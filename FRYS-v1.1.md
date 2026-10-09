@@ -22,7 +22,19 @@ er nøyaktig feilen runde 1 i v1.0 gjorde to ganger.
 
 ---
 
-## Tolv funn
+## Runde 2 (Vault, 2026-10-09)
+
+Lesningen under ble først kjørt i en container uten arkivene, uten den tilbakeholdte fila,
+uten Zenodo-token og uten tag-push. Runde 2 er samme lesning kjørt fra Vault etter at
+disse manglene var borte, og den **feilet første gang** — 4 FUNN, `exit 1` — på nettopp det
+containeren ikke kunne se: det deponerte konsekvenskartet var utdatert mot `lovkart.yaml`
+(FUNN 13). Kartet er regenerert, README og forventningene i `frys_read_v11.py` er rettet, og
+lesningen er kjørt på nytt til `REN`. Runde 2 la til kontroll (h) (tittelen) og fant at et
+README-tall hadde feil etikett (FUNN 14). FUNN 8 og FUNN 12, som runde 1 lot stå, er rettet.
+
+---
+
+## Fjorten funn
 
 ### FUNN 1 (alvorligst): prosjektets egen driftkontroll feilet på den sammenslåtte tilstanden
 
@@ -85,6 +97,11 @@ README bærer de deponerte tallene. Et tall ingen rapport har er ikke et tall RE
 uansett hvor det kom fra — det var FUNN 2 i v1.0, og regelen gjelder også når kilden er
 oppdraget.
 
+**Oppdatering i runde 2:** strengene finnes nå. `5,9 %` og `94,1 %` er målt av `parse.py`
+på 2024–2026 (265 av 4499) og står i README med omfang i samme setning; loggen er deponert
+som `src/register/lovtidend/rapporter/parse_log.txt`. Det som manglet i runde 1 var ikke
+tallene, men målingen.
+
 ### FUNN 5 (reell begrensning): to tall i en deponert rapport kan ikke etterprøves fra deponeringen
 
 `93,6 %` og `6,4 %` er **strengliteraler** i `impact.py`, skrevet inn i rapportens
@@ -97,6 +114,11 @@ altså en retting forfatteren gjorde mot seg selv. Men de er det eneste 2b-talle
 kan re-måles fra deponeringen, og README sier hvor de kommer fra. Arkivene er dessuten den
 ene manglende inndataen hvem som helst kan skaffe: `fetch.py` henter dem uten konto, uten
 nøkkel og uten skjema.
+
+**Oppdatering i runde 2:** arkivene lå på Vault, `parse.py` ble kjørt på nytt, og loggen er
+deponert (`parse_log.txt`). Tallene er nå *sporet* til en deponert logg. De kan fortsatt
+ikke re-måles fra deponeringen alene, fordi arkivene ikke er deponert; kontroll (f6b) regner
+derfor prosentene fra tellingene i loggen i stedet for å slå dem opp.
 
 ### FUNN 6 (reell): `vakt_2027-05-02.md` er en artefakt fra før rettingen
 
@@ -121,19 +143,25 @@ deponerte rapporten er den som ble laget med snapshotene til stede.
 
 README sier dette med tallene i, framfor å si at rapporten «kan kjøres på nytt».
 
-### FUNN 8 (reell, IKKE rettet): konsekvenskjedens siste ledd leser en sti utenfor deponeringen
+### FUNN 8 (reell, rettet i v1.1): `impact.py` leser `data/expected_facts.yaml` relativt
 
-`impact.py` sin `load_scenarios()` leser `expected_facts.yaml` fra en hjemmekatalog-sti.
-Konsekvensen er at **alle 1235 radtreff i den deponerte `impact.json` har tom
-`scenarier`-kolonne**. Koden som lukker bruddet ADR-0002 beskriver *finnes* — den har en
+`impact.py` sin `load_scenarios()` leste `expected_facts.yaml` fra en hjemmekatalog-sti.
+I runde 1 hadde alle 1235 radtreff i den deponerte `impact.json` derfor tom
+`scenarier`-kolonne. Koden som lukker bruddet ADR-0002 beskriver *fantes* — den har en
 egen gren for klagefrist-tabellens etatsnavn → `NAV-KLAGE-01`, `SKATT-KLAGE-01`,
-`LK-KLAGE-01` — men stien den leser overlever ikke deponering. Samme logikk, pekt på den
-deponerte `data/expected_facts.yaml`, løser **2 rader og 3 koblinger**.
+`LK-KLAGE-01` — men stien den leste overlevde ikke deponering. Samme logikk, pekt på den
+deponerte `data/expected_facts.yaml`, løste **2 rader og 3 koblinger**.
 
-**Ikke rettet, og grunnen er at den ikke kan verifiseres herfra.** Et fall-back til den
-deponerte fila er én linje, men kartet kan ikke regenereres uten arkivene, så koden og
-rapporten ville blitt stående i utakt — et nytt FUNN 3, bare omvendt. Det er ført som
-første punkt på hva som bør gjøres, med målingen vedlagt, framfor å bli rettet blindt.
+Runde 1 lot det stå, fordi kartet ikke kunne regenereres uten arkivene, og en endret sti
+ville latt koden og rapporten stå i utakt — et nytt FUNN 3, bare omvendt.
+
+**Rettet i runde 2**, fra Vault der arkivene finnes: `impact.py` leser nå
+`data/expected_facts.yaml` med sti relativt til treet, og kartet er regenerert fra arkivene
+i samme operasjon, så kode og rapport ikke står i utakt. Resultat: `load_scenarios()` gir 2
+rader og 3 koblinger, og **56 av 1296 radtreff** har et scenario, i **52** kunngjøringer
+(`NAV-KLAGE-01` 38, `SKATT-KLAGE-01` 18; 29 på paragrafnivå, 27 på dokumentnivå). Kontroll
+(f6) måler alle tallene. Forventningene runde 1 hadde for tilstanden før rettingen (0 og 0)
+er byttet ut.
 
 ### FUNN 9 (stale status, kontroll (e)): README v1.0 sin status om SimpleAudit-grenen var utdatert
 
@@ -176,20 +204,65 @@ ved å kjøre dem.
 hver av dem feller, og sier eksplisitt hvilke fire kommandoer som går ende til ende fra
 deponeringen alene. Alle fire ble kjørt ved deponering.
 
-### FUNN 12 (arvet fra v1.0, ikke rettet, og det er et valg): tittelen teller feil
+### FUNN 12 (arvet fra v1.0, rettet i v1.1): tittelen telte feil
 
-Tittelen sier «six preregistered experiments». Det er **fem**: fase 1, 1b, 3, 3b og 3c.
-Tabellen i README har sagt fem hele tiden, også i v1.0 — avviket er mellom tittelen og
+Tittelen sa «six preregistered experiments». Det er **fem**: fase 1, 1b, 3, 3b og 3c.
+Tabellen i README har sagt fem hele tiden, også i v1.0 — avviket var mellom tittelen og
 dokumentets eget innhold, og det sto der da deponeringen ble publisert første gang.
 
-**Ikke rettet.** Tittelen er den publiserte tittelen på en post med konsept-DOI, og
-oppdraget holder den uendret. Å gi v1.1 et annet navn ville gjort at siteringen i v1.0
-peker på noe som heter noe annet; det er en verre feil enn å telle én for mange, og den er
-ikke reversibel. Avviket er i stedet skrevet ned i README med begrunnelsen, og her.
+**Rettet i v1.1.** Tittelen er «Forseti probes 2026: five preregistered experiments on
+Norwegian public-service fact checking», som versjonsmetadata: Zenodo-postens tittel
+(`zenodo_v1.1.json`), overskriften i README og `CITATION.cff`. Konsept-DOI-en er uendret, og
+v1.0-posten beholder tittelen den ble publisert med, så en sitering av v1.0 peker fortsatt
+på en post som heter det samme som den siterte. Runde 1 lot tittelen stå som den var;
+runde 2 rettet den etter nytt oppdrag. README forklarer retten og at v1.0 beholder sin
+tittel.
 
-Lesningen fanget det ikke. Ingen kontroll sammenligner tittelen med tabellen under den, og
-(a) ser bare tall med to eller flere siffer, så «six» i prosa går rett gjennom. Det er en
-tredje måte en kontroll kan være blind på, ved siden av de to v1.0 fant: negasjon og språk.
+Lesningen fanget det ikke i runde 1. Ingen kontroll sammenlignet tittelen med tabellen
+under den, og (a) ser bare tall med to eller flere siffer, så «six» i prosa går rett
+gjennom. Det er en tredje måte en kontroll kan være blind på, ved siden av de to v1.0 fant:
+negasjon og språk. Kontroll (h) lukker det: tittelen skal være lik i README, `CITATION.cff`
+og `zenodo_v1.1.json`, den skal si «five», og ingen tekst skal påstå at tittelen står som den
+er med vilje.
+
+### FUNN 13 (reell, funnet i runde 2): det deponerte konsekvenskartet var utdatert mot `lovkart.yaml`
+
+FUNN 1 førte de tre klagefristradene inn i `used_by` i `lovkart.yaml` (`7a1178c`) og fikk
+`resolve_lovkart.py --check` til `exit 0`. Men `impact.json` er *generert* fra
+`lovkart.yaml`, og den ble ikke regenerert, fordi containeren ikke hadde arkivene. Dermed var
+`lovkart.yaml` og kartet ikke lenger samme tilstand, selv om kontrollen mellom register og
+lovkart var grønn.
+
+Regenerert fra arkivene gir `impact.py` **157** kunngjøringer og **1296** radtreff der den
+deponerte filen hadde 146 og 1235. De 61 ekstra er de tre klagefristradene (`NAV-KLAGE-01`
+38, `SKATT-KLAGE-01` 18, `LK-KLAGE-01` 5); ingen av de 1235 gamle falt bort, og ingen fikk
+endret felt utenom `scenarier`. Avviket er isolert fra FUNN 8: med scenariokoblingen slått av
+gir koden fortsatt 157 og 1296, så det kommer av lovkartet og ikke av stien.
+
+Runde 1 skrev under «To substansielle funn» at `LK-KLAGE-01` «flagges også» på
+forvaltningslovens kunngjøring. Det var ikke sant i det deponerte kartet; det er sant i det
+regenererte. Det er samme feilklasse som FUNN 3 — en generert fil etterlatt på forrige
+tilstand — og ingen kontroll fanget den, fordi (f) målte filen mot README, og begge var like
+utdaterte. Runde 2 fanget den fordi forventningene ble kjørt mot et nylagd kart.
+
+**Rettet:** kartet regenerert fra arkivene. `parse.py --years 2024 2025 2026` gir en
+`parsed.jsonl` byte-identisk med fila `impact.py` leste (sha256 `61e0e47a…`, hele hashen i
+`parse_log.txt`). README og forventningene i `frys_read_v11.py` er oppdatert til 157 og 1296.
+
+### FUNN 14 (reell, funnet i runde 2): «93,6 % dokumentnivå» er en feil etikett på et riktig tall
+
+README og `impact.py` sin docstring kaller 93,6 % «dokumentnivå tilgjengelig»
+(`changesToDocuments`). Tallet er riktig, men det måler noe annet: andelen kunngjøringer
+**uten `data-change-part`**. Av 2880 kunngjøringer (2025+2026) har 2546 (88,4 %) minst ett
+endret dokument i `changesToDocuments`, mens 334 (11,6 %) ikke oppgir noen endring i det
+hele tatt. På 2024–2026 er tallene 3927 av 4499 (87,3 %) og 572 (12,7 %). Kontroll (b) fant
+det ikke, fordi den sjekker at tallet står i rapporten og ikke hva det teller. Det ble funnet
+ved å spørre hva komplementet til 6,4 % er.
+
+**Rettet i README, ikke i docstringen og ikke i `impact.md`**: begge er deponerte artefakter
+og er ikke endret. README-raden heter nå «no paragraph level, so document level at best»,
+sier at 87,3 % faktisk navngir et dokument, og sier at overskriften i `impact.md` bærer
+2025+2026-tall uten omfang. Målingen er deponert i `parse_log.txt`.
 
 ---
 
@@ -223,8 +296,10 @@ registerets kø.
 | (c) metrikk-overclaim, inkl. tre nye 2b/vakt-mønstre | rent |
 | (d) eksterne tall | rent — og de annenhånds Lovdata-prisene i ADR-0002 er **ikke** gjentatt i README, kontrollert eksplisitt |
 | (e) stale status: PR #105, `default_enabled`, vilkårsrettelsen | rent etter FUNN 9 og 10 |
-| (f) 32 tall målt på nytt ved deponering | rent — 32 av 32 |
-| (f2) hvert «målt ved deponering»-tall har en målelinje | rent — 8 av 8 |
+| (f) 53 tall målt på nytt | rent — 53 av 53 |
+| (f2) hvert «målt ved deponering»-tall har en målelinje | rent — 18 av 18 |
+| (h) tittelen lik i README, `CITATION.cff` og `zenodo_v1.1.json`, og sier «five» | rent |
+| (g) full vindusskanning, 5/6/7/8 ord | `CLEAN` — 0 treff, 0,0 % gjenopprettbart |
 | (g) `hei_refusal` under `data/` | rent — 0 filer |
 | (g) `hei_refusal`-strengen i filer nye i v1.1 | rent — 0, med ett navngitt unntak |
 
@@ -232,19 +307,23 @@ registerets kø.
 
 De tre nye (c)-mønstrene er der fordi 2b inviterer til tre bestemte overdrivelser: at
 baklengs-testen bestod *på paragrafnivå* (den gjorde det ikke), at paragrafnivå er bredt
-tilgjengelig (6,4 %), og at vaktens tall gjelder et større register enn 121 rader. Hvert
+tilgjengelig (6,4 % på 2025+2026), og at vaktens tall gjelder et større register enn 121 rader. Hvert
 mønster krever at forbeholdet står innenfor samme avsnitt som påstanden, ikke bare et sted
 i dokumentet — det var FUNN 4 i v1.0.
 
 ---
 
-## Ett åpent punkt, og det blokkerer deponering
+## Det åpne punktet fra runde 1 er lukket
 
-**Eksklusjonssjekkens vindusskanning er ikke kjørt.** `src/exclusion_check.py` krever den
-tilbakeholdte `scenarios.jsonl` med de 47 `hei_refusal`-promptene, og denne maskinen holder
-den ikke. Lesningen rapporterer det som **ÅPENT PUNKT, ikke som bestått kontroll** — en
-kontroll som ikke kunne kjøres er ikke en kontroll som gikk gjennom, og det var den
-hardeste lærdommen fra v1.0.
+Runde 1 kunne ikke kjøre eksklusjonssjekkens vindusskanning, fordi den krever den
+tilbakeholdte `scenarios.jsonl` med de 47 `hei_refusal`-promptene, og rapporterte det som
+**ÅPENT PUNKT, ikke som bestått kontroll** — en kontroll som ikke kunne kjøres er ikke en
+kontroll som gikk gjennom, og det var den hardeste lærdommen fra v1.0.
+
+**Kjørt i runde 2**, fra Vault, med den tilbakeholdte fila (sha256 begynner `7157b091`, lik
+hashen fase 1-preregistreringen oppgir) og over den utpakkede release-tarballen: 0 treff av
+262, 235, 211 og 187 vinduer ved 5, 6, 7 og 8 ord, 0,0 % av noen enkeltprompt
+gjenopprettbart, 0 `hei_refusal`-filer under `data/`. Utskriften er `CLEAN`.
 
 Det som *kunne* kontrolleres på v1.1-treet, og som er rent:
 
@@ -269,25 +348,18 @@ innholdet — to kjøringer på rad ga først 12, så 13. Den holdes derfor uten
 hverandre. Et tall som endrer seg med rekkefølgen er ikke en måling, og en telling man
 justerer til den stemmer er verre enn ingen telling.
 
-**Vindusskanningen ved 5, 6, 7 og 8 ord, og per-prompt-rekonstruerbarheten, må kjøres på
-den utpakkede tarballen fra maskinen som holder fila, og må gi `CLEAN`, før v1.1.0
-deponeres.** `frys_read_v11.py` tar stien som argument og kjører den da som del av
-lesningen.
+Vindusskanningen er dermed ikke lenger noe åpent punkt. `frys_read_v11.py` tar stien som
+argument og kjører den som del av lesningen (g); uten argumentet rapporterer den fortsatt
+skanningen som åpent punkt, ikke som bestått.
 
-Zenodo-deponeringen er ikke kjørt av samme grunn i annen form: `ZENODO_TOKEN` er ikke satt
-i dette miljøet.
-
-Og et tredje, mindre punkt av samme slag: **taggen `v1.1.0` er laget, men ikke pushet.**
-Hver push til en tagg-ref gir 403 i dette miljøet — kontrollert med både annotert og
-lettvektstagg, mens grenpush til samme repo går gjennom, og ingenting ble opprettet på
-fjernsiden. Commiten taggen peker på ligger på `main`. Taggen må settes og pushes fra samme
-maskin som kjører deponeringen.
+Deponeringen og taggen som runde 1 ikke kunne gjøre er gjort fra Vault etter at lesningen
+ble `REN`. Versjons-DOI står i README, og taggen heter `v1.1.0`.
 
 ---
 
-## Tre ting lesningen ikke kan fange, ført som kjent begrensning
+## Fire ting lesningen ikke kan fange, ført som kjent begrensning
 
-De to første er arvet fra v1.0 og gjelder fortsatt. Den tredje er ny med 2b.
+De to første er arvet fra v1.0 og gjelder fortsatt. Den tredje er ny med 2b, den fjerde med runde 2.
 
 1. **At et tall finnes ordrett i en rapport beviser ikke at det er brukt riktig.**
    Kontroll (b) sammenligner tall mot navngitt rapport, men en setning kan sitere riktig
@@ -303,3 +375,8 @@ De to første er arvet fra v1.0 og gjelder fortsatt. Den tredje er ny med 2b.
    løse en rad til feil dokument — det var nettopp FUNN 2, og den ble funnet ved å lese
    `legal_basis` mot utfallet, ikke av noen kontroll. En re-måling er sterkere enn et
    oppslag og svakere enn en lesning.
+
+4. **Et riktig tall kan ha feil etikett, og (a)–(f) ser ikke etiketten.** FUNN 14: 93,6 %
+   var riktig målt og feil navngitt som «dokumentnivå». Kontrollene sjekker at tallet står i
+   en rapport og at koden gir det, ikke hva tallet teller. Det ble funnet ved å lese tallet
+   og spørre hva komplementet er, og det er den eneste kontrollen som finnes for det.

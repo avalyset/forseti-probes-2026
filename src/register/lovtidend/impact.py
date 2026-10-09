@@ -55,7 +55,8 @@ def load_register():
 def load_scenarios():
     """registerrad-ID -> scenarier, via expected_facts.yaml sine register-koblinger."""
     import yaml, re
-    p = os.path.expanduser("~/ClaudeWork/decision-probe/factcheck/expected_facts.yaml")
+    # Den deponerte fila, relativt til treet: src/register/lovtidend -> repo-roten.
+    p = os.path.join(os.path.dirname(REG), "..", "data", "expected_facts.yaml")
     if not os.path.exists(p):
         return {}
     d = yaml.safe_load(open(p, encoding="utf-8"))

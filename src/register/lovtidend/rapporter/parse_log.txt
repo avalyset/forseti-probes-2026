@@ -1,0 +1,32 @@
+# parse.py — dekning av paragraf- og dokumentniva, malt pa arkivene i lovdata/
+# Kjort 2026-10-09 fra Vault. To omfang, fordi tallene i README ellers blandes.
+# Kommandoene er de samme som README oppgir; 'skrevet'-linjene (lokale stier) er tatt ut.
+
+## python -I lovtidend/parse.py --years 2025 2026      (omfang: 2025+2026)
+kunngjøringer lest: 2880
+  med data-change-part (paragrafnivå): 184 (6.4%)
+  uten (eldre format / ingen endring): 2696 (93.6%)
+
+    år   kunngj.  m/change-part   kun dokumentnivå
+  2025      1787       117 ( 6.5%)          1444
+  2026      1093        67 ( 6.1%)           918
+
+
+## python -I lovtidend/parse.py --years 2024 2025 2026  (omfang: 2024-2026 = kartet i impact.json)
+kunngjøringer lest: 4499
+  med data-change-part (paragrafnivå): 265 (5.9%)
+  uten (eldre format / ingen endring): 4234 (94.1%)
+
+    år   kunngj.  m/change-part   kun dokumentnivå
+  2024      1619        81 ( 5.0%)          1300
+  2025      1787       117 ( 6.5%)          1444
+  2026      1093        67 ( 6.1%)           918
+
+
+## sha256 av parsed.jsonl for 2024-2026 (byte-identisk med fila impact.py leste):
+61e0e47ac69867a6208cad1191c4b840eac2eea066c2be4e284314dccf94ade1
+
+## Hva «uten change-part» er: ikke alle har dokumentniva (malt pa samme parsed.jsonl)
+# changes_documents tom OG ingen change-part = kunngjoringen oppgir ingen endret dokument i det hele tatt.
+omfang 2025+2026: 2880 kunngjøringer | paragrafnivå 184 (6.4%) | kun dokumentnivå 2362 (82.0%) | ingen endringsinfo 334 (11.6%) | minst dokumentnivå 2546 (88.4%)
+omfang 2024-2026: 4499 kunngjøringer | paragrafnivå 265 (5.9%) | kun dokumentnivå 3662 (81.4%) | ingen endringsinfo 572 (12.7%) | minst dokumentnivå 3927 (87.3%)

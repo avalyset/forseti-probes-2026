@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "upload_type": "software",
+    "title": "Forseti probes 2026: five preregistered experiments on Norwegian public-service fact checking",
+    "version": "1.1.0",
+    "publication_date": "2026-10-09",
+    "description": "<p><strong>Five preregistered experiments on whether a language model's handling of\nNorwegian public-service facts can be checked mechanically.</strong> Each carries a\npreregistration committed before the run it governs; four further pieces of work are\nengineering tasks with no hypothesis to preregister.</p>\n\n<p>Four of five preregistered criteria were not met, and the reports say so in their own\nwords: <em>&laquo;trenger data&raquo;</em> (fase 1), <em>&laquo;overf&oslash;rer ikke&raquo;</em>\n(fase 1b), <em>&laquo;virker ikke&raquo;</em> (fase 3, 3b and 3c).</p>\n\n<p>The useful result came from a control. The question &laquo;who is claiming this\nnumber?&raquo; looked like a classification problem and was not one. A linear probe learning\nit from the sentence reached 0,852 against a 0,867 regex baseline and caught 1 of 13 known\nfalse accusations. Feeding the probe the user's prompt made it worse (0,6914): mean-pooling\nover a shared prefix cut the share of variance within an answer from 45,0&nbsp;% to\n30,4&nbsp;%. Looking the figure up instead &mdash; is it in any user turn? &mdash; together\nwith a phone-number filter caught <strong>13 of 13</strong>, with no model at all.</p>\n\n<p>The caveat belongs with the result: none of the pairwise precision differences in that\nphase are distinguishable from noise (McNemar p = 0,22&ndash;1,00). The claim is not that\nregex is better, but that the probe bought no measurable gain while costing a 248&nbsp;MB\nartifact and a torch dependency. Precision was never the right instrument &mdash; thirteen\npairs out of 324 is 4&nbsp;% of the data and drowns in an aggregate score.</p>\n\n<p><strong>New in v1.1.0.</strong> Fase 2b: a consequence map from amendments published in\nNorsk Lovtidend (Lovdata's open NLOD&nbsp;2.0 dataset) to the register rows that rest on the\namended law. 4499 announcements from 2024&ndash;2026 were read and 157 touch the register.\nA backwards test finds all 5 known amendments, but four of them at document level only:\njust 5,9&nbsp;% of the announcements carry paragraph-level change markup (265 of 4499).\nAnd the metningsvakt: four guards over register and tail saturation, each tested on a case\nit must fire on and a case it must stay silent on. Neither is preregistered, and the\ndeposit says so.</p>\n\n<p><strong>The title is corrected in v1.1.0.</strong> v1.0.0 was titled &laquo;six\npreregistered experiments&raquo;; there are five, and the table in its own README said so.\nThe concept DOI is unchanged, and the v1.0.0 record keeps the title it was published\nwith.</p>\n\n<p>Also deposited: a Norwegian public-sector fact register (118 rows in v1.0.0, 121 in v1.1.0)\nconverted to YAML on the OpenFisca pattern, with every incomplete field flagged rather than guessed, a checker that\ncatches a stale grunnbel&oslash;p value in a historical commit, and a change detector that\nfinds the 2026 grunnbel&oslash;p change from two real page snapshots.</p>\n\n<p><strong>The scenario pack used as the test set in fase 1 and 1b is not included</strong>\n(the README names it). It is SimulaMet's, its content is sensitive, and it was used as a\ntest set only. No prompt text, and nothing from which a prompt could be reconstructed, is in\nthis deposit: 0 hits at 5-, 6-, 7- and 8-word windows, and 0,0&nbsp;% of any single prompt\nrecoverable, rechecked on the v1.1.0 tarball. The verification script is included so the\ncheck can be rerun by anyone who holds the pack.</p>\n\n<p>Code is Apache-2.0; preregistrations, reports, data and figures are CC BY 4.0.</p>",
+    "access_right": "open",
+    "license": "apache2.0",
+    "creators": [
+      {
+        "name": "Nicolaysen, Eirik Botten",
+        "affiliation": "EcoDeco AS",
+        "orcid": "0009-0001-9188-6788"
+      }
+    ],
+    "keywords": [
+      "Norwegian",
+      "public services",
+      "LLM evaluation",
+      "fact checking",
+      "preregistration",
+      "SimpleAudit"
+    ],
+    "language": "eng",
+    "related_identifiers": [
+      {
+        "identifier": "https://github.com/SimulaMet/SimpleAudit",
+        "relation": "isSupplementTo",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://osf.io/vz8xj/",
+        "relation": "references",
+        "scheme": "url"
+      }
+    ]
+  }
+}

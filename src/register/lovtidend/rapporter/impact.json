@@ -93,6 +93,56 @@
   ]
  },
  {
+  "legacy_id": "LOV-2024-01-12-7",
+  "hits": [
+   {
+    "ref": "lov/2016-05-27-14",
+    "abbrev": "skfvl.",
+    "row": "SKATT-KLAGE-01",
+    "paragraphs": [
+     "§1-1",
+     "§13-3",
+     "§2-1",
+     "§5-6",
+     "§8-14 lov",
+     "§9-1",
+     "§9-2"
+    ],
+    "level": "paragraf",
+    "current_value": [
+     "6 uker"
+    ],
+    "claim": "Skatteetaten: klagefrist 6 uker fra mottatt vedtak",
+    "scenarios": [
+     "Egenretting av skattemelding — treårsvindu [klagefrist_kontrast]",
+     "Klagefrist på skattevedtak [klagefrist]"
+    ]
+   }
+  ]
+ },
+ {
+  "legacy_id": "LOV-2024-03-22-11",
+  "hits": [
+   {
+    "ref": "lov/2016-05-27-14",
+    "abbrev": "skfvl.",
+    "row": "SKATT-KLAGE-01",
+    "paragraphs": [
+     "§3-5"
+    ],
+    "level": "paragraf",
+    "current_value": [
+     "6 uker"
+    ],
+    "claim": "Skatteetaten: klagefrist 6 uker fra mottatt vedtak",
+    "scenarios": [
+     "Egenretting av skattemelding — treårsvindu [klagefrist_kontrast]",
+     "Klagefrist på skattevedtak [klagefrist]"
+    ]
+   }
+  ]
+ },
+ {
   "legacy_id": "LOV-2024-04-12-14",
   "hits": [
    {
@@ -269,6 +319,29 @@
     ],
     "claim": "«Hvis du forsørger barn under 18 år, kan du få et barnetillegg på 38 kroner per barn, pr. ",
     "scenarios": []
+   },
+   {
+    "ref": "lov/1997-02-28-19",
+    "abbrev": "ftrl.",
+    "row": "NAV-KLAGE-01",
+    "paragraphs": [
+     "§17-11",
+     "§17-9",
+     "§17A-5",
+     "§17A-6",
+     "§20-15",
+     "§3-19",
+     "§4-24",
+     "§8-52"
+    ],
+    "level": "paragraf",
+    "current_value": [
+     "6 uker"
+    ],
+    "claim": "NAV: klagefrist 6 uker fra mottatt vedtak",
+    "scenarios": [
+     "AAP Klagefrist - Tidsfrist [klagefrist]"
+    ]
    }
   ]
  },
@@ -393,6 +466,44 @@
     ],
     "claim": "«Hvis du forsørger barn under 18 år, kan du få et barnetillegg på 38 kroner per barn, pr. ",
     "scenarios": []
+   },
+   {
+    "ref": "lov/1997-02-28-19",
+    "abbrev": "ftrl.",
+    "row": "NAV-KLAGE-01",
+    "paragraphs": [
+     "§14-9"
+    ],
+    "level": "paragraf",
+    "current_value": [
+     "6 uker"
+    ],
+    "claim": "NAV: klagefrist 6 uker fra mottatt vedtak",
+    "scenarios": [
+     "AAP Klagefrist - Tidsfrist [klagefrist]"
+    ]
+   }
+  ]
+ },
+ {
+  "legacy_id": "LOV-2024-05-31-25",
+  "hits": [
+   {
+    "ref": "lov/2016-05-27-14",
+    "abbrev": "skfvl.",
+    "row": "SKATT-KLAGE-01",
+    "paragraphs": [
+     "§3-10"
+    ],
+    "level": "paragraf",
+    "current_value": [
+     "6 uker"
+    ],
+    "claim": "Skatteetaten: klagefrist 6 uker fra mottatt vedtak",
+    "scenarios": [
+     "Egenretting av skattemelding — treårsvindu [klagefrist_kontrast]",
+     "Klagefrist på skattevedtak [klagefrist]"
+    ]
    }
   ]
  },
@@ -769,6 +880,37 @@
     ],
     "claim": "Klagefrist 3 uker fra underretning er kommet frem til parten",
     "scenarios": []
+   },
+   {
+    "ref": "lov/1967-02-10",
+    "abbrev": "fvl.",
+    "row": "LK-KLAGE-01",
+    "paragraphs": [
+     "§12"
+    ],
+    "level": "paragraf",
+    "current_value": [
+     "3 uker"
+    ],
+    "claim": "Lånekassen: klagefrist 3 uker fra mottatt vedtak",
+    "scenarios": []
+   },
+   {
+    "ref": "lov/2016-05-27-14",
+    "abbrev": "skfvl.",
+    "row": "SKATT-KLAGE-01",
+    "paragraphs": [
+     "§3-9"
+    ],
+    "level": "paragraf",
+    "current_value": [
+     "6 uker"
+    ],
+    "claim": "Skatteetaten: klagefrist 6 uker fra mottatt vedtak",
+    "scenarios": [
+     "Egenretting av skattemelding — treårsvindu [klagefrist_kontrast]",
+     "Klagefrist på skattevedtak [klagefrist]"
+    ]
    }
   ]
  },
@@ -877,6 +1019,20 @@
     ],
     "claim": "«Hvis du forsørger barn under 18 år, kan du få et barnetillegg på 38 kroner per barn, pr. ",
     "scenarios": []
+   },
+   {
+    "ref": "lov/1997-02-28-19",
+    "abbrev": "ftrl.",
+    "row": "NAV-KLAGE-01",
+    "paragraphs": null,
+    "level": "dokument",
+    "current_value": [
+     "6 uker"
+    ],
+    "claim": "NAV: klagefrist 6 uker fra mottatt vedtak",
+    "scenarios": [
+     "AAP Klagefrist - Tidsfrist [klagefrist]"
+    ]
    }
   ]
  },
@@ -1001,6 +1157,22 @@
     ],
     "claim": "«Hvis du forsørger barn under 18 år, kan du få et barnetillegg på 38 kroner per barn, pr. ",
     "scenarios": []
+   },
+   {
+    "ref": "lov/1997-02-28-19",
+    "abbrev": "ftrl.",
+    "row": "NAV-KLAGE-01",
+    "paragraphs": [
+     "§14-14"
+    ],
+    "level": "paragraf",
+    "current_value": [
+     "6 uker"
+    ],
+    "claim": "NAV: klagefrist 6 uker fra mottatt vedtak",
+    "scenarios": [
+     "AAP Klagefrist - Tidsfrist [klagefrist]"
+    ]
    }
   ]
  },
@@ -1173,6 +1345,22 @@
     ],
     "claim": "«Hvis du forsørger barn under 18 år, kan du få et barnetillegg på 38 kroner per barn, pr. ",
     "scenarios": []
+   },
+   {
+    "ref": "lov/1997-02-28-19",
+    "abbrev": "ftrl.",
+    "row": "NAV-KLAGE-01",
+    "paragraphs": [
+     "§23-3"
+    ],
+    "level": "paragraf",
+    "current_value": [
+     "6 uker"
+    ],
+    "claim": "NAV: klagefrist 6 uker fra mottatt vedtak",
+    "scenarios": [
+     "AAP Klagefrist - Tidsfrist [klagefrist]"
+    ]
    }
   ]
  },
@@ -1493,6 +1681,40 @@
     ],
     "claim": "«Hvis du forsørger barn under 18 år, kan du få et barnetillegg på 38 kroner per barn, pr. ",
     "scenarios": []
+   },
+   {
+    "ref": "lov/1997-02-28-19",
+    "abbrev": "ftrl.",
+    "row": "NAV-KLAGE-01",
+    "paragraphs": [
+     "§11-13",
+     "§11-18",
+     "§11-4",
+     "§12-15",
+     "§13-11",
+     "§13-2",
+     "§19-8",
+     "§19-9a",
+     "§20-4",
+     "§3-3",
+     "§4-10",
+     "§4-15",
+     "§4-16",
+     "§4-20",
+     "§4-23",
+     "§4-26",
+     "§4-5",
+     "§4-9",
+     "§8-49"
+    ],
+    "level": "paragraf",
+    "current_value": [
+     "6 uker"
+    ],
+    "claim": "NAV: klagefrist 6 uker fra mottatt vedtak",
+    "scenarios": [
+     "AAP Klagefrist - Tidsfrist [klagefrist]"
+    ]
    }
   ]
  },
@@ -1625,6 +1847,23 @@
     ],
     "claim": "«Hvis du forsørger barn under 18 år, kan du få et barnetillegg på 38 kroner per barn, pr. ",
     "scenarios": []
+   },
+   {
+    "ref": "lov/1997-02-28-19",
+    "abbrev": "ftrl.",
+    "row": "NAV-KLAGE-01",
+    "paragraphs": [
+     "§23-2",
+     "§23-3"
+    ],
+    "level": "paragraf",
+    "current_value": [
+     "6 uker"
+    ],
+    "claim": "NAV: klagefrist 6 uker fra mottatt vedtak",
+    "scenarios": [
+     "AAP Klagefrist - Tidsfrist [klagefrist]"
+    ]
    }
   ]
  },
@@ -1730,6 +1969,28 @@
     ],
     "claim": "Registreringsgrense for merverdiavgift: «beløpsgrensen på 50 000 kroner i § 2-1 første led",
     "scenarios": []
+   }
+  ]
+ },
+ {
+  "legacy_id": "LOV-2024-12-20-89",
+  "hits": [
+   {
+    "ref": "lov/2016-05-27-14",
+    "abbrev": "skfvl.",
+    "row": "SKATT-KLAGE-01",
+    "paragraphs": [
+     "§7-10"
+    ],
+    "level": "paragraf",
+    "current_value": [
+     "6 uker"
+    ],
+    "claim": "Skatteetaten: klagefrist 6 uker fra mottatt vedtak",
+    "scenarios": [
+     "Egenretting av skattemelding — treårsvindu [klagefrist_kontrast]",
+     "Klagefrist på skattevedtak [klagefrist]"
+    ]
    }
   ]
  },
@@ -1855,6 +2116,26 @@
     "current_value": [],
     "claim": "**Innflytting, hovedregel i lovteksten**: «skal innen åtte dager etter ankomsten personlig",
     "scenarios": []
+   }
+  ]
+ },
+ {
+  "legacy_id": "LOV-2024-12-20-93",
+  "hits": [
+   {
+    "ref": "lov/2016-05-27-14",
+    "abbrev": "skfvl.",
+    "row": "SKATT-KLAGE-01",
+    "paragraphs": null,
+    "level": "dokument",
+    "current_value": [
+     "6 uker"
+    ],
+    "claim": "Skatteetaten: klagefrist 6 uker fra mottatt vedtak",
+    "scenarios": [
+     "Egenretting av skattemelding — treårsvindu [klagefrist_kontrast]",
+     "Klagefrist på skattevedtak [klagefrist]"
+    ]
    }
   ]
  },
@@ -2112,6 +2393,20 @@
     ],
     "claim": "«Hvis du forsørger barn under 18 år, kan du få et barnetillegg på 38 kroner per barn, pr. ",
     "scenarios": []
+   },
+   {
+    "ref": "lov/1997-02-28-19",
+    "abbrev": "ftrl.",
+    "row": "NAV-KLAGE-01",
+    "paragraphs": null,
+    "level": "dokument",
+    "current_value": [
+     "6 uker"
+    ],
+    "claim": "NAV: klagefrist 6 uker fra mottatt vedtak",
+    "scenarios": [
+     "AAP Klagefrist - Tidsfrist [klagefrist]"
+    ]
    }
   ]
  },
@@ -2581,6 +2876,26 @@
   ]
  },
  {
+  "legacy_id": "FOR-2024-03-22-516",
+  "hits": [
+   {
+    "ref": "lov/2016-05-27-14",
+    "abbrev": "skfvl.",
+    "row": "SKATT-KLAGE-01",
+    "paragraphs": null,
+    "level": "dokument",
+    "current_value": [
+     "6 uker"
+    ],
+    "claim": "Skatteetaten: klagefrist 6 uker fra mottatt vedtak",
+    "scenarios": [
+     "Egenretting av skattemelding — treårsvindu [klagefrist_kontrast]",
+     "Klagefrist på skattevedtak [klagefrist]"
+    ]
+   }
+  ]
+ },
+ {
   "legacy_id": "FOR-2024-03-25-532",
   "hits": [
    {
@@ -2908,6 +3223,20 @@
     ],
     "claim": "«Hvis du forsørger barn under 18 år, kan du få et barnetillegg på 38 kroner per barn, pr. ",
     "scenarios": []
+   },
+   {
+    "ref": "lov/1997-02-28-19",
+    "abbrev": "ftrl.",
+    "row": "NAV-KLAGE-01",
+    "paragraphs": null,
+    "level": "dokument",
+    "current_value": [
+     "6 uker"
+    ],
+    "claim": "NAV: klagefrist 6 uker fra mottatt vedtak",
+    "scenarios": [
+     "AAP Klagefrist - Tidsfrist [klagefrist]"
+    ]
    }
   ]
  },
@@ -3016,6 +3345,20 @@
     ],
     "claim": "«Hvis du forsørger barn under 18 år, kan du få et barnetillegg på 38 kroner per barn, pr. ",
     "scenarios": []
+   },
+   {
+    "ref": "lov/1997-02-28-19",
+    "abbrev": "ftrl.",
+    "row": "NAV-KLAGE-01",
+    "paragraphs": null,
+    "level": "dokument",
+    "current_value": [
+     "6 uker"
+    ],
+    "claim": "NAV: klagefrist 6 uker fra mottatt vedtak",
+    "scenarios": [
+     "AAP Klagefrist - Tidsfrist [klagefrist]"
+    ]
    }
   ]
  },
@@ -3314,6 +3657,20 @@
     ],
     "claim": "«Hvis du forsørger barn under 18 år, kan du få et barnetillegg på 38 kroner per barn, pr. ",
     "scenarios": []
+   },
+   {
+    "ref": "lov/1997-02-28-19",
+    "abbrev": "ftrl.",
+    "row": "NAV-KLAGE-01",
+    "paragraphs": null,
+    "level": "dokument",
+    "current_value": [
+     "6 uker"
+    ],
+    "claim": "NAV: klagefrist 6 uker fra mottatt vedtak",
+    "scenarios": [
+     "AAP Klagefrist - Tidsfrist [klagefrist]"
+    ]
    }
   ]
  },
@@ -3698,6 +4055,26 @@
   ]
  },
  {
+  "legacy_id": "FOR-2024-05-31-871",
+  "hits": [
+   {
+    "ref": "lov/2016-05-27-14",
+    "abbrev": "skfvl.",
+    "row": "SKATT-KLAGE-01",
+    "paragraphs": null,
+    "level": "dokument",
+    "current_value": [
+     "6 uker"
+    ],
+    "claim": "Skatteetaten: klagefrist 6 uker fra mottatt vedtak",
+    "scenarios": [
+     "Egenretting av skattemelding — treårsvindu [klagefrist_kontrast]",
+     "Klagefrist på skattevedtak [klagefrist]"
+    ]
+   }
+  ]
+ },
+ {
   "legacy_id": "FOR-2024-05-31-872",
   "hits": [
    {
@@ -3897,6 +4274,20 @@
     ],
     "claim": "«Hvis du forsørger barn under 18 år, kan du få et barnetillegg på 38 kroner per barn, pr. ",
     "scenarios": []
+   },
+   {
+    "ref": "lov/1997-02-28-19",
+    "abbrev": "ftrl.",
+    "row": "NAV-KLAGE-01",
+    "paragraphs": null,
+    "level": "dokument",
+    "current_value": [
+     "6 uker"
+    ],
+    "claim": "NAV: klagefrist 6 uker fra mottatt vedtak",
+    "scenarios": [
+     "AAP Klagefrist - Tidsfrist [klagefrist]"
+    ]
    }
   ]
  },
@@ -4261,6 +4652,20 @@
     ],
     "claim": "«Hvis du forsørger barn under 18 år, kan du få et barnetillegg på 38 kroner per barn, pr. ",
     "scenarios": []
+   },
+   {
+    "ref": "lov/1997-02-28-19",
+    "abbrev": "ftrl.",
+    "row": "NAV-KLAGE-01",
+    "paragraphs": null,
+    "level": "dokument",
+    "current_value": [
+     "6 uker"
+    ],
+    "claim": "NAV: klagefrist 6 uker fra mottatt vedtak",
+    "scenarios": [
+     "AAP Klagefrist - Tidsfrist [klagefrist]"
+    ]
    }
   ]
  },
@@ -4369,6 +4774,20 @@
     ],
     "claim": "«Hvis du forsørger barn under 18 år, kan du få et barnetillegg på 38 kroner per barn, pr. ",
     "scenarios": []
+   },
+   {
+    "ref": "lov/1997-02-28-19",
+    "abbrev": "ftrl.",
+    "row": "NAV-KLAGE-01",
+    "paragraphs": null,
+    "level": "dokument",
+    "current_value": [
+     "6 uker"
+    ],
+    "claim": "NAV: klagefrist 6 uker fra mottatt vedtak",
+    "scenarios": [
+     "AAP Klagefrist - Tidsfrist [klagefrist]"
+    ]
    }
   ]
  },
@@ -4510,6 +4929,20 @@
     ],
     "claim": "«Hvis du forsørger barn under 18 år, kan du få et barnetillegg på 38 kroner per barn, pr. ",
     "scenarios": []
+   },
+   {
+    "ref": "lov/1997-02-28-19",
+    "abbrev": "ftrl.",
+    "row": "NAV-KLAGE-01",
+    "paragraphs": null,
+    "level": "dokument",
+    "current_value": [
+     "6 uker"
+    ],
+    "claim": "NAV: klagefrist 6 uker fra mottatt vedtak",
+    "scenarios": [
+     "AAP Klagefrist - Tidsfrist [klagefrist]"
+    ]
    }
   ]
  },
@@ -4527,6 +4960,33 @@
     ],
     "claim": "Klagefrist 3 uker fra underretning er kommet frem til parten",
     "scenarios": []
+   },
+   {
+    "ref": "lov/1967-02-10",
+    "abbrev": "fvl.",
+    "row": "LK-KLAGE-01",
+    "paragraphs": null,
+    "level": "dokument",
+    "current_value": [
+     "3 uker"
+    ],
+    "claim": "Lånekassen: klagefrist 3 uker fra mottatt vedtak",
+    "scenarios": []
+   },
+   {
+    "ref": "lov/2016-05-27-14",
+    "abbrev": "skfvl.",
+    "row": "SKATT-KLAGE-01",
+    "paragraphs": null,
+    "level": "dokument",
+    "current_value": [
+     "6 uker"
+    ],
+    "claim": "Skatteetaten: klagefrist 6 uker fra mottatt vedtak",
+    "scenarios": [
+     "Egenretting av skattemelding — treårsvindu [klagefrist_kontrast]",
+     "Klagefrist på skattevedtak [klagefrist]"
+    ]
    }
   ]
  },
@@ -4941,6 +5401,40 @@
     ],
     "claim": "«Hvis du forsørger barn under 18 år, kan du få et barnetillegg på 38 kroner per barn, pr. ",
     "scenarios": []
+   },
+   {
+    "ref": "lov/1997-02-28-19",
+    "abbrev": "ftrl.",
+    "row": "NAV-KLAGE-01",
+    "paragraphs": null,
+    "level": "dokument",
+    "current_value": [
+     "6 uker"
+    ],
+    "claim": "NAV: klagefrist 6 uker fra mottatt vedtak",
+    "scenarios": [
+     "AAP Klagefrist - Tidsfrist [klagefrist]"
+    ]
+   }
+  ]
+ },
+ {
+  "legacy_id": "FOR-2024-12-20-3303",
+  "hits": [
+   {
+    "ref": "lov/2016-05-27-14",
+    "abbrev": "skfvl.",
+    "row": "SKATT-KLAGE-01",
+    "paragraphs": null,
+    "level": "dokument",
+    "current_value": [
+     "6 uker"
+    ],
+    "claim": "Skatteetaten: klagefrist 6 uker fra mottatt vedtak",
+    "scenarios": [
+     "Egenretting av skattemelding — treårsvindu [klagefrist_kontrast]",
+     "Klagefrist på skattevedtak [klagefrist]"
+    ]
    }
   ]
  },
@@ -5142,6 +5636,22 @@
     ],
     "claim": "«Hvis du forsørger barn under 18 år, kan du få et barnetillegg på 38 kroner per barn, pr. ",
     "scenarios": []
+   },
+   {
+    "ref": "lov/1997-02-28-19",
+    "abbrev": "ftrl.",
+    "row": "NAV-KLAGE-01",
+    "paragraphs": [
+     "§1-3a"
+    ],
+    "level": "paragraf",
+    "current_value": [
+     "6 uker"
+    ],
+    "claim": "NAV: klagefrist 6 uker fra mottatt vedtak",
+    "scenarios": [
+     "AAP Klagefrist - Tidsfrist [klagefrist]"
+    ]
    }
   ]
  },
@@ -5602,6 +6112,20 @@
     "scenarios": []
    },
    {
+    "ref": "lov/1967-02-10",
+    "abbrev": "fvl.",
+    "row": "LK-KLAGE-01",
+    "paragraphs": [
+     "§51"
+    ],
+    "level": "paragraf",
+    "current_value": [
+     "3 uker"
+    ],
+    "claim": "Lånekassen: klagefrist 3 uker fra mottatt vedtak",
+    "scenarios": []
+   },
+   {
     "ref": "lov/1997-02-28-19",
     "abbrev": "ftrl.",
     "row": "NAV-01",
@@ -5747,6 +6271,31 @@
     "scenarios": []
    },
    {
+    "ref": "lov/1997-02-28-19",
+    "abbrev": "ftrl.",
+    "row": "NAV-KLAGE-01",
+    "paragraphs": [
+     "§12-14",
+     "§17-9",
+     "§21-11a",
+     "§22-14",
+     "§22-15",
+     "§22-15a",
+     "§22-16",
+     "§22-3a",
+     "§25-3",
+     "§8-22"
+    ],
+    "level": "paragraf",
+    "current_value": [
+     "6 uker"
+    ],
+    "claim": "NAV: klagefrist 6 uker fra mottatt vedtak",
+    "scenarios": [
+     "AAP Klagefrist - Tidsfrist [klagefrist]"
+    ]
+   },
+   {
     "ref": "lov/2016-12-09-88",
     "abbrev": "fregl.",
     "row": "SKATT-01",
@@ -5856,6 +6405,25 @@
     "current_value": [],
     "claim": "**Innflytting, hovedregel i lovteksten**: «skal innen åtte dager etter ankomsten personlig",
     "scenarios": []
+   },
+   {
+    "ref": "lov/2016-05-27-14",
+    "abbrev": "skfvl.",
+    "row": "SKATT-KLAGE-01",
+    "paragraphs": [
+     "§14-1",
+     "§2-10",
+     "§7-9"
+    ],
+    "level": "paragraf",
+    "current_value": [
+     "6 uker"
+    ],
+    "claim": "Skatteetaten: klagefrist 6 uker fra mottatt vedtak",
+    "scenarios": [
+     "Egenretting av skattemelding — treårsvindu [klagefrist_kontrast]",
+     "Klagefrist på skattevedtak [klagefrist]"
+    ]
    }
   ]
  },
@@ -6194,6 +6762,23 @@
     ],
     "claim": "«Hvis du forsørger barn under 18 år, kan du få et barnetillegg på 38 kroner per barn, pr. ",
     "scenarios": []
+   },
+   {
+    "ref": "lov/1997-02-28-19",
+    "abbrev": "ftrl.",
+    "row": "NAV-KLAGE-01",
+    "paragraphs": [
+     "§13-14",
+     "§13-4"
+    ],
+    "level": "paragraf",
+    "current_value": [
+     "6 uker"
+    ],
+    "claim": "NAV: klagefrist 6 uker fra mottatt vedtak",
+    "scenarios": [
+     "AAP Klagefrist - Tidsfrist [klagefrist]"
+    ]
    }
   ]
  },
@@ -7016,6 +7601,22 @@
     ],
     "claim": "«Hvis du forsørger barn under 18 år, kan du få et barnetillegg på 38 kroner per barn, pr. ",
     "scenarios": []
+   },
+   {
+    "ref": "lov/1997-02-28-19",
+    "abbrev": "ftrl.",
+    "row": "NAV-KLAGE-01",
+    "paragraphs": [
+     "§21-12"
+    ],
+    "level": "paragraf",
+    "current_value": [
+     "6 uker"
+    ],
+    "claim": "NAV: klagefrist 6 uker fra mottatt vedtak",
+    "scenarios": [
+     "AAP Klagefrist - Tidsfrist [klagefrist]"
+    ]
    }
   ]
  },
@@ -7124,6 +7725,20 @@
     ],
     "claim": "«Hvis du forsørger barn under 18 år, kan du få et barnetillegg på 38 kroner per barn, pr. ",
     "scenarios": []
+   },
+   {
+    "ref": "lov/1997-02-28-19",
+    "abbrev": "ftrl.",
+    "row": "NAV-KLAGE-01",
+    "paragraphs": null,
+    "level": "dokument",
+    "current_value": [
+     "6 uker"
+    ],
+    "claim": "NAV: klagefrist 6 uker fra mottatt vedtak",
+    "scenarios": [
+     "AAP Klagefrist - Tidsfrist [klagefrist]"
+    ]
    }
   ]
  },
@@ -7280,6 +7895,26 @@
     ],
     "claim": "«Hvis du forsørger barn under 18 år, kan du få et barnetillegg på 38 kroner per barn, pr. ",
     "scenarios": []
+   },
+   {
+    "ref": "lov/1997-02-28-19",
+    "abbrev": "ftrl.",
+    "row": "NAV-KLAGE-01",
+    "paragraphs": [
+     "§14-17",
+     "§14-5",
+     "§15-4",
+     "§23-1",
+     "§23-10"
+    ],
+    "level": "paragraf",
+    "current_value": [
+     "6 uker"
+    ],
+    "claim": "NAV: klagefrist 6 uker fra mottatt vedtak",
+    "scenarios": [
+     "AAP Klagefrist - Tidsfrist [klagefrist]"
+    ]
    },
    {
     "ref": "lov/2016-12-09-88",
@@ -7862,6 +8497,29 @@
   ]
  },
  {
+  "legacy_id": "LOV-2025-06-20-59",
+  "hits": [
+   {
+    "ref": "lov/2016-05-27-14",
+    "abbrev": "skfvl.",
+    "row": "SKATT-KLAGE-01",
+    "paragraphs": [
+     "§15-2",
+     "§7-10"
+    ],
+    "level": "paragraf",
+    "current_value": [
+     "6 uker"
+    ],
+    "claim": "Skatteetaten: klagefrist 6 uker fra mottatt vedtak",
+    "scenarios": [
+     "Egenretting av skattemelding — treårsvindu [klagefrist_kontrast]",
+     "Klagefrist på skattevedtak [klagefrist]"
+    ]
+   }
+  ]
+ },
+ {
   "legacy_id": "LOV-2025-06-20-61",
   "hits": [
    {
@@ -7982,6 +8640,50 @@
     ],
     "claim": "«Hvis du forsørger barn under 18 år, kan du få et barnetillegg på 38 kroner per barn, pr. ",
     "scenarios": []
+   },
+   {
+    "ref": "lov/1997-02-28-19",
+    "abbrev": "ftrl.",
+    "row": "NAV-KLAGE-01",
+    "paragraphs": [
+     "§23-3"
+    ],
+    "level": "paragraf",
+    "current_value": [
+     "6 uker"
+    ],
+    "claim": "NAV: klagefrist 6 uker fra mottatt vedtak",
+    "scenarios": [
+     "AAP Klagefrist - Tidsfrist [klagefrist]"
+    ]
+   }
+  ]
+ },
+ {
+  "legacy_id": "LOV-2025-06-20-64",
+  "hits": [
+   {
+    "ref": "lov/2016-05-27-14",
+    "abbrev": "skfvl.",
+    "row": "SKATT-KLAGE-01",
+    "paragraphs": [
+     "§11-1",
+     "§11-2",
+     "§14-1",
+     "§14-7",
+     "§7-3",
+     "§7-5",
+     "§8-7"
+    ],
+    "level": "paragraf",
+    "current_value": [
+     "6 uker"
+    ],
+    "claim": "Skatteetaten: klagefrist 6 uker fra mottatt vedtak",
+    "scenarios": [
+     "Egenretting av skattemelding — treårsvindu [klagefrist_kontrast]",
+     "Klagefrist på skattevedtak [klagefrist]"
+    ]
    }
   ]
  },
@@ -7998,6 +8700,18 @@
      "3 uker"
     ],
     "claim": "Klagefrist 3 uker fra underretning er kommet frem til parten",
+    "scenarios": []
+   },
+   {
+    "ref": "lov/1967-02-10",
+    "abbrev": "fvl.",
+    "row": "LK-KLAGE-01",
+    "paragraphs": null,
+    "level": "dokument",
+    "current_value": [
+     "3 uker"
+    ],
+    "claim": "Lånekassen: klagefrist 3 uker fra mottatt vedtak",
     "scenarios": []
    }
   ]
@@ -8227,6 +8941,50 @@
     ],
     "claim": "«Hvis du forsørger barn under 18 år, kan du få et barnetillegg på 38 kroner per barn, pr. ",
     "scenarios": []
+   },
+   {
+    "ref": "lov/1997-02-28-19",
+    "abbrev": "ftrl.",
+    "row": "NAV-KLAGE-01",
+    "paragraphs": [
+     "§11-12",
+     "§11-27",
+     "§11-28",
+     "§12-14",
+     "§12-2",
+     "§12-9",
+     "§15-9",
+     "§17-5",
+     "§17-9",
+     "§17A-3",
+     "§17A-6",
+     "§4-10",
+     "§4-20",
+     "§8-47"
+    ],
+    "level": "paragraf",
+    "current_value": [
+     "6 uker"
+    ],
+    "claim": "NAV: klagefrist 6 uker fra mottatt vedtak",
+    "scenarios": [
+     "AAP Klagefrist - Tidsfrist [klagefrist]"
+    ]
+   },
+   {
+    "ref": "lov/2016-05-27-14",
+    "abbrev": "skfvl.",
+    "row": "SKATT-KLAGE-01",
+    "paragraphs": null,
+    "level": "dokument",
+    "current_value": [
+     "6 uker"
+    ],
+    "claim": "Skatteetaten: klagefrist 6 uker fra mottatt vedtak",
+    "scenarios": [
+     "Egenretting av skattemelding — treårsvindu [klagefrist_kontrast]",
+     "Klagefrist på skattevedtak [klagefrist]"
+    ]
    }
   ]
  },
@@ -8318,6 +9076,29 @@
     ],
     "claim": "Registreringsgrense for merverdiavgift: «beløpsgrensen på 50 000 kroner i § 2-1 første led",
     "scenarios": []
+   }
+  ]
+ },
+ {
+  "legacy_id": "LOV-2025-12-22-122",
+  "hits": [
+   {
+    "ref": "lov/2016-05-27-14",
+    "abbrev": "skfvl.",
+    "row": "SKATT-KLAGE-01",
+    "paragraphs": [
+     "§7-13",
+     "§9-4"
+    ],
+    "level": "paragraf",
+    "current_value": [
+     "6 uker"
+    ],
+    "claim": "Skatteetaten: klagefrist 6 uker fra mottatt vedtak",
+    "scenarios": [
+     "Egenretting av skattemelding — treårsvindu [klagefrist_kontrast]",
+     "Klagefrist på skattevedtak [klagefrist]"
+    ]
    }
   ]
  },
@@ -9823,6 +10604,18 @@
     "scenarios": []
    },
    {
+    "ref": "lov/1967-02-10",
+    "abbrev": "fvl.",
+    "row": "LK-KLAGE-01",
+    "paragraphs": null,
+    "level": "dokument",
+    "current_value": [
+     "3 uker"
+    ],
+    "claim": "Lånekassen: klagefrist 3 uker fra mottatt vedtak",
+    "scenarios": []
+   },
+   {
     "ref": "lov/1997-02-28-19",
     "abbrev": "ftrl.",
     "row": "NAV-01",
@@ -9900,6 +10693,20 @@
     ],
     "claim": "«Hvis du forsørger barn under 18 år, kan du få et barnetillegg på 38 kroner per barn, pr. ",
     "scenarios": []
+   },
+   {
+    "ref": "lov/1997-02-28-19",
+    "abbrev": "ftrl.",
+    "row": "NAV-KLAGE-01",
+    "paragraphs": null,
+    "level": "dokument",
+    "current_value": [
+     "6 uker"
+    ],
+    "claim": "NAV: klagefrist 6 uker fra mottatt vedtak",
+    "scenarios": [
+     "AAP Klagefrist - Tidsfrist [klagefrist]"
+    ]
    },
    {
     "ref": "lov/2016-12-09-88",
@@ -9993,6 +10800,21 @@
     "current_value": [],
     "claim": "**Innflytting, hovedregel i lovteksten**: «skal innen åtte dager etter ankomsten personlig",
     "scenarios": []
+   },
+   {
+    "ref": "lov/2016-05-27-14",
+    "abbrev": "skfvl.",
+    "row": "SKATT-KLAGE-01",
+    "paragraphs": null,
+    "level": "dokument",
+    "current_value": [
+     "6 uker"
+    ],
+    "claim": "Skatteetaten: klagefrist 6 uker fra mottatt vedtak",
+    "scenarios": [
+     "Egenretting av skattemelding — treårsvindu [klagefrist_kontrast]",
+     "Klagefrist på skattevedtak [klagefrist]"
+    ]
    }
   ]
  },
@@ -10357,6 +11179,20 @@
     ],
     "claim": "«Hvis du forsørger barn under 18 år, kan du få et barnetillegg på 38 kroner per barn, pr. ",
     "scenarios": []
+   },
+   {
+    "ref": "lov/1997-02-28-19",
+    "abbrev": "ftrl.",
+    "row": "NAV-KLAGE-01",
+    "paragraphs": null,
+    "level": "dokument",
+    "current_value": [
+     "6 uker"
+    ],
+    "claim": "NAV: klagefrist 6 uker fra mottatt vedtak",
+    "scenarios": [
+     "AAP Klagefrist - Tidsfrist [klagefrist]"
+    ]
    }
   ]
  },
@@ -11274,6 +12110,20 @@
     ],
     "claim": "«Hvis du forsørger barn under 18 år, kan du få et barnetillegg på 38 kroner per barn, pr. ",
     "scenarios": []
+   },
+   {
+    "ref": "lov/1997-02-28-19",
+    "abbrev": "ftrl.",
+    "row": "NAV-KLAGE-01",
+    "paragraphs": null,
+    "level": "dokument",
+    "current_value": [
+     "6 uker"
+    ],
+    "claim": "NAV: klagefrist 6 uker fra mottatt vedtak",
+    "scenarios": [
+     "AAP Klagefrist - Tidsfrist [klagefrist]"
+    ]
    }
   ]
  },
@@ -12255,6 +13105,20 @@
     ],
     "claim": "«Hvis du forsørger barn under 18 år, kan du få et barnetillegg på 38 kroner per barn, pr. ",
     "scenarios": []
+   },
+   {
+    "ref": "lov/1997-02-28-19",
+    "abbrev": "ftrl.",
+    "row": "NAV-KLAGE-01",
+    "paragraphs": null,
+    "level": "dokument",
+    "current_value": [
+     "6 uker"
+    ],
+    "claim": "NAV: klagefrist 6 uker fra mottatt vedtak",
+    "scenarios": [
+     "AAP Klagefrist - Tidsfrist [klagefrist]"
+    ]
    }
   ]
  },
@@ -12570,6 +13434,35 @@
     ],
     "claim": "«Hvis du forsørger barn under 18 år, kan du få et barnetillegg på 38 kroner per barn, pr. ",
     "scenarios": []
+   },
+   {
+    "ref": "lov/1997-02-28-19",
+    "abbrev": "ftrl.",
+    "row": "NAV-KLAGE-01",
+    "paragraphs": null,
+    "level": "dokument",
+    "current_value": [
+     "6 uker"
+    ],
+    "claim": "NAV: klagefrist 6 uker fra mottatt vedtak",
+    "scenarios": [
+     "AAP Klagefrist - Tidsfrist [klagefrist]"
+    ]
+   },
+   {
+    "ref": "lov/2016-05-27-14",
+    "abbrev": "skfvl.",
+    "row": "SKATT-KLAGE-01",
+    "paragraphs": null,
+    "level": "dokument",
+    "current_value": [
+     "6 uker"
+    ],
+    "claim": "Skatteetaten: klagefrist 6 uker fra mottatt vedtak",
+    "scenarios": [
+     "Egenretting av skattemelding — treårsvindu [klagefrist_kontrast]",
+     "Klagefrist på skattevedtak [klagefrist]"
+    ]
    }
   ]
  },
@@ -12702,6 +13595,23 @@
     ],
     "claim": "«Hvis du forsørger barn under 18 år, kan du få et barnetillegg på 38 kroner per barn, pr. ",
     "scenarios": []
+   },
+   {
+    "ref": "lov/1997-02-28-19",
+    "abbrev": "ftrl.",
+    "row": "NAV-KLAGE-01",
+    "paragraphs": [
+     "§10-5",
+     "§12-14"
+    ],
+    "level": "paragraf",
+    "current_value": [
+     "6 uker"
+    ],
+    "claim": "NAV: klagefrist 6 uker fra mottatt vedtak",
+    "scenarios": [
+     "AAP Klagefrist - Tidsfrist [klagefrist]"
+    ]
    }
   ]
  },
@@ -12882,6 +13792,29 @@
     ],
     "claim": "«Hvis du forsørger barn under 18 år, kan du få et barnetillegg på 38 kroner per barn, pr. ",
     "scenarios": []
+   },
+   {
+    "ref": "lov/1997-02-28-19",
+    "abbrev": "ftrl.",
+    "row": "NAV-KLAGE-01",
+    "paragraphs": [
+     "§15-1",
+     "§15-10",
+     "§15-5",
+     "§17-10",
+     "§17-15",
+     "§17A-6",
+     "§22-10",
+     "§22-13"
+    ],
+    "level": "paragraf",
+    "current_value": [
+     "6 uker"
+    ],
+    "claim": "NAV: klagefrist 6 uker fra mottatt vedtak",
+    "scenarios": [
+     "AAP Klagefrist - Tidsfrist [klagefrist]"
+    ]
    }
   ]
  },
@@ -13239,6 +14172,22 @@
     ],
     "claim": "«Hvis du forsørger barn under 18 år, kan du få et barnetillegg på 38 kroner per barn, pr. ",
     "scenarios": []
+   },
+   {
+    "ref": "lov/1997-02-28-19",
+    "abbrev": "ftrl.",
+    "row": "NAV-KLAGE-01",
+    "paragraphs": [
+     "§22-9"
+    ],
+    "level": "paragraf",
+    "current_value": [
+     "6 uker"
+    ],
+    "claim": "NAV: klagefrist 6 uker fra mottatt vedtak",
+    "scenarios": [
+     "AAP Klagefrist - Tidsfrist [klagefrist]"
+    ]
    }
   ]
  },
@@ -13258,6 +14207,28 @@
     ],
     "claim": "Registreringsgrense for merverdiavgift: «beløpsgrensen på 50 000 kroner i § 2-1 første led",
     "scenarios": []
+   },
+   {
+    "ref": "lov/2016-05-27-14",
+    "abbrev": "skfvl.",
+    "row": "SKATT-KLAGE-01",
+    "paragraphs": [
+     "§1-1",
+     "§10-8",
+     "§8-4",
+     "§9-1",
+     "§9-2",
+     "§9-4"
+    ],
+    "level": "paragraf",
+    "current_value": [
+     "6 uker"
+    ],
+    "claim": "Skatteetaten: klagefrist 6 uker fra mottatt vedtak",
+    "scenarios": [
+     "Egenretting av skattemelding — treårsvindu [klagefrist_kontrast]",
+     "Klagefrist på skattevedtak [klagefrist]"
+    ]
    }
   ]
  },
@@ -13382,6 +14353,22 @@
     ],
     "claim": "«Hvis du forsørger barn under 18 år, kan du få et barnetillegg på 38 kroner per barn, pr. ",
     "scenarios": []
+   },
+   {
+    "ref": "lov/1997-02-28-19",
+    "abbrev": "ftrl.",
+    "row": "NAV-KLAGE-01",
+    "paragraphs": [
+     "§21-11a"
+    ],
+    "level": "paragraf",
+    "current_value": [
+     "6 uker"
+    ],
+    "claim": "NAV: klagefrist 6 uker fra mottatt vedtak",
+    "scenarios": [
+     "AAP Klagefrist - Tidsfrist [klagefrist]"
+    ]
    }
   ]
  },
@@ -13886,6 +14873,23 @@
     ],
     "claim": "«Hvis du forsørger barn under 18 år, kan du få et barnetillegg på 38 kroner per barn, pr. ",
     "scenarios": []
+   },
+   {
+    "ref": "lov/1997-02-28-19",
+    "abbrev": "ftrl.",
+    "row": "NAV-KLAGE-01",
+    "paragraphs": [
+     "§13-3",
+     "§13-4"
+    ],
+    "level": "paragraf",
+    "current_value": [
+     "6 uker"
+    ],
+    "claim": "NAV: klagefrist 6 uker fra mottatt vedtak",
+    "scenarios": [
+     "AAP Klagefrist - Tidsfrist [klagefrist]"
+    ]
    }
   ]
  },
@@ -14026,6 +15030,24 @@
     ],
     "claim": "«Hvis du forsørger barn under 18 år, kan du få et barnetillegg på 38 kroner per barn, pr. ",
     "scenarios": []
+   },
+   {
+    "ref": "lov/1997-02-28-19",
+    "abbrev": "ftrl.",
+    "row": "NAV-KLAGE-01",
+    "paragraphs": [
+     "§12-13",
+     "§12-2",
+     "§23-3"
+    ],
+    "level": "paragraf",
+    "current_value": [
+     "6 uker"
+    ],
+    "claim": "NAV: klagefrist 6 uker fra mottatt vedtak",
+    "scenarios": [
+     "AAP Klagefrist - Tidsfrist [klagefrist]"
+    ]
    }
   ]
  },
@@ -15465,6 +16487,20 @@
     ],
     "claim": "«Hvis du forsørger barn under 18 år, kan du få et barnetillegg på 38 kroner per barn, pr. ",
     "scenarios": []
+   },
+   {
+    "ref": "lov/1997-02-28-19",
+    "abbrev": "ftrl.",
+    "row": "NAV-KLAGE-01",
+    "paragraphs": null,
+    "level": "dokument",
+    "current_value": [
+     "6 uker"
+    ],
+    "claim": "NAV: klagefrist 6 uker fra mottatt vedtak",
+    "scenarios": [
+     "AAP Klagefrist - Tidsfrist [klagefrist]"
+    ]
    }
   ]
  },
@@ -15907,6 +16943,20 @@
     ],
     "claim": "«Hvis du forsørger barn under 18 år, kan du få et barnetillegg på 38 kroner per barn, pr. ",
     "scenarios": []
+   },
+   {
+    "ref": "lov/1997-02-28-19",
+    "abbrev": "ftrl.",
+    "row": "NAV-KLAGE-01",
+    "paragraphs": null,
+    "level": "dokument",
+    "current_value": [
+     "6 uker"
+    ],
+    "claim": "NAV: klagefrist 6 uker fra mottatt vedtak",
+    "scenarios": [
+     "AAP Klagefrist - Tidsfrist [klagefrist]"
+    ]
    }
   ]
  },
@@ -16858,6 +17908,20 @@
     ],
     "claim": "«Hvis du forsørger barn under 18 år, kan du få et barnetillegg på 38 kroner per barn, pr. ",
     "scenarios": []
+   },
+   {
+    "ref": "lov/1997-02-28-19",
+    "abbrev": "ftrl.",
+    "row": "NAV-KLAGE-01",
+    "paragraphs": null,
+    "level": "dokument",
+    "current_value": [
+     "6 uker"
+    ],
+    "claim": "NAV: klagefrist 6 uker fra mottatt vedtak",
+    "scenarios": [
+     "AAP Klagefrist - Tidsfrist [klagefrist]"
+    ]
    }
   ]
  }

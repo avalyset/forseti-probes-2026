@@ -14,6 +14,10 @@ Tre slag kontroll, og skillet mellom dem er hele poenget:
   (g)      eksklusjonssjekken. Vindusskanningen krever den tilbakeholdte fila.
            Uten den rapporteres den som AAPENT PUNKT, ikke som bestaatt - og
            de to delkontrollene som ikke trenger fila kjores likevel.
+  (h)      NYTT i runde 2: tittelen. README, CITATION.cff og zenodo_v1.1.json
+           skal si det samme, og ingen tekst skal fortsatt kalle feilen i
+           v1.0-tittelen «bevisst uendret». Ingen kontroll sammenlignet
+           tittelen med tabellen under den i runde 1 (FUNN 12).
 
 frys_read.py er beholdt urort som v1.0-artefakt. Den kan ikke lese dette
 README-et: grunnlaget dens kjenner ikke 2b eller vakta.
@@ -58,6 +62,7 @@ GROUND_FILES = (
        os.path.join(REG, "lovkart.yaml"),
        os.path.join(REG, "conversion_report.json"),
        os.path.join(REG, "lovtidend", "rapporter", "impact.md"),
+       os.path.join(REG, "lovtidend", "rapporter", "parse_log.txt"),
        os.path.join(REG, "lovtidend", "fetch.py"),
        os.path.join(REG, "lovtidend", "impact.py")]
     + glob.glob(os.path.join(REG, "data", "*.yaml"))
@@ -77,7 +82,8 @@ EXEMPT = {"0,90", "1,00", "0,0", "83", "2026", "0,88", "1.1.0", "1.0.0",
           "97", "43", "121", "46", "20", "18", "77", "15", "12", "51"}
 # Tall README selv oppgir som maalt ved deponering. Hvert av dem MAA ha en
 # linje i (f) som maaler det paa nytt; MEASURED_COVERED under sjekker det.
-MEASURED = {"5/5", "20/20", "1235", "146", "38", "12", "10", "8"}
+MEASURED = {"5/5", "20/20", "1296", "157", "56", "52", "29", "27", "38", "12", "10", "8",
+            "5,9", "94,1", "87,3", "12,7", "146", "1235"}
 EXEMPT |= MEASURED
 
 print("=== (a) tall uten opphav i deponert kildemateriale ===")
@@ -235,8 +241,8 @@ measured("baklengs: forventninger i lovkart", 5, len(exp))
 measured("…av dem bare dokumentniva", 4, doc_only)
 measured("baklengs, slik README skriver det", "5/5", f"{hit}/{len(exp)}")
 measured("«5/5» staar i README", True, "5/5" in readme)
-measured("treff i impact.json", 146, len(imp))
-measured("rad-treff i alt i impact.json", 1235,
+measured("treff i impact.json", 157, len(imp))
+measured("rad-treff i alt i impact.json", 1296,
          sum(len(a["hits"]) for a in imp))
 
 # f4: vakt-testene
@@ -279,15 +285,78 @@ spec2 = importlib.util.spec_from_file_location(
     "imp", os.path.join(REG, "lovtidend", "impact.py"))
 I = importlib.util.module_from_spec(spec2)
 spec2.loader.exec_module(I)
-measured("impact.load_scenarios() med innebygd sti", 0, len(I.load_scenarios()))
+measured("impact.load_scenarios() med innebygd sti", 2, len(I.load_scenarios()))
 ef = yaml.safe_load(read(os.path.join(ROOT, "data", "expected_facts.yaml")))
 couplings = [(sc["id"], f["key"]) for sc in ef["scenarios"] for f in sc["facts"]
              if isinstance(f.get("register"), dict)]
 measured("register-koblinger i deponert expected_facts.yaml", 3, len(couplings))
-measured("treff i impact.json med scenariokobling", 0,
-         sum(1 for a in imp for h in a["hits"] if h.get("scenarios")))
+sc_hits = [(a["legacy_id"], h) for a in imp for h in a["hits"] if h.get("scenarios")]
+measured("radtreff i impact.json med scenariokobling", 56, len(sc_hits))
+measured("...i antall kunngjoringer", 52, len({l for l, _ in sc_hits}))
+measured("...NAV-KLAGE-01", 38, sum(1 for _, h in sc_hits if h["row"] == "NAV-KLAGE-01"))
+measured("...SKATT-KLAGE-01", 18, sum(1 for _, h in sc_hits if h["row"] == "SKATT-KLAGE-01"))
+measured("...paa paragrafniva", 29, sum(1 for _, h in sc_hits if h["level"] == "paragraf"))
+measured("...paa dokumentniva", 27, sum(1 for _, h in sc_hits if h["level"] == "dokument"))
+measured("LK-KLAGE-01-treff uten scenario", 5,
+         sum(1 for a in imp for h in a["hits"]
+             if h["row"] == "LK-KLAGE-01" and not h.get("scenarios")))
+measured("LOV-2025-06-20-81 flagger LK-KLAGE-01", True,
+         any(h["row"] == "LK-KLAGE-01" for a in imp if a["legacy_id"] == "LOV-2025-06-20-81"
+             for h in a["hits"]))
 measured("«2 rows and 3 couplings» staar i README", True,
          "**2 rows and 3 couplings**" in readme)
+
+# f6a: forrige tilstand, gjengitt i README og FUNN 13 som historikk. Den maales
+# mot git (ff768ef = main foer runde 2), saa tallene ikke bare staar der.
+prev = json.loads(subprocess.run(
+    ["git", "show", "ff768ef:src/register/lovtidend/rapporter/impact.json"],
+    cwd=ROOT, capture_output=True, text=True).stdout or "[]")
+measured("forrige kart (ff768ef): kunngjoringer og radtreff", "146 1235",
+         f"{len(prev)} {sum(len(a['hits']) for a in prev)}")
+measured("forrige kart: ingen treff hadde scenariokobling", 0,
+         sum(1 for a in prev for h in a["hits"] if h.get("scenarios")))
+
+# f6b: dekningstallene — to omfang, og de skal ikke blandes. Kilden er
+# parse_log.txt (parse.py over arkivene); arkivene er ikke deponert, saa dette
+# er SPORET til loggen, ikke re-maalt. Prosentene REGNES her fra tellingene.
+plog = read(os.path.join(REG, "lovtidend", "rapporter", "parse_log.txt"))
+
+
+def pct(a, b):
+    return f"{100 * a / b:.1f}".replace(".", ",") + " %"
+
+
+def grab(pat, text=plog):
+    m = re.search(pat, text, re.S)
+    return tuple(int(x) for x in m.groups()) if m else None
+
+
+n2526, p2526 = grab(r"2025 2026 .*?lest: (\d+)\n\s+med data-change-part[^:]*: (\d+)")
+n2426, p2426 = grab(r"2024 2025 2026 .*?lest: (\d+)\n\s+med data-change-part[^:]*: (\d+)")
+none2426, d2426 = grab(r"omfang 2024-2026: \d+ kunngj\S+ \| paragraf\S+ \d+ \([\d.]+%\) \| "
+                       r"kun dokument\S+ \d+ \([\d.]+%\) \| ingen endringsinfo (\d+) "
+                       r"\([\d.]+%\) \| minst dokument\S+ (\d+)")
+measured("parse_log 2025+2026: kunngjoringer", 2880, n2526)
+measured("parse_log 2025+2026: paragrafniva / 6,4 %", "184 6,4 %", f"{p2526} {pct(p2526, n2526)}")
+measured("parse_log 2025+2026: uten paragraf / 93,6 %", "2696 93,6 %",
+         f"{n2526 - p2526} {pct(n2526 - p2526, n2526)}")
+measured("parse_log 2024-2026: kunngjoringer = kartet", 4499, n2426)
+measured("parse_log 2024-2026: paragrafniva / 5,9 %", "265 5,9 %", f"{p2426} {pct(p2426, n2426)}")
+measured("parse_log 2024-2026: uten paragraf / 94,1 %", "4234 94,1 %",
+         f"{n2426 - p2426} {pct(n2426 - p2426, n2426)}")
+measured("parse_log 2024-2026: nevner endret dokument / 87,3 %", "3927 87,3 %",
+         f"{d2426} {pct(d2426, n2426)}")
+measured("parse_log 2024-2026: nevner ingen / 12,7 %", "572 12,7 %",
+         f"{none2426} {pct(none2426, n2426)}")
+measured("impact.md oppgir samme antall kunngjoringer", True,
+         f"{n2426} kunngjøringer lest" in R["impact"])
+measured("README: 5,9 % / 94,1 % med omfang i samme setning", True,
+         "**5,9 % paragraph level / 94,1 % document level at best** (265 of\n4499" in readme)
+measured("README: 87,3 % og 12,7 % staar der", True,
+         "**87,3 %** of the 4499 (3927)" in readme and "**12,7 %**" in readme)
+sha_log = re.search(r"\n([0-9a-f]{64})\n", plog).group(1)
+measured("parsed.jsonl-hash staar i README og i loggen", True,
+         sha_log in readme and sha_log.startswith("61e0e47a"))
 
 # f7: fvl. i arkivet
 fvl = [a["legacy_id"] for a in imp
@@ -363,6 +432,29 @@ measured("av dem under data/", 0, len(under_data))
 measured("av dem nye i v1.1, lesningen unntatt", 0, len(in_new))
 measured("unntakene er navngitt i README", True,
          all(x in readme for x in SELF | {OWN_OUTPUT}))
+
+print("\n=== (h) tittel ===")
+H1 = readme.splitlines()[0].lstrip("# ").strip()
+cff = read(os.path.join(ROOT, "CITATION.cff"))
+mt = re.search(r"^title: >-\n((?:  .*\n)+)", cff, re.M)
+cff_title = " ".join(x.strip() for x in mt.group(1).splitlines()) if mt else ""
+zj = json.load(open(os.path.join(ROOT, "zenodo_v1.1.json"), encoding="utf-8"))
+measured("tittel: README = CITATION.cff", H1, cff_title)
+measured("tittel: README = zenodo_v1.1.json", H1, zj["metadata"]["title"])
+measured("tittel sier «five» (ikke «six»)", True,
+         "five preregistered experiments" in H1 and "six" not in H1.lower())
+fy = read(os.path.join(ROOT, "FRYS-v1.1.md"))
+for ph in ["left unchanged anyway", "title unchanged", "holder den uendret", "bevisst uendret",
+           "Ikke rettet.** Tittelen", "FUNN 12 (arvet fra v1.0, ikke rettet"]:
+    measured(f"ingen «{ph}» i README/FRYS", False, ph in readme or ph in fy)
+measured("README: tittelen rettet i v1.1, konsept-DOI uendret", True,
+         "**The title is corrected in v1.1.0**" in readme and "concept DOI is unchanged" in readme)
+measured("FRYS: FUNN 12 rettet i v1.1", True, "FUNN 12 (arvet fra v1.0, rettet i v1.1" in fy)
+measured("FRYS: FUNN 8 rettet i v1.1", True, "FUNN 8 (reell, rettet i v1.1" in fy)
+measured("CITATION.cff: konsept-DOI", True, "doi: 10.5281/zenodo.23260755" in cff)
+measured("README: versjons-DOI satt, ikke plassholder", True,
+         "version DOI minted at deposit" not in readme
+         and "**v1.1.0**: [10.5281/zenodo." in readme)
 
 print("\n=== (f2) er hvert «maalt ved deponering»-tall faktisk maalt? ===")
 for tok in sorted(MEASURED):

@@ -1,11 +1,11 @@
-# Forseti probes 2026: six preregistered experiments on Norwegian public-service fact checking
+# Forseti probes 2026: five preregistered experiments on Norwegian public-service fact checking
 
 Eirik Botten Nicolaysen · [ORCID 0009-0001-9188-6788](https://orcid.org/0009-0001-9188-6788) · EcoDeco AS
 **Version 1.1.0** · 2026-10-09
 
 **Concept DOI** (always the latest version): [10.5281/zenodo.23260755](https://doi.org/10.5281/zenodo.23260755)
 **v1.0.0**: [10.5281/zenodo.23260756](https://doi.org/10.5281/zenodo.23260756)
-**v1.1.0**: version DOI minted at deposit — see «Deposit status» below.
+**v1.1.0**: [10.5281/zenodo.23262758](https://doi.org/10.5281/zenodo.23262758)
 
 Cite the concept DOI unless you need to pin an exact version. Machine-readable
 metadata is in `CITATION.cff`.
@@ -22,6 +22,11 @@ Two engineering tasks, both on the register side, neither preregistered:
 
 Nothing in fase 1–3c changed. Those reports, preregistrations and figures are
 byte-identical to v1.0.0.
+
+Two corrections ride along, both to version metadata and neither to a result: the title
+now says **five** preregistered experiments (see below), and the fase 2b consequence map
+was regenerated from the archives so that it agrees with `lovkart.yaml` and reaches the
+scenarios (see «2b — lovendringer»).
 
 ---
 
@@ -50,12 +55,14 @@ hypothesis to preregister.
 Each preregistration was committed as its own commit **before** the run it governs. The
 SHA is in the filename under `PREREG/`, and the matching report is in `RAPPORT/`.
 
-**The title says six preregistered experiments. There are five.** The count in this table
-is the accurate one, and it was already five in v1.0.0 — the title overstated it by one
-when the deposit was first published. The title is left unchanged anyway: it is the
-published title of a record with a concept DOI, and renaming it between versions would make
-the citation in v1.0.0 point at something with a different name. The error is recorded
-here and in `FRYS-v1.1.md` rather than quietly corrected.
+**The v1.0.0 title said «six preregistered experiments». There are five.** The count in
+this table is the accurate one, and it was already five in v1.0.0 — the title overstated
+it by one when the deposit was first published. **The title is corrected in v1.1.0**: in
+the Zenodo record, in the heading of this file and in `CITATION.cff`. It is a change of
+version metadata — the concept DOI is unchanged, and the v1.0.0 record keeps the title it
+was published with, so a citation of v1.0.0 still matches its own record. The error and
+its correction are recorded here and in `FRYS-v1.1.md` (FUNN 12) rather than quietly
+corrected.
 
 **Fase 0, fase 2, fase 2b and the vakt have no `PREREG.md` and no `RAPPORT.md`, and none
 has been written after the fact.** They were engineering tasks — convert a register, build
@@ -77,16 +84,26 @@ have cost.
 
 | measure | value | source |
 |---|---|---|
-| announcements read from the archive | **4499** | `lovtidend/rapporter/impact.md` |
-| announcements that touch a register row | **146** | `impact.md`; `impact.json` carries 146 entries |
-| document level available (`changesToDocuments`) | **93,6 %** | `impact.md`, measured on 2025+2026 |
-| paragraph level available (`data-change-part`) | **6,4 %** | `impact.md`, same measurement |
+| announcements read from the archive (2024–2026) | **4499** | `lovtidend/rapporter/parse_log.txt`; `impact.md` |
+| announcements that touch a register row | **157** | `impact.md`; `impact.json` carries 157 entries |
+| no paragraph level, so document level at best (2025+2026, 2696 of 2880) | **93,6 %** | `parse_log.txt`; `impact.md` |
+| paragraph level available (`data-change-part`) (2025+2026, 184 of 2880) | **6,4 %** | `parse_log.txt`; `impact.md` |
+
+Those two percentages are measured on **2025+2026**. The map itself covers **2024–2026**,
+where the figures are **5,9 % paragraph level / 94,1 % document level at best** (265 of
+4499 announcements carry a `data-change-part`; the rest do not). «Document level at best»
+is the whole claim: the 94,1 % is *no paragraph level*, not *a document is named* —
+**87,3 %** of the 4499 (3927) name at least one amended document in `changesToDocuments`,
+and **12,7 %** name none. The header line of `impact.md` carries 93,6 % and 6,4 % without
+a scope; they are the 2025+2026 figures. All of these are measured by `parse.py` over the
+archives, and the log is deposited as `parse_log.txt`.
 
 ### The recon was wrong about the paragraph level, and the code says so
 
 ADR-0002 read Lovdata's markup and concluded that «fra 2023 er hver enkelt endring
 merket ned til ledd» — a machine-readable change log at paragraph level. Measured
-against the archive it is present in **6,4 %** of announcements, not most of them.
+against the archive it is present in **6,4 %** of announcements (2025+2026, 184 of
+2880), not most of them.
 `src/register/lovtidend/impact.py` records the correction in its own docstring:
 «Rekognoseringen antok at paragrafnivaet var bredt tilgjengelig «fra 2023». Det er det
 ikke.» The map is therefore built on document level, with paragraph as a refinement
@@ -148,18 +165,26 @@ a false positive the code can remove.
   entry's own note.
 - One of those five is `LOV-2025-06-20-81 — Lov om saksbehandlingen i offentlig
   forvaltning (forvaltningsloven)`, in force «Kongen bestemmer», which declares that it
-  amends `lov/1967-02-10`. The map flags `LK-01` (klagefrist 3 uker) on it. **What a new
+  amends `lov/1967-02-10`. The map flags `LK-01` (klagefrist 3 uker) and `LK-KLAGE-01` on it. **What a new
   forvaltningslov does to the three-week appeal deadline is not determined here** — the
   deposit contains the flag, not a reading of the act.
-- The row → scenario link, the last leg of the chain, is **still broken in the deposited
-  map**: all 1235 hits carry an empty `scenarier` column. `impact.py` reads
-  `expected_facts.yaml` from a path outside this repository, so the deposited
-  `data/expected_facts.yaml` — which holds exactly the three `register:` couplings
-  ADR-0002 identified — is never seen. Pointed at the deposited file, the same function
-  resolves **2 rows and 3 couplings** (`NAV-KLAGE-01`, `SKATT-KLAGE-01`). The code that
-  closes the break exists; the path it reads does not survive deposit. Fixing that is the
-  first thing to do next, and it is not fixed here because the map cannot be regenerated
-  without the archive.
+- The row → scenario link, the last leg of the chain, **is closed in v1.1.0**. The deposit
+  as first assembled left it broken: `impact.py` read `expected_facts.yaml` from a path
+  outside this repository, so every hit in the map carried an empty `scenarier` column
+  (`FRYS-v1.1.md`, FUNN 8). It now reads `data/expected_facts.yaml` relative to the tree.
+  That file holds exactly the three `register:` couplings ADR-0002 identified, and they
+  resolve **2 rows and 3 couplings** (`NAV-KLAGE-01`, `SKATT-KLAGE-01`). In the regenerated
+  map **56 of the 1296 row hits carry a scenario**, in **52** announcements: `NAV-KLAGE-01`
+  38 and `SKATT-KLAGE-01` 18, of which 29 are at paragraph level and 27 at document level.
+  `LK-KLAGE-01` has 5 hits and no scenario, because no scenario in `expected_facts.yaml`
+  is coupled to it.
+- **The consequence map was stale against `lovkart.yaml`, and is now regenerated.**
+  Commit `7a1178c` put the three klagefrist rows into `lovkart.yaml` without regenerating
+  the map, which needs the archives. The map therefore held 146 announcements and 1235 row
+  hits where `lovkart.yaml` gives **157** and **1296**; the 61 extra hits are the three
+  klagefrist rows. It was regenerated on 2026-10-09 from the archives, and
+  `parse.py --years 2024 2025 2026` reproduces the `parsed.jsonl` that `impact.py` reads
+  byte for byte (sha256 `61e0e47ac69867a6208cad1191c4b840eac2eea066c2be4e284314dccf94ade1`).
 
 ## Metningsvakt
 
@@ -301,11 +326,12 @@ Collected from the reports' own «hva som ikke påstås» sections:
   carries a source quote — the three added rows are the klagefrist table, and they close
   ADR-0002's break on the register side.
 - **No claim that 2b is a mechanism.** What is deposited is a map and a measurement: an
-  archive read once, 146 announcements matched against the register, and a backwards test
+  archive read once, 157 announcements matched against the register, and a backwards test
   on five known amendments. Nothing fetches on a schedule, nothing files a proposal, and
   nothing has run against a change that happened after the map was built.
-- **No claim that document-level flagging is precise.** 93,6 % of announcements can be
-  resolved only to the document they amend. Every register row resting on that document is
+- **No claim that document-level flagging is precise.** In 2025+2026, 93,6 % of announcements
+  (2696 of 2880) have no paragraph level and can be resolved at best to the document they
+  amend. Every register row resting on that document is
   then a candidate, and the backwards test shows that widening in practice.
 
 Three preregistered criteria turned out to be unreachable or unreadable as written, and
@@ -348,11 +374,14 @@ reproduce the check:
 python -I src/exclusion_check.py /path/to/scenarios.jsonl   # prints CLEAN or FAILED
 ```
 
-**Status of that table in v1.1.** The six figures were measured against the v1.0.0 tree.
-The window counts in the left column are a property of the 47 prompts and do not change.
-The hit counts have **not** been re-measured against the files v1.1 adds, because the
-window scan needs the withheld file and this version was assembled on a machine that does
-not hold it. What was verified here instead, on the v1.1 tree:
+**Status of that table in v1.1.** Re-measured on 2026-10-09 against the v1.1.0 tree:
+`src/exclusion_check.py`, run from the machine that holds the withheld file (its sha256
+begins `7157b091` — the hash fase 1's preregistration records), over the extracted release
+tarball. The six figures are unchanged, and the script printed `CLEAN`. The window counts
+in the left column are a property of the 47 prompts and never change; the hit counts are
+what the files v1.1 adds could have moved, and did not.
+
+Beside that scan, on the same tree:
 
 | check | result |
 |---|---|
@@ -371,9 +400,9 @@ widen silently. The run's own log, `FRYS-v1.1.txt`, is held out of the count by 
 the log is written by redirection the file is empty at the moment the scan reads the tree,
 so counting it would make the number depend on run order rather than on content. **None of the 43 files the two merged branches bring in —
 38 added, 5 changed — carries any `hei_refusal` content**, and nor does any other file new
-in v1.1. **The full window scan at 5, 6, 7 and 8 words must be rerun
-from the machine holding the withheld file before this version is deposited**, and
-`FRYS-v1.1.md` records that as an open item rather than a passed check.
+in v1.1. The full window scan at 5, 6, 7 and 8 words, which the container that assembled v1.1 could
+not run, is therefore no longer an open item: it was run, over the tarball that is
+deposited, before the tag was set.
 
 The string `hei_refusal` does appear, as the pack's *name*, in two preregistrations, two
 reports and two source files, and the sha256 of the withheld file appears once in fase 1's
@@ -478,7 +507,7 @@ python -I resolve_lovkart.py --markdown docs/forkortelser-lovdata.md
 
 # fase 2b: fetch the archive, parse it, build the consequence map
 python -I lovtidend/fetch.py
-python -I lovtidend/parse.py --years 2025 2026
+python -I lovtidend/parse.py --years 2024 2025 2026   # the map's scope; --years 2025 2026 gives the 2880-announcement scope of the two percentages
 python -I lovtidend/impact.py
 python -I lovtidend/test_backwards.py             # 5/5 expected hits
 
@@ -533,24 +562,28 @@ time: `resolve_lovkart.py --check`, `resolve_lovkart.py --markdown`,
 
 ## Deposit status
 
-v1.1.0 was assembled, merged and read on 2026-10-09 in a cloud container that holds
-neither the Zenodo token nor the withheld `hei_refusal` pack, and whose git credentials
-accept branch pushes but refuse `refs/tags/*`. Three steps therefore remain, and all three
-must run from the machine that holds what they need:
+v1.1.0 was assembled and merged on 2026-10-09 in a cloud container that held neither the
+Zenodo token nor the withheld pack, and whose git credentials refused `refs/tags/*`. The
+three steps that needed another machine were run the same day from the machine that holds
+what they need:
 
 1. **The full exclusion scan** — `src/exclusion_check.py` against the withheld
-   `scenarios.jsonl`, over the extracted tarball. It must print `CLEAN`.
-2. **The tag** — `v1.1.0` was created in the container and could not be pushed: every
-   push to a tag ref returns 403 here, lightweight and annotated alike, while branch pushes
-   to the same repository succeed. The commit it points at is on `main`.
+   `scenarios.jsonl`, over the extracted release tarball. It printed `CLEAN`; the figures
+   are above.
+2. **The tag** — `v1.1.0`, annotated, on the commit that carries this README.
 3. **The Zenodo deposit** — a new version under concept DOI
-   [10.5281/zenodo.23260755](https://doi.org/10.5281/zenodo.23260755), same metadata,
-   title unchanged, this README as the description. The version DOI it mints replaces the
-   placeholder line at the top of this file.
+   [10.5281/zenodo.23260755](https://doi.org/10.5281/zenodo.23260755), version DOI
+   [10.5281/zenodo.23262758](https://doi.org/10.5281/zenodo.23262758). Same creator,
+   licence and keywords as v1.0.0; the title is corrected to «five» (see above); the
+   description is v1.0.0's, updated for what v1.1.0 adds and re-measured. The record's
+   metadata is kept in `zenodo_v1.1.json`, and the file is
+   `forseti-probes-2026-v1.1.0.tar.gz`.
 
-Everything else is done and recorded: the merge, this README, `CITATION.cff`, and the
-frys-reading in `FRYS-v1.1.md` with its log in `FRYS-v1.1.txt`.
-`frys_read_v11.py` reruns the reading — it takes the withheld file's path as an argument,
-and reports the exclusion scan as an open item rather than a passed check when that file is
-absent. `frys_read.py` is kept untouched as the v1.0.0 artifact; it cannot read this README,
-because its ground corpus does not know 2b or the vakt.
+Between assembly and deposit the frys-reading was rerun from the Vault and **failed**: the
+consequence map as first assembled was stale against `lovkart.yaml` (`FRYS-v1.1.md`,
+FUNN 13). The map, this README and `frys_read_v11.py` were corrected and the reading rerun
+to `REN` before the tag was set. `frys_read_v11.py` reruns the reading from a git checkout
+— it takes the withheld file's path as an argument and then runs the window scan as part of
+the reading, and reports the scan as an open item rather than a passed check when the file
+is absent. `frys_read.py` is kept untouched as the v1.0.0 artifact; it cannot read this
+README, because its ground corpus does not know 2b or the vakt.

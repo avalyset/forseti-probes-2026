@@ -64,8 +64,8 @@
     …av dem bare dokumentniva                      README 4              maalt 4              ok
     baklengs, slik README skriver det              README 5/5            maalt 5/5            ok
     «5/5» staar i README                           README True           maalt True           ok
-    treff i impact.json                            README 146            maalt 146            ok
-    rad-treff i alt i impact.json                  README 1235           maalt 1235           ok
+    treff i impact.json                            README 157            maalt 157            ok
+    rad-treff i alt i impact.json                  README 1296           maalt 1296           ok
     vakt/test_vakt.py                              README 20/20 bestått  maalt 20/20 bestått  ok
     «20/20 bestått» staar i README                 README True           maalt True           ok
     toppseksjon regenererer ordrett                README True           maalt True           ok
@@ -74,10 +74,31 @@
     V3 «aldri hentet», regenerert (uten snapshots) README 20             maalt 20             ok
     V4 stille, deponert                            README 8              maalt 8              ok
     V4 stille, regenerert                          README 18             maalt 18             ok
-    impact.load_scenarios() med innebygd sti       README 0              maalt 0              ok
+    impact.load_scenarios() med innebygd sti       README 2              maalt 2              ok
     register-koblinger i deponert expected_facts.yaml README 3              maalt 3              ok
-    treff i impact.json med scenariokobling        README 0              maalt 0              ok
+    radtreff i impact.json med scenariokobling     README 56             maalt 56             ok
+    ...i antall kunngjoringer                      README 52             maalt 52             ok
+    ...NAV-KLAGE-01                                README 38             maalt 38             ok
+    ...SKATT-KLAGE-01                              README 18             maalt 18             ok
+    ...paa paragrafniva                            README 29             maalt 29             ok
+    ...paa dokumentniva                            README 27             maalt 27             ok
+    LK-KLAGE-01-treff uten scenario                README 5              maalt 5              ok
+    LOV-2025-06-20-81 flagger LK-KLAGE-01          README True           maalt True           ok
     «2 rows and 3 couplings» staar i README        README True           maalt True           ok
+    forrige kart (ff768ef): kunngjoringer og radtreff README 146 1235       maalt 146 1235       ok
+    forrige kart: ingen treff hadde scenariokobling README 0              maalt 0              ok
+    parse_log 2025+2026: kunngjoringer             README 2880           maalt 2880           ok
+    parse_log 2025+2026: paragrafniva / 6,4 %      README 184 6,4 %      maalt 184 6,4 %      ok
+    parse_log 2025+2026: uten paragraf / 93,6 %    README 2696 93,6 %    maalt 2696 93,6 %    ok
+    parse_log 2024-2026: kunngjoringer = kartet    README 4499           maalt 4499           ok
+    parse_log 2024-2026: paragrafniva / 5,9 %      README 265 5,9 %      maalt 265 5,9 %      ok
+    parse_log 2024-2026: uten paragraf / 94,1 %    README 4234 94,1 %    maalt 4234 94,1 %    ok
+    parse_log 2024-2026: nevner endret dokument / 87,3 % README 3927 87,3 %    maalt 3927 87,3 %    ok
+    parse_log 2024-2026: nevner ingen / 12,7 %     README 572 12,7 %     maalt 572 12,7 %     ok
+    impact.md oppgir samme antall kunngjoringer    README True           maalt True           ok
+    README: 5,9 % / 94,1 % med omfang i samme setning README True           maalt True           ok
+    README: 87,3 % og 12,7 % staar der             README True           maalt True           ok
+    parsed.jsonl-hash staar i README og i loggen   README True           maalt True           ok
     fvl.: kunngjoringer i arkivet                  README 5              maalt 5              ok
     fvl.: av dem paa paragrafniva                  README 2              maalt 2              ok
     LOV-2025-06-20-81 blant dem                    README True           maalt True           ok
@@ -86,8 +107,7 @@
     filer de to grenene endrer                     README 5              maalt 5              ok
 
 === (g) eksklusjonssjekk ===
-    full vindusskanning (5/6/7/8 ord + rekonstruerbarhet): KAN IKKE KJORES - den tilbakeholdte fila finnes ikke paa denne maskinen.
-    AAPENT PUNKT, ikke bestaatt kontroll. Ma kjores fra Vault for deponering.
+    full vindusskanning: CLEAN
     filer med strengen «hei_refusal», egen logg utenom README 12             maalt 12             ok
       FRYS-v1.1.md   (lesningen selv, navngitt unntak)
       FRYS.md
@@ -105,14 +125,40 @@
     av dem nye i v1.1, lesningen unntatt           README 0              maalt 0              ok
     unntakene er navngitt i README                 README True           maalt True           ok
 
+=== (h) tittel ===
+    tittel: README = CITATION.cff                  README Forseti probes 2026: five preregistered experiments on Norwegian public-service fact checking maalt Forseti probes 2026: five preregistered experiments on Norwegian public-service fact checking ok
+    tittel: README = zenodo_v1.1.json              README Forseti probes 2026: five preregistered experiments on Norwegian public-service fact checking maalt Forseti probes 2026: five preregistered experiments on Norwegian public-service fact checking ok
+    tittel sier «five» (ikke «six»)                README True           maalt True           ok
+    ingen «left unchanged anyway» i README/FRYS    README False          maalt False          ok
+    ingen «title unchanged» i README/FRYS          README False          maalt False          ok
+    ingen «holder den uendret» i README/FRYS       README False          maalt False          ok
+    ingen «bevisst uendret» i README/FRYS          README False          maalt False          ok
+    ingen «Ikke rettet.** Tittelen» i README/FRYS  README False          maalt False          ok
+    ingen «FUNN 12 (arvet fra v1.0, ikke rettet» i README/FRYS README False          maalt False          ok
+    README: tittelen rettet i v1.1, konsept-DOI uendret README True           maalt True           ok
+    FRYS: FUNN 12 rettet i v1.1                    README True           maalt True           ok
+    FRYS: FUNN 8 rettet i v1.1                     README True           maalt True           ok
+    CITATION.cff: konsept-DOI                      README True           maalt True           ok
+    README: versjons-DOI satt, ikke plassholder    README True           maalt True           ok
+
 === (f2) er hvert «maalt ved deponering»-tall faktisk maalt? ===
     10       daekket av en maalelinje: ok
     12       daekket av en maalelinje: ok
+    12,7     daekket av en maalelinje: ok
     1235     daekket av en maalelinje: ok
+    1296     daekket av en maalelinje: ok
     146      daekket av en maalelinje: ok
+    157      daekket av en maalelinje: ok
     20/20    daekket av en maalelinje: ok
+    27       daekket av en maalelinje: ok
+    29       daekket av en maalelinje: ok
     38       daekket av en maalelinje: ok
+    5,9      daekket av en maalelinje: ok
     5/5      daekket av en maalelinje: ok
+    52       daekket av en maalelinje: ok
+    56       daekket av en maalelinje: ok
     8        daekket av en maalelinje: ok
+    87,3     daekket av en maalelinje: ok
+    94,1     daekket av en maalelinje: ok
 
 RESULTAT: REN

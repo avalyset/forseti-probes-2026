@@ -1,6 +1,6 @@
 # Konsekvenskart — Lovtidend avd. I
 
-4499 kunngjøringer lest. **146** treffer registeret.
+4499 kunngjøringer lest. **157** treffer registeret.
 
 Oppslagsnivå: dokument (`changesToDocuments`, 93,6 % dekning) med paragraf (`data-change-part`, 6,4 %) som presisering der den finnes.
 
@@ -31,6 +31,22 @@ I kraft 2024-01-01 · `lti/2024/nl-20240112-006.xml`
 |---|---|---|---|---|---|
 | mval. | paragraf | §11-6 | **SKATT-20** | 50000 NOK | — |
 
+## LOV-2024-01-12-7 — Lov om endringer i skatteforvaltningsloven
+
+I kraft 2024-01-01 · `lti/2024/nl-20240112-007.xml`
+
+| endrer | nivå | paragraf | rad | registerets verdi | scenarier |
+|---|---|---|---|---|---|
+| skfvl. | paragraf | §1-1, §13-3, §2-1, §5-6, §8-14 lov, §9-1, §9-2 | **SKATT-KLAGE-01** | 6 uker | Egenretting av skattemelding — treårsvindu [klagefrist_kontrast], Klagefrist på skattevedtak [klagefrist] |
+
+## LOV-2024-03-22-11 — Lov om endringer i lovgivningen som følge av nye navn på Olje- og energidepartem
+
+I kraft Kongen bestemmer · `lti/2024/nl-20240322-011.xml`
+
+| endrer | nivå | paragraf | rad | registerets verdi | scenarier |
+|---|---|---|---|---|---|
+| skfvl. | paragraf | §3-5 | **SKATT-KLAGE-01** | 6 uker | Egenretting av skattemelding — treårsvindu [klagefrist_kontrast], Klagefrist på skattevedtak [klagefrist] |
+
 ## LOV-2024-04-12-14 — Lov om endringer i lov om avtalefestet pensjon for medlemmer av Statens pensjons
 
 I kraft Kongen bestemmer · `lti/2024/nl-20240412-014.xml`
@@ -45,6 +61,7 @@ I kraft Kongen bestemmer · `lti/2024/nl-20240412-014.xml`
 | ftrl. | paragraf | §17-11, §17-9, §17A-5, §17A-6, §20-15, §3-19, §4-24, §8-52 | **NAV-04** | 185798 NOK, 25 ar | — |
 | ftrl. | paragraf | §17-11, §17-9, §17A-5, §17A-6, §20-15, §3-19, §4-24, §8-52 | **NAV-05** | 66 prosent | — |
 | ftrl. | paragraf | §17-11, §17-9, §17A-5, §17A-6, §20-15, §3-19, §4-24, §8-52 | **NAV-06** | 38 NOK, 18 ar | — |
+| ftrl. | paragraf | §17-11, §17-9, §17A-5, §17A-6, §20-15, §3-19, §4-24, §8-52 | **NAV-KLAGE-01** | 6 uker | AAP Klagefrist - Tidsfrist [klagefrist] |
 
 ## LOV-2024-05-14-21 — Lov om endringer i kontantstøtteloven og folketrygdloven (justering av kontantst
 
@@ -60,6 +77,15 @@ I kraft Kongen bestemmer · `lti/2024/nl-20240514-021.xml`
 | ftrl. | paragraf | §14-9 | **NAV-04** | 185798 NOK, 25 ar | — |
 | ftrl. | paragraf | §14-9 | **NAV-05** | 66 prosent | — |
 | ftrl. | paragraf | §14-9 | **NAV-06** | 38 NOK, 18 ar | — |
+| ftrl. | paragraf | §14-9 | **NAV-KLAGE-01** | 6 uker | AAP Klagefrist - Tidsfrist [klagefrist] |
+
+## LOV-2024-05-31-25 — Lov om endringer i straffeloven mv. (påvirkning fra fremmed etterretning)
+
+I kraft Kongen bestemmer · `lti/2024/nl-20240531-025.xml`
+
+| endrer | nivå | paragraf | rad | registerets verdi | scenarier |
+|---|---|---|---|---|---|
+| skfvl. | paragraf | §3-10 | **SKATT-KLAGE-01** | 6 uker | Egenretting av skattemelding — treårsvindu [klagefrist_kontrast], Klagefrist på skattevedtak [klagefrist] |
 
 ## LOV-2024-05-31-27 — Lov om endringer i utdanningsstøtteloven (beregning av rente på utdanningslån un
 
@@ -106,6 +132,8 @@ I kraft 2024-06-21 · `lti/2024/nl-20240621-046.xml`
 | endrer | nivå | paragraf | rad | registerets verdi | scenarier |
 |---|---|---|---|---|---|
 | fvl. | paragraf | §12 | **LK-01** | 3 uker | — |
+| fvl. | paragraf | §12 | **LK-KLAGE-01** | 3 uker | — |
+| skfvl. | paragraf | §3-9 | **SKATT-KLAGE-01** | 6 uker | Egenretting av skattemelding — treårsvindu [klagefrist_kontrast], Klagefrist på skattevedtak [klagefrist] |
 
 ## LOV-2024-06-25-54 — Lov om endringer i integreringsloven, folketrygdloven og tannhelsetjenesteloven 
 
@@ -121,6 +149,7 @@ I kraft Kongen bestemmer · `lti/2024/nl-20240625-054.xml`
 | ftrl. | dokument | — | **NAV-04** | 185798 NOK, 25 ar | — |
 | ftrl. | dokument | — | **NAV-05** | 66 prosent | — |
 | ftrl. | dokument | — | **NAV-06** | 38 NOK, 18 ar | — |
+| ftrl. | dokument | — | **NAV-KLAGE-01** | 6 uker | AAP Klagefrist - Tidsfrist [klagefrist] |
 
 ## LOV-2024-06-25-59 — Lov om endring i folketrygdloven (styrking av fedres rett til foreldrepenger)
 
@@ -136,6 +165,7 @@ I kraft Kongen bestemmer · `lti/2024/nl-20240625-059.xml`
 | ftrl. | paragraf | §14-14 | **NAV-04** | 185798 NOK, 25 ar | — |
 | ftrl. | paragraf | §14-14 | **NAV-05** | 66 prosent | — |
 | ftrl. | paragraf | §14-14 | **NAV-06** | 38 NOK, 18 ar | — |
+| ftrl. | paragraf | §14-14 | **NAV-KLAGE-01** | 6 uker | AAP Klagefrist - Tidsfrist [klagefrist] |
 
 ## LOV-2024-06-25-61 — Lov om endringar i skatteloven
 
@@ -160,6 +190,7 @@ I kraft 2024-06-25 · `lti/2024/nl-20240625-062.xml`
 | ftrl. | paragraf | §23-3 | **NAV-04** | 185798 NOK, 25 ar | — |
 | ftrl. | paragraf | §23-3 | **NAV-05** | 66 prosent | — |
 | ftrl. | paragraf | §23-3 | **NAV-06** | 38 NOK, 18 ar | — |
+| ftrl. | paragraf | §23-3 | **NAV-KLAGE-01** | 6 uker | AAP Klagefrist - Tidsfrist [klagefrist] |
 
 ## LOV-2024-06-25-64 — Lov om endringar i merverdiavgiftsloven
 
@@ -192,6 +223,7 @@ I kraft 2024-12-20, 2024-12-20 med verknad frå 2024-10-01, 2025-01-01, 2025-07-
 | ftrl. | paragraf | §11-13, §11-18, §11-4, §12-15, §13-11, §13-2, §19-8, §19-9a, §20-4, §3-3, §4-10, §4-15, §4-16, §4-20, §4-23, §4-26, §4-5, §4-9, §8-49 | **NAV-04** | 185798 NOK, 25 ar | — |
 | ftrl. | paragraf | §11-13, §11-18, §11-4, §12-15, §13-11, §13-2, §19-8, §19-9a, §20-4, §3-3, §4-10, §4-15, §4-16, §4-20, §4-23, §4-26, §4-5, §4-9, §8-49 | **NAV-05** | 66 prosent | — |
 | ftrl. | paragraf | §11-13, §11-18, §11-4, §12-15, §13-11, §13-2, §19-8, §19-9a, §20-4, §3-3, §4-10, §4-15, §4-16, §4-20, §4-23, §4-26, §4-5, §4-9, §8-49 | **NAV-06** | 38 NOK, 18 ar | — |
+| ftrl. | paragraf | §11-13, §11-18, §11-4, §12-15, §13-11, §13-2, §19-8, §19-9a, §20-4, §3-3, §4-10, §4-15, §4-16, §4-20, §4-23, §4-26, §4-5, §4-9, §8-49 | **NAV-KLAGE-01** | 6 uker | AAP Klagefrist - Tidsfrist [klagefrist] |
 
 ## LOV-2024-12-20-85 — Lov om endringer i folketrygdloven
 
@@ -207,6 +239,7 @@ I kraft 2024-12-20 med virkning fra og med inntektsåret 2025 · `lti/2024/nl-20
 | ftrl. | paragraf | §23-2, §23-3 | **NAV-04** | 185798 NOK, 25 ar | — |
 | ftrl. | paragraf | §23-2, §23-3 | **NAV-05** | 66 prosent | — |
 | ftrl. | paragraf | §23-2, §23-3 | **NAV-06** | 38 NOK, 18 ar | — |
+| ftrl. | paragraf | §23-2, §23-3 | **NAV-KLAGE-01** | 6 uker | AAP Klagefrist - Tidsfrist [klagefrist] |
 
 ## LOV-2024-12-20-86 — Lov om endringer i skatteloven
 
@@ -225,6 +258,14 @@ I kraft Departementet bestemmer · `lti/2024/nl-20241220-088.xml`
 |---|---|---|---|---|---|
 | mval. | paragraf | §5-1 | **SKATT-20** | 50000 NOK | — |
 
+## LOV-2024-12-20-89 — Lov om endringer i skatteforvaltningsloven
+
+I kraft 2024-12-20, 2025-01-01 · `lti/2024/nl-20241220-089.xml`
+
+| endrer | nivå | paragraf | rad | registerets verdi | scenarier |
+|---|---|---|---|---|---|
+| skfvl. | paragraf | §7-10 | **SKATT-KLAGE-01** | 6 uker | Egenretting av skattemelding — treårsvindu [klagefrist_kontrast], Klagefrist på skattevedtak [klagefrist] |
+
 ## LOV-2024-12-20-90 — Lov om endringer i folkeregisterloven
 
 I kraft 2024-12-20 · `lti/2024/nl-20241220-090.xml`
@@ -240,6 +281,14 @@ I kraft 2024-12-20 · `lti/2024/nl-20241220-090.xml`
 | fregl. | paragraf | §2-2, §9-3 | **SKATT-07** | — | — |
 | fregl. | paragraf | §2-2, §9-3 | **SKATT-08** | 31 dager, 8 dager | — |
 | fregl. | paragraf | §2-2, §9-3 | **SKATT-17** | — | — |
+
+## LOV-2024-12-20-93 — Lov om endringer i forsikrings- og finansmarkedslovgivingen (samleproposisjon)
+
+I kraft Kongen bestemmer · `lti/2024/nl-20241220-093.xml`
+
+| endrer | nivå | paragraf | rad | registerets verdi | scenarier |
+|---|---|---|---|---|---|
+| skfvl. | dokument | — | **SKATT-KLAGE-01** | 6 uker | Egenretting av skattemelding — treårsvindu [klagefrist_kontrast], Klagefrist på skattevedtak [klagefrist] |
 
 ## LOV-2024-12-20-94 — Lov om endringer i folkeregisterloven (bostedsregistrering av NATO-personell og 
 
@@ -280,6 +329,7 @@ I kraft 2024-01-12, 2024-02-01 · `lti/2024/sf-20240112-0060.xml`
 | ftrl. | dokument | — | **NAV-04** | 185798 NOK, 25 ar | — |
 | ftrl. | dokument | — | **NAV-05** | 66 prosent | — |
 | ftrl. | dokument | — | **NAV-06** | 38 NOK, 18 ar | — |
+| ftrl. | dokument | — | **NAV-KLAGE-01** | 6 uker | AAP Klagefrist - Tidsfrist [klagefrist] |
 
 ## FOR-2024-01-18-86 — Forskrift om endring i forskrift om inn- og utførsel av varer (vareførselsforskr
 
@@ -361,6 +411,14 @@ I kraft 2024-05-01 · `lti/2024/sf-20240307-0682.xml`
 | blåreseptforskriften | dokument | — | **HF-06** | 400 NOK, 520 NOK, 60 prosent, 50 prosent | — |
 | blåreseptforskriften | dokument | — | **HF-09** | 400 NOK, 60 prosent | — |
 
+## FOR-2024-03-22-516 — Ikraftsetting av lov 22. mars 2024 nr. 11 om endringer i lovgivningen som følge 
+
+I kraft 2024-04-01 · `lti/2024/sf-20240322-0516.xml`
+
+| endrer | nivå | paragraf | rad | registerets verdi | scenarier |
+|---|---|---|---|---|---|
+| skfvl. | dokument | — | **SKATT-KLAGE-01** | 6 uker | Egenretting av skattemelding — treårsvindu [klagefrist_kontrast], Klagefrist på skattevedtak [klagefrist] |
+
 ## FOR-2024-03-25-532 — Forskrift om endring i forskrift om inn- og utførsel av varer (vareførselsforskr
 
 I kraft 2024-04-01 · `lti/2024/sf-20240325-0532.xml`
@@ -408,6 +466,7 @@ I kraft 2025-01-01 · `lti/2024/sf-20240412-0614.xml`
 | ftrl. | dokument | — | **NAV-04** | 185798 NOK, 25 ar | — |
 | ftrl. | dokument | — | **NAV-05** | 66 prosent | — |
 | ftrl. | dokument | — | **NAV-06** | 38 NOK, 18 ar | — |
+| ftrl. | dokument | — | **NAV-KLAGE-01** | 6 uker | AAP Klagefrist - Tidsfrist [klagefrist] |
 
 ## FOR-2024-05-14-772 — Delt ikraftsetting av lov 14. mai 2024 nr. 21 om endringer i kontantstøtteloven 
 
@@ -423,6 +482,7 @@ I kraft 2024-07-01, 2024-08-01 · `lti/2024/sf-20240514-0772.xml`
 | ftrl. | dokument | — | **NAV-04** | 185798 NOK, 25 ar | — |
 | ftrl. | dokument | — | **NAV-05** | 66 prosent | — |
 | ftrl. | dokument | — | **NAV-06** | 38 NOK, 18 ar | — |
+| ftrl. | dokument | — | **NAV-KLAGE-01** | 6 uker | AAP Klagefrist - Tidsfrist [klagefrist] |
 
 ## FOR-2024-05-23-820 — Forskrift om endring i vareførselsforskriften
 
@@ -462,6 +522,7 @@ I kraft 2024-05-24, 2024-09-01 · `lti/2024/sf-20240524-0811.xml`
 | ftrl. | dokument | — | **NAV-04** | 185798 NOK, 25 ar | — |
 | ftrl. | dokument | — | **NAV-05** | 66 prosent | — |
 | ftrl. | dokument | — | **NAV-06** | 38 NOK, 18 ar | — |
+| ftrl. | dokument | — | **NAV-KLAGE-01** | 6 uker | AAP Klagefrist - Tidsfrist [klagefrist] |
 
 ## FOR-2024-05-24-821 — Forskrift om endring i forskrift om inn- og utførsel av varer (vareførselsforskr
 
@@ -511,6 +572,14 @@ I kraft 2024-07-01 – 2024-12-31 · `lti/2024/sf-20240529-1010.xml`
 | vareførselsforskriften | dokument | — | **TOLL-16** | — | — |
 | vareførselsforskriften | dokument | — | **TOLL-17** | — | — |
 
+## FOR-2024-05-31-871 — Ikraftsetting av lov 31. mai 2024 nr. 25 om endringer i straffeloven mv. (påvirk
+
+I kraft 2024-07-01 · `lti/2024/sf-20240531-0871.xml`
+
+| endrer | nivå | paragraf | rad | registerets verdi | scenarier |
+|---|---|---|---|---|---|
+| skfvl. | dokument | — | **SKATT-KLAGE-01** | 6 uker | Egenretting av skattemelding — treårsvindu [klagefrist_kontrast], Klagefrist på skattevedtak [klagefrist] |
+
 ## FOR-2024-05-31-872 — Ikraftsetting av lov 31. mai 2024 nr. 27 om endringer i utdanningsstøtteloven (b
 
 I kraft 2024-08-01 · `lti/2024/sf-20240531-0872.xml`
@@ -540,6 +609,7 @@ I kraft 2024-07-01 · `lti/2024/sf-20240531-0877.xml`
 | ftrl. | dokument | — | **NAV-04** | 185798 NOK, 25 ar | — |
 | ftrl. | dokument | — | **NAV-05** | 66 prosent | — |
 | ftrl. | dokument | — | **NAV-06** | 38 NOK, 18 ar | — |
+| ftrl. | dokument | — | **NAV-KLAGE-01** | 6 uker | AAP Klagefrist - Tidsfrist [klagefrist] |
 
 ## FOR-2024-06-14-981 — Ikraftsetting av lov 14. juni 2024 nr. 31 om endringer i arbeidsmiljøloven mv. (
 
@@ -595,6 +665,7 @@ I kraft 2024-07-01, 2024-10-01 · `lti/2024/sf-20240625-1211.xml`
 | ftrl. | dokument | — | **NAV-04** | 185798 NOK, 25 ar | — |
 | ftrl. | dokument | — | **NAV-05** | 66 prosent | — |
 | ftrl. | dokument | — | **NAV-06** | 38 NOK, 18 ar | — |
+| ftrl. | dokument | — | **NAV-KLAGE-01** | 6 uker | AAP Klagefrist - Tidsfrist [klagefrist] |
 
 ## FOR-2024-06-25-1219 — Ikraftsetting av lov 25. juni 2024 nr. 59 om endring i folketrygdloven (styrking
 
@@ -610,6 +681,7 @@ I kraft 2024-08-02 · `lti/2024/sf-20240625-1219.xml`
 | ftrl. | dokument | — | **NAV-04** | 185798 NOK, 25 ar | — |
 | ftrl. | dokument | — | **NAV-05** | 66 prosent | — |
 | ftrl. | dokument | — | **NAV-06** | 38 NOK, 18 ar | — |
+| ftrl. | dokument | — | **NAV-KLAGE-01** | 6 uker | AAP Klagefrist - Tidsfrist [klagefrist] |
 
 ## FOR-2024-09-17-2447 — Forskrift om endring i forskrift om stønad til dekning av utgifter til viktige l
 
@@ -634,6 +706,7 @@ I kraft 2024-10-01 · `lti/2024/sf-20240920-2209.xml`
 | ftrl. | dokument | — | **NAV-04** | 185798 NOK, 25 ar | — |
 | ftrl. | dokument | — | **NAV-05** | 66 prosent | — |
 | ftrl. | dokument | — | **NAV-06** | 38 NOK, 18 ar | — |
+| ftrl. | dokument | — | **NAV-KLAGE-01** | 6 uker | AAP Klagefrist - Tidsfrist [klagefrist] |
 
 ## FOR-2024-10-11-2461 — Delt ikraftsetting av lov 12. mai 2022 nr. 28 om advokater og andre som yter ret
 
@@ -642,6 +715,8 @@ I kraft 2025-01-01 · `lti/2024/sf-20241011-2461.xml`
 | endrer | nivå | paragraf | rad | registerets verdi | scenarier |
 |---|---|---|---|---|---|
 | fvl. | dokument | — | **LK-01** | 3 uker | — |
+| fvl. | dokument | — | **LK-KLAGE-01** | 3 uker | — |
+| skfvl. | dokument | — | **SKATT-KLAGE-01** | 6 uker | Egenretting av skattemelding — treårsvindu [klagefrist_kontrast], Klagefrist på skattevedtak [klagefrist] |
 
 ## FOR-2024-11-06-3236 — Forskrift om endring i forskrift om stønad til dekning av utgifter til viktige l
 
@@ -716,6 +791,15 @@ I kraft 2024-12-20, 2025-01-01, 2025-07-01 · `lti/2024/sf-20241220-3298.xml`
 | ftrl. | dokument | — | **NAV-04** | 185798 NOK, 25 ar | — |
 | ftrl. | dokument | — | **NAV-05** | 66 prosent | — |
 | ftrl. | dokument | — | **NAV-06** | 38 NOK, 18 ar | — |
+| ftrl. | dokument | — | **NAV-KLAGE-01** | 6 uker | AAP Klagefrist - Tidsfrist [klagefrist] |
+
+## FOR-2024-12-20-3303 — Ikrafttredelse av lov 20. desember 2024 nr. 93 om endringer i forsikrings- og fi
+
+I kraft 2025-01-01 · `lti/2024/sf-20241220-3303.xml`
+
+| endrer | nivå | paragraf | rad | registerets verdi | scenarier |
+|---|---|---|---|---|---|
+| skfvl. | dokument | — | **SKATT-KLAGE-01** | 6 uker | Egenretting av skattemelding — treårsvindu [klagefrist_kontrast], Klagefrist på skattevedtak [klagefrist] |
 
 ## FOR-2024-12-20-3409 — Forskrift om endring i forskrift til folkeregisterloven (folkeregisterforskrifte
 
@@ -745,6 +829,7 @@ I kraft 2025-04-10 · `lti/2025/nl-20250410-008.xml`
 | ftrl. | paragraf | §1-3a | **NAV-04** | 185798 NOK, 25 ar | — |
 | ftrl. | paragraf | §1-3a | **NAV-05** | 66 prosent | — |
 | ftrl. | paragraf | §1-3a | **NAV-06** | 38 NOK, 18 ar | — |
+| ftrl. | paragraf | §1-3a | **NAV-KLAGE-01** | 6 uker | AAP Klagefrist - Tidsfrist [klagefrist] |
 
 ## LOV-2025-04-10-9 — Lov om statsføretak (statsføretakslova)
 
@@ -788,12 +873,14 @@ I kraft Kongen bestemmer · `lti/2025/nl-20250425-012.xml`
 | utdanningsstøtteloven | paragraf | §12, §13, §17 | **LK-10** | 234821 NOK | — |
 | utdanningsstøtteloven | paragraf | §12, §13, §17 | **LK-11** | 15488 NOK | — |
 | utdanningsstøtteloven | paragraf | §12, §13, §17 | **LK-13** | 25000 NOK, 3 maneder | — |
+| fvl. | paragraf | §51 | **LK-KLAGE-01** | 3 uker | — |
 | ftrl. | paragraf | §12-14, §17-9, §21-11a, §22-14, §22-15, §22-15a, §22-16, §22-3a, §25-3, §8-22 | **NAV-01** | 136549 NOK, 130160 NOK, 124028 NOK, 118620 NOK, 111477 NOK | — |
 | ftrl. | paragraf | §12-14, §17-9, §21-11a, §22-14, §22-15, §22-15a, §22-16, §22-3a, §25-3, §8-22 | **NAV-02** | 819294 NOK | — |
 | ftrl. | paragraf | §12-14, §17-9, §21-11a, §22-14, §22-15, §22-15a, §22-16, §22-3a, §25-3, §8-22 | **NAV-03** | 278697 NOK, 25 ar | — |
 | ftrl. | paragraf | §12-14, §17-9, §21-11a, §22-14, §22-15, §22-15a, §22-16, §22-3a, §25-3, §8-22 | **NAV-04** | 185798 NOK, 25 ar | — |
 | ftrl. | paragraf | §12-14, §17-9, §21-11a, §22-14, §22-15, §22-15a, §22-16, §22-3a, §25-3, §8-22 | **NAV-05** | 66 prosent | — |
 | ftrl. | paragraf | §12-14, §17-9, §21-11a, §22-14, §22-15, §22-15a, §22-16, §22-3a, §25-3, §8-22 | **NAV-06** | 38 NOK, 18 ar | — |
+| ftrl. | paragraf | §12-14, §17-9, §21-11a, §22-14, §22-15, §22-15a, §22-16, §22-3a, §25-3, §8-22 | **NAV-KLAGE-01** | 6 uker | AAP Klagefrist - Tidsfrist [klagefrist] |
 | fregl. | paragraf | §12-1 | **SKATT-01** | — | — |
 | fregl. | paragraf | §12-1 | **SKATT-02** | — | — |
 | fregl. | paragraf | §12-1 | **SKATT-03** | — | — |
@@ -803,6 +890,7 @@ I kraft Kongen bestemmer · `lti/2025/nl-20250425-012.xml`
 | fregl. | paragraf | §12-1 | **SKATT-07** | — | — |
 | fregl. | paragraf | §12-1 | **SKATT-08** | 31 dager, 8 dager | — |
 | fregl. | paragraf | §12-1 | **SKATT-17** | — | — |
+| skfvl. | paragraf | §14-1, §2-10, §7-9 | **SKATT-KLAGE-01** | 6 uker | Egenretting av skattemelding — treårsvindu [klagefrist_kontrast], Klagefrist på skattevedtak [klagefrist] |
 
 ## LOV-2025-05-27-17 — Lov om endringer i arbeidsmiljøloven, lov om aldersgrenser for statsansatte m.fl
 
@@ -841,6 +929,7 @@ I kraft Kongen bestemmer · `lti/2025/nl-20250610-030.xml`
 | ftrl. | paragraf | §13-14, §13-4 | **NAV-04** | 185798 NOK, 25 ar | — |
 | ftrl. | paragraf | §13-14, §13-4 | **NAV-05** | 66 prosent | — |
 | ftrl. | paragraf | §13-14, §13-4 | **NAV-06** | 38 NOK, 18 ar | — |
+| ftrl. | paragraf | §13-14, §13-4 | **NAV-KLAGE-01** | 6 uker | AAP Klagefrist - Tidsfrist [klagefrist] |
 
 ## LOV-2025-06-20-34 — Lov om endringer i arbeidsmiljøloven mv. (Arbeidstilsynets virkemidler)
 
@@ -925,6 +1014,7 @@ I kraft Kongen bestemmer · `lti/2025/nl-20250620-038.xml`
 | ftrl. | paragraf | §21-12 | **NAV-04** | 185798 NOK, 25 ar | — |
 | ftrl. | paragraf | §21-12 | **NAV-05** | 66 prosent | — |
 | ftrl. | paragraf | §21-12 | **NAV-06** | 38 NOK, 18 ar | — |
+| ftrl. | paragraf | §21-12 | **NAV-KLAGE-01** | 6 uker | AAP Klagefrist - Tidsfrist [klagefrist] |
 
 ## LOV-2025-06-20-39 — Lov om endringer i barnevernsloven mv. (kvalitetsløftet i barnevernet)
 
@@ -940,6 +1030,7 @@ I kraft Kongen bestemmer · `lti/2025/nl-20250620-039.xml`
 | ftrl. | dokument | — | **NAV-04** | 185798 NOK, 25 ar | — |
 | ftrl. | dokument | — | **NAV-05** | 66 prosent | — |
 | ftrl. | dokument | — | **NAV-06** | 38 NOK, 18 ar | — |
+| ftrl. | dokument | — | **NAV-KLAGE-01** | 6 uker | AAP Klagefrist - Tidsfrist [klagefrist] |
 
 ## LOV-2025-06-20-40 — Lov om barn og foreldre (barnelova)
 
@@ -955,6 +1046,7 @@ I kraft Kongen fastset · `lti/2025/nl-20250620-040.xml`
 | ftrl. | paragraf | §14-17, §14-5, §15-4, §23-1, §23-10 | **NAV-04** | 185798 NOK, 25 ar | — |
 | ftrl. | paragraf | §14-17, §14-5, §15-4, §23-1, §23-10 | **NAV-05** | 66 prosent | — |
 | ftrl. | paragraf | §14-17, §14-5, §15-4, §23-1, §23-10 | **NAV-06** | 38 NOK, 18 ar | — |
+| ftrl. | paragraf | §14-17, §14-5, §15-4, §23-1, §23-10 | **NAV-KLAGE-01** | 6 uker | AAP Klagefrist - Tidsfrist [klagefrist] |
 | fregl. | paragraf | §3-3, §6-4 | **SKATT-01** | — | — |
 | fregl. | paragraf | §3-3, §6-4 | **SKATT-02** | — | — |
 | fregl. | paragraf | §3-3, §6-4 | **SKATT-03** | — | — |
@@ -1017,6 +1109,14 @@ I kraft 2025-06-20, 2025-06-20 med verknad frå inntektsåret 2025, 2025-06-20 m
 | sktl. | paragraf | §12-2, §19-6, §5-42, §6-32, §8-1, §8-3 | **SKATT-18** | 114540 NOK | — |
 | sktl. | paragraf | §12-2, §19-6, §5-42, §6-32, §8-1, §8-3 | **SKATT-19** | 95700 NOK, 75400 NOK, 46 prosent, 40 prosent | — |
 
+## LOV-2025-06-20-59 — Lov om endringar i skatteforvaltningsloven
+
+I kraft 2025-06-20, 2025-06-20 med verknad frå skatteåret 2026 · `lti/2025/nl-20250620-059.xml`
+
+| endrer | nivå | paragraf | rad | registerets verdi | scenarier |
+|---|---|---|---|---|---|
+| skfvl. | paragraf | §15-2, §7-10 | **SKATT-KLAGE-01** | 6 uker | Egenretting av skattemelding — treårsvindu [klagefrist_kontrast], Klagefrist på skattevedtak [klagefrist] |
+
 ## LOV-2025-06-20-61 — Lov om endring i folketrygdloven
 
 I kraft 2025-06-20 med verknad frå inntektsåret 2025 · `lti/2025/nl-20250620-061.xml`
@@ -1031,6 +1131,15 @@ I kraft 2025-06-20 med verknad frå inntektsåret 2025 · `lti/2025/nl-20250620-
 | ftrl. | paragraf | §23-3 | **NAV-04** | 185798 NOK, 25 ar | — |
 | ftrl. | paragraf | §23-3 | **NAV-05** | 66 prosent | — |
 | ftrl. | paragraf | §23-3 | **NAV-06** | 38 NOK, 18 ar | — |
+| ftrl. | paragraf | §23-3 | **NAV-KLAGE-01** | 6 uker | AAP Klagefrist - Tidsfrist [klagefrist] |
+
+## LOV-2025-06-20-64 — Lov om endringer i skatteforvaltningsloven
+
+I kraft 2025-06-20, 2026-01-01 · `lti/2025/nl-20250620-064.xml`
+
+| endrer | nivå | paragraf | rad | registerets verdi | scenarier |
+|---|---|---|---|---|---|
+| skfvl. | paragraf | §11-1, §11-2, §14-1, §14-7, §7-3, §7-5, §8-7 | **SKATT-KLAGE-01** | 6 uker | Egenretting av skattemelding — treårsvindu [klagefrist_kontrast], Klagefrist på skattevedtak [klagefrist] |
 
 ## LOV-2025-06-20-81 — Lov om saksbehandlingen i offentlig forvaltning (forvaltningsloven)
 
@@ -1039,6 +1148,7 @@ I kraft Kongen bestemmer · `lti/2025/nl-20250620-081.xml`
 | endrer | nivå | paragraf | rad | registerets verdi | scenarier |
 |---|---|---|---|---|---|
 | fvl. | dokument | — | **LK-01** | 3 uker | — |
+| fvl. | dokument | — | **LK-KLAGE-01** | 3 uker | — |
 
 ## LOV-2025-12-22-117 — Lov om endringar i folketrygdlova og enkelte andre lover (oppfølging av tiltak i
 
@@ -1054,6 +1164,8 @@ I kraft 2025-12-22, med virkning fra 2026-01-01, med virkning fra 2026-01-01, 20
 | ftrl. | paragraf | §11-12, §11-27, §11-28, §12-14, §12-2, §12-9, §15-9, §17-5, §17-9, §17A-3, §17A-6, §4-10, §4-20, §8-47 | **NAV-04** | 185798 NOK, 25 ar | — |
 | ftrl. | paragraf | §11-12, §11-27, §11-28, §12-14, §12-2, §12-9, §15-9, §17-5, §17-9, §17A-3, §17A-6, §4-10, §4-20, §8-47 | **NAV-05** | 66 prosent | — |
 | ftrl. | paragraf | §11-12, §11-27, §11-28, §12-14, §12-2, §12-9, §15-9, §17-5, §17-9, §17A-3, §17A-6, §4-10, §4-20, §8-47 | **NAV-06** | 38 NOK, 18 ar | — |
+| ftrl. | paragraf | §11-12, §11-27, §11-28, §12-14, §12-2, §12-9, §15-9, §17-5, §17-9, §17A-3, §17A-6, §4-10, §4-20, §8-47 | **NAV-KLAGE-01** | 6 uker | AAP Klagefrist - Tidsfrist [klagefrist] |
+| skfvl. | dokument | — | **SKATT-KLAGE-01** | 6 uker | Egenretting av skattemelding — treårsvindu [klagefrist_kontrast], Klagefrist på skattevedtak [klagefrist] |
 
 ## LOV-2025-12-22-119 — Lov om endringer i skatteloven
 
@@ -1071,6 +1183,14 @@ I kraft 2026-01-01, 2026-07-01 · `lti/2025/nl-20251222-121.xml`
 | endrer | nivå | paragraf | rad | registerets verdi | scenarier |
 |---|---|---|---|---|---|
 | mval. | paragraf | §3-30, §4-7, §6-8 | **SKATT-20** | 50000 NOK | — |
+
+## LOV-2025-12-22-122 — Lov om endringer i skatteforvaltningsloven
+
+I kraft 2025-12-22 · `lti/2025/nl-20251222-122.xml`
+
+| endrer | nivå | paragraf | rad | registerets verdi | scenarier |
+|---|---|---|---|---|---|
+| skfvl. | paragraf | §7-13, §9-4 | **SKATT-KLAGE-01** | 6 uker | Egenretting av skattemelding — treårsvindu [klagefrist_kontrast], Klagefrist på skattevedtak [klagefrist] |
 
 ## FOR-2025-01-10-30 — Forskrift om endring i forskrift om stønad til dekning av utgifter til viktige l
 
@@ -1296,12 +1416,14 @@ I kraft 2026-01-01, 2027-01-01 · `lti/2025/sf-20250610-0967.xml`
 | utdanningsstøtteloven | dokument | — | **LK-10** | 234821 NOK | — |
 | utdanningsstøtteloven | dokument | — | **LK-11** | 15488 NOK | — |
 | utdanningsstøtteloven | dokument | — | **LK-13** | 25000 NOK, 3 maneder | — |
+| fvl. | dokument | — | **LK-KLAGE-01** | 3 uker | — |
 | ftrl. | dokument | — | **NAV-01** | 136549 NOK, 130160 NOK, 124028 NOK, 118620 NOK, 111477 NOK | — |
 | ftrl. | dokument | — | **NAV-02** | 819294 NOK | — |
 | ftrl. | dokument | — | **NAV-03** | 278697 NOK, 25 ar | — |
 | ftrl. | dokument | — | **NAV-04** | 185798 NOK, 25 ar | — |
 | ftrl. | dokument | — | **NAV-05** | 66 prosent | — |
 | ftrl. | dokument | — | **NAV-06** | 38 NOK, 18 ar | — |
+| ftrl. | dokument | — | **NAV-KLAGE-01** | 6 uker | AAP Klagefrist - Tidsfrist [klagefrist] |
 | fregl. | dokument | — | **SKATT-01** | — | — |
 | fregl. | dokument | — | **SKATT-02** | — | — |
 | fregl. | dokument | — | **SKATT-03** | — | — |
@@ -1311,6 +1433,7 @@ I kraft 2026-01-01, 2027-01-01 · `lti/2025/sf-20250610-0967.xml`
 | fregl. | dokument | — | **SKATT-07** | — | — |
 | fregl. | dokument | — | **SKATT-08** | 31 dager, 8 dager | — |
 | fregl. | dokument | — | **SKATT-17** | — | — |
+| skfvl. | dokument | — | **SKATT-KLAGE-01** | 6 uker | Egenretting av skattemelding — treårsvindu [klagefrist_kontrast], Klagefrist på skattevedtak [klagefrist] |
 
 ## FOR-2025-06-11-1538 — Forskrift om endring i forskrift om stønad til dekning av utgifter til viktige l
 
@@ -1366,6 +1489,7 @@ I kraft 2026-01-01, 2027-01-01 · `lti/2025/sf-20250620-1113.xml`
 | ftrl. | dokument | — | **NAV-04** | 185798 NOK, 25 ar | — |
 | ftrl. | dokument | — | **NAV-05** | 66 prosent | — |
 | ftrl. | dokument | — | **NAV-06** | 38 NOK, 18 ar | — |
+| ftrl. | dokument | — | **NAV-KLAGE-01** | 6 uker | AAP Klagefrist - Tidsfrist [klagefrist] |
 
 ## FOR-2025-06-20-1118 — Ikraftsetting av lov 20. juni 2025 nr. 36 om endringer i arbeidsmiljøloven (innl
 
@@ -1483,6 +1607,7 @@ I kraft 2026-01-01, 2027-01-01 · `lti/2025/sf-20250829-1743.xml`
 | ftrl. | dokument | — | **NAV-04** | 185798 NOK, 25 ar | — |
 | ftrl. | dokument | — | **NAV-05** | 66 prosent | — |
 | ftrl. | dokument | — | **NAV-06** | 38 NOK, 18 ar | — |
+| ftrl. | dokument | — | **NAV-KLAGE-01** | 6 uker | AAP Klagefrist - Tidsfrist [klagefrist] |
 
 ## FOR-2025-09-24-1918 — Forskrift om endring i forskrift om inn- og utførsel av varer (vareførselsforskr
 
@@ -1642,6 +1767,7 @@ I kraft 2026-01-01, 2027-01-01 · `lti/2025/sf-20251219-2711.xml`
 | ftrl. | dokument | — | **NAV-04** | 185798 NOK, 25 ar | — |
 | ftrl. | dokument | — | **NAV-05** | 66 prosent | — |
 | ftrl. | dokument | — | **NAV-06** | 38 NOK, 18 ar | — |
+| ftrl. | dokument | — | **NAV-KLAGE-01** | 6 uker | AAP Klagefrist - Tidsfrist [klagefrist] |
 
 ## FOR-2025-12-19-2741 — Forskrift om endring i forskrift om stønad til dekning av utgifter til undersøke
 
@@ -1689,6 +1815,8 @@ I kraft 2025-12-22, 2026-01-01, 2026-07-01, 2026-07-01 med virkning fra 2026-01-
 | ftrl. | dokument | — | **NAV-04** | 185798 NOK, 25 ar | — |
 | ftrl. | dokument | — | **NAV-05** | 66 prosent | — |
 | ftrl. | dokument | — | **NAV-06** | 38 NOK, 18 ar | — |
+| ftrl. | dokument | — | **NAV-KLAGE-01** | 6 uker | AAP Klagefrist - Tidsfrist [klagefrist] |
+| skfvl. | dokument | — | **SKATT-KLAGE-01** | 6 uker | Egenretting av skattemelding — treårsvindu [klagefrist_kontrast], Klagefrist på skattevedtak [klagefrist] |
 
 ## LOV-2026-06-12-24 — Lov om endringer i folketrygdloven og enkelte andre lover (oppfølging av Stortin
 
@@ -1704,6 +1832,7 @@ I kraft Kongen bestemmer · `lti/2026/nl-20260612-024.xml`
 | ftrl. | paragraf | §10-5, §12-14 | **NAV-04** | 185798 NOK, 25 ar | — |
 | ftrl. | paragraf | §10-5, §12-14 | **NAV-05** | 66 prosent | — |
 | ftrl. | paragraf | §10-5, §12-14 | **NAV-06** | 38 NOK, 18 ar | — |
+| ftrl. | paragraf | §10-5, §12-14 | **NAV-KLAGE-01** | 6 uker | AAP Klagefrist - Tidsfrist [klagefrist] |
 
 ## LOV-2026-06-12-27 — Lov om endringer i folketrygdloven (delvis avvikling av stønad til enslig mor el
 
@@ -1719,6 +1848,7 @@ I kraft 2026-07-01, 2026-07-01 med virkning fra 2026-01-01 · `lti/2026/nl-20260
 | ftrl. | paragraf | §15-1, §15-10, §15-5, §17-10, §17-15, §17A-6, §22-10, §22-13 | **NAV-04** | 185798 NOK, 25 ar | — |
 | ftrl. | paragraf | §15-1, §15-10, §15-5, §17-10, §17-15, §17A-6, §22-10, §22-13 | **NAV-05** | 66 prosent | — |
 | ftrl. | paragraf | §15-1, §15-10, §15-5, §17-10, §17-15, §17A-6, §22-10, §22-13 | **NAV-06** | 38 NOK, 18 ar | — |
+| ftrl. | paragraf | §15-1, §15-10, §15-5, §17-10, §17-15, §17A-6, §22-10, §22-13 | **NAV-KLAGE-01** | 6 uker | AAP Klagefrist - Tidsfrist [klagefrist] |
 
 ## LOV-2026-06-19-33 — Lov om endringer i arbeidsmiljøloven og folketrygdloven (hjemmel for oppdragsgiv
 
@@ -1750,6 +1880,7 @@ I kraft Kongen bestemmer · `lti/2026/nl-20260619-033.xml`
 | ftrl. | paragraf | §22-9 | **NAV-04** | 185798 NOK, 25 ar | — |
 | ftrl. | paragraf | §22-9 | **NAV-05** | 66 prosent | — |
 | ftrl. | paragraf | §22-9 | **NAV-06** | 38 NOK, 18 ar | — |
+| ftrl. | paragraf | §22-9 | **NAV-KLAGE-01** | 6 uker | AAP Klagefrist - Tidsfrist [klagefrist] |
 
 ## LOV-2026-06-19-41 — Lov om særavgifter (særavgiftsloven)
 
@@ -1758,6 +1889,7 @@ I kraft Kongen bestemmer · `lti/2026/nl-20260619-041.xml`
 | endrer | nivå | paragraf | rad | registerets verdi | scenarier |
 |---|---|---|---|---|---|
 | mval. | paragraf | §6-7 | **SKATT-20** | 50000 NOK | — |
+| skfvl. | paragraf | §1-1, §10-8, §8-4, §9-1, §9-2, §9-4 | **SKATT-KLAGE-01** | 6 uker | Egenretting av skattemelding — treårsvindu [klagefrist_kontrast], Klagefrist på skattevedtak [klagefrist] |
 
 ## LOV-2026-06-19-45 — Lov om endringer i politiloven og tvangsfullbyrdelsesloven m.m. (kjønnsnøytrale 
 
@@ -1773,6 +1905,7 @@ I kraft Kongen bestemmer · `lti/2026/nl-20260619-045.xml`
 | ftrl. | paragraf | §21-11a | **NAV-04** | 185798 NOK, 25 ar | — |
 | ftrl. | paragraf | §21-11a | **NAV-05** | 66 prosent | — |
 | ftrl. | paragraf | §21-11a | **NAV-06** | 38 NOK, 18 ar | — |
+| ftrl. | paragraf | §21-11a | **NAV-KLAGE-01** | 6 uker | AAP Klagefrist - Tidsfrist [klagefrist] |
 
 ## LOV-2026-06-19-48 — Lov om endringer i konkursloven mv. (rekonstruksjonsforhandling)
 
@@ -1830,6 +1963,7 @@ I kraft Kongen bestemmer · `lti/2026/nl-20260623-064.xml`
 | ftrl. | paragraf | §13-3, §13-4 | **NAV-04** | 185798 NOK, 25 ar | — |
 | ftrl. | paragraf | §13-3, §13-4 | **NAV-05** | 66 prosent | — |
 | ftrl. | paragraf | §13-3, §13-4 | **NAV-06** | 38 NOK, 18 ar | — |
+| ftrl. | paragraf | §13-3, §13-4 | **NAV-KLAGE-01** | 6 uker | AAP Klagefrist - Tidsfrist [klagefrist] |
 
 ## LOV-2026-06-23-65 — Lov om endringar i folketrygdloven
 
@@ -1845,6 +1979,7 @@ I kraft 2026-06-23 med verknad frå 2026-07-01, 2026-10-01 med verknad frå 2026
 | ftrl. | paragraf | §12-13, §12-2, §23-3 | **NAV-04** | 185798 NOK, 25 ar | — |
 | ftrl. | paragraf | §12-13, §12-2, §23-3 | **NAV-05** | 66 prosent | — |
 | ftrl. | paragraf | §12-13, §12-2, §23-3 | **NAV-06** | 38 NOK, 18 ar | — |
+| ftrl. | paragraf | §12-13, §12-2, §23-3 | **NAV-KLAGE-01** | 6 uker | AAP Klagefrist - Tidsfrist [klagefrist] |
 
 ## LOV-2026-06-23-66 — Lov om endringar i skatteloven
 
@@ -2062,6 +2197,7 @@ I kraft 2026-10-01, med virkning fra 2026-01-01 · `lti/2026/sf-20260612-1078.xm
 | ftrl. | dokument | — | **NAV-04** | 185798 NOK, 25 ar | — |
 | ftrl. | dokument | — | **NAV-05** | 66 prosent | — |
 | ftrl. | dokument | — | **NAV-06** | 38 NOK, 18 ar | — |
+| ftrl. | dokument | — | **NAV-KLAGE-01** | 6 uker | AAP Klagefrist - Tidsfrist [klagefrist] |
 
 ## FOR-2026-06-18-1354 — Forskrift om endring i forskrift om stønad til dekning av utgifter til viktige l
 
@@ -2124,6 +2260,7 @@ I kraft 2026-07-01, fra den tid LOV-2025-06-20-40 trer i kraft, fra den tid LOV-
 | ftrl. | dokument | — | **NAV-04** | 185798 NOK, 25 ar | — |
 | ftrl. | dokument | — | **NAV-05** | 66 prosent | — |
 | ftrl. | dokument | — | **NAV-06** | 38 NOK, 18 ar | — |
+| ftrl. | dokument | — | **NAV-KLAGE-01** | 6 uker | AAP Klagefrist - Tidsfrist [klagefrist] |
 
 ## FOR-2026-06-21-1156 — Forskrift om endring i forskrift om stønad til dekning av utgifter til undersøke
 
@@ -2261,3 +2398,4 @@ I kraft 2027-01-01 · `lti/2026/sf-20260925-1893.xml`
 | ftrl. | dokument | — | **NAV-04** | 185798 NOK, 25 ar | — |
 | ftrl. | dokument | — | **NAV-05** | 66 prosent | — |
 | ftrl. | dokument | — | **NAV-06** | 38 NOK, 18 ar | — |
+| ftrl. | dokument | — | **NAV-KLAGE-01** | 6 uker | AAP Klagefrist - Tidsfrist [klagefrist] |
