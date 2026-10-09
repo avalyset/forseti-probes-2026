@@ -1,7 +1,7 @@
 """Løs registerets legal_basis-prosa mot lovkart.yaml og skriv tabellen.
 
 Dette er IKKE 2b-mekanismen. Den henter ingenting, sammenligner ingenting og
-vet ikke hva en endring er. Den gjør én ting: slår hver av de 118 radenes
+vet ikke hva en endring er. Den gjør én ting: slår hver av de 121 radenes
 `legal_basis` opp i lovkart.yaml og rapporterer hva som lot seg løse til
 (dokument, paragraf) — og hva som ikke lot seg løse.
 

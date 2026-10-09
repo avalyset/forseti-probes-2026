@@ -48,7 +48,8 @@ lover:
     legacy_id: LOV-1997-02-28-19
     status: korroborert
     source: https://lovdata.no/dokument/LTI/lov/1997-02-28-19/*
-    used_by: [NAV-01, NAV-02, NAV-03, NAV-04, NAV-05, NAV-06, HF-05, HF-08]
+    used_by: [NAV-01, NAV-02, NAV-03, NAV-04, NAV-05, NAV-06, HF-05, HF-08,
+              NAV-KLAGE-01]
     note: >
       Også hjemmel for HF-01/HF-02 indirekte, men der er grunnlaget et rundskriv
       til § 5-3 — ikke lovteksten. Se ikke_lovtekst nedenfor.
@@ -71,12 +72,18 @@ lover:
     legacy_id: LOV-1967-02-10
     status: ubekreftet
     source: null
-    used_by: [LK-01]
+    used_by: [LK-01, LK-KLAGE-01]
     note: >
       Innholdet i § 29 (tre ukers klagefrist) ble korroborert, men selve
       dokument-IDen kom ikke fram i noe søk. Loven har ingen «nr.» i vanlig
       sitering, og det er uklart om Lovdatas refid er `lov/1967-02-10` eller
       bærer et nummer. ENESTE ID I FILA SOM IKKE ER BEKREFTET I NOEN FORM.
+      MERK (2026-10-09, etter at arkivet ble hentet): `lov/1967-02-10` opptrer
+      som endret dokument i fem kunngjøringer i Lovtidend-arkivet, to av dem på
+      paragrafnivå (§ 12, § 51). IDen finnes altså i Lovdatas egne data.
+      `status` er likevel ikke endret: statusvokabularet beskriver hvordan IDen
+      ble funnet i rekognoseringen, og en oppgradering er registerarbeid, ikke
+      en konsekvens av denne lesningen. Se FRYS-v1.1.md.
 
   - abbrev: [utdanningsstøtteloven]
     title: Lov om utdanningsstøtte (utdanningsstøtteloven)
@@ -129,12 +136,14 @@ lover:
     legacy_id: LOV-2016-05-27-14
     status: korroborert
     source: https://lovdata.no/dokument/NL/lov/2016-05-27-14/kap13
-    used_by: []
+    used_by: [SKATT-KLAGE-01]
     note: >
-      Brukes IKKE av noen av de 118 YAML-radene. Står her fordi
-      data/expected_facts.yaml kobler to scenarier til «skfvl. § 13-4», og den
-      koblingen peker på markdown-registerets kryss-tabell, ikke på YAML-en.
-      Kapittel 13 bekreftet som «Klage». Se bruddet i konsekvenskartet, ADR-0002.
+      Sto med `used_by: []` i rekognoseringen: ingen av de 118 YAML-radene
+      brukte den, mens data/expected_facts.yaml koblet to scenarier til
+      «skfvl. § 13-4» via markdown-registerets kryss-tabell. Det bruddet
+      ADR-0002 beskriver er nå lukket fra registersiden — klagefrist-tabellen er
+      konvertert, og SKATT-KLAGE-01 bærer «skfvl. § 13-4». Kapittel 13 bekreftet
+      som «Klage».
 
   - abbrev: [pliktavleveringslova, pliktavleveringsloven]
     title: Lov om avleveringsplikt for allment tilgjengelege dokument (pliktavleveringslova)
@@ -142,10 +151,13 @@ lover:
     legacy_id: LOV-1989-06-09-32
     status: registerfestet
     source: src/register/data/nasjonalbiblioteket.yaml (NB-17)
-    used_by: [NB-15, NB-17, NB-18, NB-19, NB-20, NB-21, NB-22, NB-23]
+    used_by: [NB-15, NB-17, NB-19, NB-20, NB-21, NB-22]
     note: >
-      NB-18…NB-23 oppgir bare «pliktavleveringslova» uten paragraf. De kan
-      flagges på dokumentnivå, aldri på paragrafnivå.
+      NB-19, NB-20 og NB-22 oppgir bare «pliktavleveringslova» uten paragraf.
+      De kan flagges på dokumentnivå, aldri på paragrafnivå. NB-17 og NB-21
+      navngir nå § 4 og løses på paragrafnivå. NB-18 og NB-23 navngir
+      FOR-2018-07-01-1139 § 8 og § 6 og står derfor under forskriften, ikke
+      her — ellers ville de blitt flagget på lovens paragrafnumre.
 
   - abbrev: [vareførselsloven]
     title: Lov om inn- og utførsel av varer (vareførselsloven)
@@ -219,7 +231,11 @@ forskrifter:
     legacy_id: FOR-2018-07-01-1139
     status: registerfestet
     source: src/register/data/nasjonalbiblioteket.yaml (NB-17)
-    used_by: [NB-17]
+    used_by: [NB-17, NB-18, NB-23]
+    note: >
+      NB-18 («forskrift FOR-2018-07-01-1139 § 8») og NB-23 («… § 6») navngir
+      forskriften, ikke loven. De sto under pliktavleveringslova i
+      rekognoseringen, da begge hadde bare «pliktavleveringslova» i feltet.
 
   - abbrev: []
     title: null

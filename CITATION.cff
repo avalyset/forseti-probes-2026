@@ -1,0 +1,41 @@
+cff-version: 1.2.0
+message: >-
+  If you use this work, cite the concept DOI unless you need to pin an exact
+  version.
+title: >-
+  Forseti probes 2026: six preregistered experiments on Norwegian
+  public-service fact checking
+abstract: >-
+  Nine pieces of work on whether a language model's handling of Norwegian
+  public-service facts can be checked mechanically. Five are preregistered
+  experiments with a hypothesis, a criterion fixed before running, and a
+  verdict; four are engineering tasks with no hypothesis to preregister. Four
+  of five preregistered criteria were not met, and the useful result is a
+  preregistered control that fired. v1.1.0 adds fase 2b, a consequence map
+  from an amendment published in Norsk Lovtidend to the register rows that
+  rest on the amended paragraph, and four saturation guards over the register
+  and the tail.
+type: dataset
+authors:
+  - given-names: Eirik
+    family-names: Botten Nicolaysen
+    orcid: 'https://orcid.org/0009-0001-9188-6788'
+    affiliation: EcoDeco AS
+version: 1.1.0
+date-released: '2026-10-09'
+doi: 10.5281/zenodo.23260755
+repository-code: 'https://github.com/avalyset/forseti-probes-2026'
+license:
+  - Apache-2.0
+  - CC-BY-4.0
+keywords:
+  - fact checking
+  - preregistration
+  - linear probes
+  - Norwegian
+  - public administration
+  - Norsk Lovtidend
+  - NLOD
+languages:
+  - nob
+  - eng

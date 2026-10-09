@@ -1,27 +1,27 @@
 # Forkortelsestabell: registerets paragrafhenvisninger → Lovdata
 
 Generert av `src/register/resolve_lovkart.py` fra `src/register/lovkart.yaml`
-og de 118 radene i `src/register/data/*.yaml`. Rediger kartet, ikke tabellen.
+og de 121 radene i `src/register/data/*.yaml`. Rediger kartet, ikke tabellen.
 
 ## Dokumentene
 
 | Forkortelse i registeret | Fullt navn | Lovdata-ID | refid | Status | Rader |
 |---|---|---|---|---|---|
-| `ftrl.`, `folketrygdloven` | Lov om folketrygd (folketrygdloven) | `LOV-1997-02-28-19` | `lov/1997-02-28-19` | korroborert | 8 |
+| `ftrl.`, `folketrygdloven` | Lov om folketrygd (folketrygdloven) | `LOV-1997-02-28-19` | `lov/1997-02-28-19` | korroborert | 9 |
 | `aml.`, `arbeidsmiljøloven` | Lov om arbeidsmiljø, arbeidstid og stillingsvern mv. (arbeidsmiljøloven) | `LOV-2005-06-17-62` | `lov/2005-06-17-62` | korroborert | 16 |
-| `fvl.`, `forvaltningsloven` | Lov om behandlingsmåten i forvaltningssaker (forvaltningsloven) | `LOV-1967-02-10` | `lov/1967-02-10` | ubekreftet | 1 |
+| `fvl.`, `forvaltningsloven` | Lov om behandlingsmåten i forvaltningssaker (forvaltningsloven) | `LOV-1967-02-10` | `lov/1967-02-10` | ubekreftet | 2 |
 | `utdanningsstøtteloven` | Lov om utdanningsstøtte (utdanningsstøtteloven) | `LOV-2005-06-03-37` | `lov/2005-06-03-37` | korroborert | 8 |
 | `fregl.`, `folkeregisterloven` | Lov om folkeregistrering (folkeregisterloven) | `LOV-2016-12-09-88` | `lov/2016-12-09-88` | registerfestet | 9 |
 | `sktl.`, `skatteloven` | Lov om skatt av formue og inntekt (skatteloven) | `LOV-1999-03-26-14` | `lov/1999-03-26-14` | korroborert | 2 |
 | `mval.`, `merverdiavgiftsloven` | Lov om merverdiavgift (merverdiavgiftsloven) | `LOV-2009-06-19-58` | `lov/2009-06-19-58` | korroborert | 1 |
-| `skfvl.`, `skatteforvaltningsloven` | Lov om skatteforvaltning (skatteforvaltningsloven) | `LOV-2016-05-27-14` | `lov/2016-05-27-14` | korroborert | 0 |
-| `pliktavleveringslova`, `pliktavleveringsloven` | Lov om avleveringsplikt for allment tilgjengelege dokument (pliktavleveringslova) | `LOV-1989-06-09-32` | `lov/1989-06-09-32` | registerfestet | 8 |
+| `skfvl.`, `skatteforvaltningsloven` | Lov om skatteforvaltning (skatteforvaltningsloven) | `LOV-2016-05-27-14` | `lov/2016-05-27-14` | korroborert | 1 |
+| `pliktavleveringslova`, `pliktavleveringsloven` | Lov om avleveringsplikt for allment tilgjengelege dokument (pliktavleveringslova) | `LOV-1989-06-09-32` | `lov/1989-06-09-32` | registerfestet | 6 |
 | `vareførselsloven` | Lov om inn- og utførsel av varer (vareførselsloven) | `LOV-2022-03-11-9` | `lov/2022-03-11-9` | korroborert | 0 |
 | `blåreseptforskriften` | Forskrift om stønad til dekning av utgifter til viktige legemidler mv. (blåreseptforskriften) | `FOR-2007-06-28-814` | `forskrift/2007-06-28-814` | korroborert | 2 |
 | `folkeregisterforskriften` | Forskrift om folkeregistrering (folkeregisterforskriften) | `FOR-2017-07-14-1201` | `forskrift/2017-07-14-1201` | registerfestet | 7 |
 | `forskrift om utdanningsstøtte` | Forskrift om utdanningsstøtte | `FOR-2020-04-15-798` | `forskrift/2020-04-15-798` | registerfestet | 8 |
 | `vareførselsforskriften` | Forskrift om inn- og utførsel av varer (vareførselsforskriften) | `FOR-2022-10-27-1901` | `forskrift/2022-10-27-1901` | korroborert | 17 |
-| `forskrift om pliktavlevering` | Forskrift om avleveringsplikt for allment tilgjengelege dokument | `FOR-2018-07-01-1139` | `forskrift/2018-07-01-1139` | registerfestet | 1 |
+| `forskrift om pliktavlevering` | Forskrift om avleveringsplikt for allment tilgjengelege dokument | `FOR-2018-07-01-1139` | `forskrift/2018-07-01-1139` | registerfestet | 3 |
 | — | — (tittel ikke funnet) | `FOR-2020-06-18-1262` | `forskrift/2020-06-18-1262` | registerfestet | 1 |
 
 **Status:** `registerfestet` = IDen står i registerets egen legal_basis. 
@@ -30,7 +30,7 @@ og de 118 radene i `src/register/data/*.yaml`. Rediger kartet, ikke tabellen.
 
 ## Per rad
 
-LØST 70 · DOKUMENT 11 · DELVIS 2 · TVETYDIG 3 · ULØST 0 · UTENFOR 32
+LØST 77 · DOKUMENT 7 · DELVIS 2 · TVETYDIG 3 · ULØST 0 · UTENFOR 32
 
 | Rad | Trigger | legal_basis (ordrett) | Dokument | Paragraf | Ledd | Utfall |
 |---|---|---|---|---|---|---|
@@ -81,12 +81,14 @@ LØST 70 · DOKUMENT 11 · DELVIS 2 · TVETYDIG 3 · ULØST 0 · UTENFOR 32
 | LK-20 | STABIL | `FOR-2020-04-15-798 **§§ 77/78/80/81**` | `forskrift/2020-04-15-798` | § 77, § 78, § 80, § 81 | — | **LØST** |
 | LK-21 | ÅRLIG | `lanekassen.no (uten-søknad-mekanisme); FOR-2020-04-15-798 **§§ 97/98/100**` | `forskrift/2020-04-15-798` | § 97, § 98, § 100 | — | **DELVIS** |
 | LK-22 | ÅRLIG | `forskrift om utdanningsstøtte 2026–2027` | `forskrift/2020-04-15-798` | — | — | **DOKUMENT** |
+| LK-KLAGE-01 | LOVENDRING | `fvl. § 29 (ingen lex specialis)` | `lov/1967-02-10` | § 29 | — | **LØST** |
 | NAV-01 | ÅRLIG | `folketrygdloven § 1-4` | `lov/1997-02-28-19` | § 1-4 | — | **LØST** |
 | NAV-02 | ÅRLIG | `folketrygdloven § 11-19` | `lov/1997-02-28-19` | § 11-19 | — | **LØST** |
 | NAV-03 | ÅRLIG | `folketrygdloven § 11-20` | `lov/1997-02-28-19` | § 11-20 | — | **LØST** |
 | NAV-04 | ÅRLIG | `folketrygdloven § 11-20` | `lov/1997-02-28-19` | § 11-20 | — | **LØST** |
 | NAV-05 | ÅRLIG | `folketrygdloven § 11-19` | `lov/1997-02-28-19` | § 11-19 | — | **LØST** |
 | NAV-06 | ÅRLIG | `folketrygdloven § 11-20` | `lov/1997-02-28-19` | § 11-20 | — | **LØST** |
+| NAV-KLAGE-01 | LOVENDRING | `ftrl. § 21-12` | `lov/1997-02-28-19` | § 21-12 | — | **LØST** |
 | NB-01 | PRAKSIS | — | — | — | — | **UTENFOR** |
 | NB-02 | PRAKSIS | — | — | — | — | **UTENFOR** |
 | NB-03 | PRAKSIS | — | — | — | — | **UTENFOR** |
@@ -103,13 +105,13 @@ LØST 70 · DOKUMENT 11 · DELVIS 2 · TVETYDIG 3 · ULØST 0 · UTENFOR 32
 | NB-14 | PRAKSIS | — | — | — | — | **UTENFOR** |
 | NB-15 | PRAKSIS | `— (ISNI selv); pliktavleveringslova avgrenser hovedgrenen` | `lov/1989-06-09-32` | — | — | **DOKUMENT** |
 | NB-16 | STABIL | — | — | — | — | **UTENFOR** |
-| NB-17 | LOVENDRING | `pliktavleveringslova LOV-1989-06-09-32; forskrift FOR-2018-07-01-1139` | `lov/1989-06-09-32`, `forskrift/2018-07-01-1139` | — | — | **DOKUMENT** |
-| NB-18 | LOVENDRING | `pliktavleveringslova` | `lov/1989-06-09-32` | — | — | **DOKUMENT** |
+| NB-17 | LOVENDRING | `pliktavleveringslova LOV-1989-06-09-32 § 4` | `lov/1989-06-09-32`, `forskrift/2018-07-01-1139` | § 4 | — | **LØST** |
+| NB-18 | LOVENDRING | `forskrift FOR-2018-07-01-1139 § 8` | `forskrift/2018-07-01-1139` | § 8 | — | **LØST** |
 | NB-19 | LOVENDRING | `pliktavleveringslova` | `lov/1989-06-09-32` | — | — | **DOKUMENT** |
 | NB-20 | LOVENDRING | `pliktavleveringslova` | `lov/1989-06-09-32` | — | — | **DOKUMENT** |
-| NB-21 | LOVENDRING | `pliktavleveringslova` | `lov/1989-06-09-32` | — | — | **DOKUMENT** |
+| NB-21 | LOVENDRING | `pliktavleveringslova LOV-1989-06-09-32 § 4` | `lov/1989-06-09-32` | § 4 | — | **LØST** |
 | NB-22 | LOVENDRING | `pliktavleveringslova` | `lov/1989-06-09-32` | — | — | **DOKUMENT** |
-| NB-23 | LOVENDRING | `pliktavleveringslova` | `lov/1989-06-09-32` | — | — | **DOKUMENT** |
+| NB-23 | LOVENDRING | `forskrift FOR-2018-07-01-1139 § 6` | `forskrift/2018-07-01-1139` | § 6 | — | **LØST** |
 | NB-24 | PRAKSIS | — | — | — | — | **UTENFOR** |
 | NB-25 | PRAKSIS | — | — | — | — | **UTENFOR** |
 | NB-26 | PRAKSIS | — | — | — | — | **UTENFOR** |
@@ -135,6 +137,7 @@ LØST 70 · DOKUMENT 11 · DELVIS 2 · TVETYDIG 3 · ULØST 0 · UTENFOR 32
 | SKATT-18 | ÅRLIG | `skatteloven § 15-4` | `lov/1999-03-26-14` | § 15-4 | — | **LØST** |
 | SKATT-19 | ÅRLIG | `skatteloven § 6-32` | `lov/1999-03-26-14` | § 6-32 | — | **LØST** |
 | SKATT-20 | LOVENDRING | `merverdiavgiftsloven § 2-1 første ledd` | `lov/2009-06-19-58` | § 2-1 | 1 | **LØST** |
+| SKATT-KLAGE-01 | LOVENDRING | `skfvl. § 13-4` | `lov/2016-05-27-14` | § 13-4 | — | **LØST** |
 | TOLL-01 | PRAKSIS | `vareførselsforskriften § 4-1-11 første ledd` | `forskrift/2022-10-27-1901` | § 4-1-11 | 1 | **LØST** |
 | TOLL-02 | PRAKSIS | `§ 4-1-11 annet ledd` | `forskrift/2022-10-27-1901` *(arvet)* | § 4-1-11 | 2 | **LØST** |
 | TOLL-03 | STABIL | `§ 4-1-11 femte ledd` | `forskrift/2022-10-27-1901` *(arvet)* | § 4-1-11 | 5 | **LØST** |

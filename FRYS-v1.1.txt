@@ -1,0 +1,118 @@
+=== (a) tall uten opphav i deponert kildemateriale ===
+    0 uten opphav
+
+=== (b) noekkeltall mot navngitt rapport ===
+    0,870                    -> fase1            ok
+    0,471                    -> fase1            ok
+    0,410                    -> fase1b           ok
+    0,566                    -> fase1b           ok
+    0,852                    -> fase3            ok
+    0,867                    -> fase3            ok
+    0,910                    -> fase3            ok
+    1/13                     -> fase3            ok
+    0,6914                   -> fase3b           ok
+    45,0 %                   -> fase3b           ok
+    0,8642                   -> fase3c           ok
+    0,8765                   -> fase3c           ok
+    13/13                    -> fase3c           ok
+    0,219                    -> fase3c           ok
+    0,002                    -> fase3c           ok
+    4499                     -> impact           ok
+    93,6 %                   -> impact           ok
+    6,4 %                    -> impact           ok
+    LØST 70 · DOKUMENT 11    -> ADR-0002         ok
+    46 (38.0%)               -> vakt_2026-10-09  ok
+    1 (0.8%)                 -> vakt_2026-10-09  ok
+    9** (7.4%)               -> vakt_2026-10-09  ok
+    4 av 4                   -> vakt_2026-10-09  ok
+    116 123, 23 32 70 00     -> vakt_2026-10-09  ok
+
+=== (c) metrikk-overclaim ===
+    ubetingede «works/succeeded/validated»: 0 ok
+    presisjonsforbedring: 1 treff, 1 negerte ok
+    «superfluous» med McNemar + «distinguishable from» innen 1200 tegn: ok
+    verdikt «trenger data»: ok
+    verdikt «overfører ikke»: ok
+    verdikt «virker ikke»: ok
+    baklengs 5/5 uten dokumentnivaa-forbehold: ok
+    6,4 % uten konsekvens: ok
+    vakt-tallene uten registerstorrelse: ok
+
+=== (d) eksterne tall ===
+    eksterne referanser: ['OSF', 'api.lovdata.no/v1/publicData`', 'api.lovdata.no/v1/publicData`.', 'api.lovdata.no`', 'github.com/SimulaMet/SimpleAudit', 'github.com/SimulaMet/SimpleAudit/pull/105', 'lovdata.no/info/vilkar`', 'lovdata.no`']
+    annenhaands pris «12 500» ikke gjentatt i README: ok
+    annenhaands pris «15 000» ikke gjentatt i README: ok
+    annenhaands pris «6 500» ikke gjentatt i README: ok
+
+=== (e) stale status ===
+    «open, not merged»: ok  (PR-status datert)
+    «default_enabled: False»: ok  (dommerens standardtilstand)
+    «SimulaMet/SimpleAudit/pull/105»: ok  (PR-lenke)
+    «This corrects ADR-0002»: ok  (vilkaarsrettelsen)
+    «that was true when written»: ok  (gammel status merket)
+
+=== (f) tall maalt ved deponering, re-maalt naa ===
+    resolve_lovkart --check exit 0                 README 0              maalt 0              ok
+    LØST 77 · DOKUMENT 7 · … (README)              README LØST 77  DOKUMENT 7  DELVIS 2  TVETYDIG 3  ULØST 0  UTENFOR 32 maalt LØST 77  DOKUMENT 7  DELVIS 2  TVETYDIG 3  ULØST 0  UTENFOR 32 ok
+    tabellen staar ordrett i README                README True           maalt True           ok
+    registerrader i alt                            README 121            maalt 121            ok
+    LOVENDRING-rader                               README 20             maalt 20             ok
+    LOVENDRING paa paragrafniva (LØST)             README 15             maalt 15             ok
+    «15 of 20» staar i README                      README True           maalt True           ok
+    baklengs: forventede treff                     README 5              maalt 5              ok
+    baklengs: forventninger i lovkart              README 5              maalt 5              ok
+    …av dem bare dokumentniva                      README 4              maalt 4              ok
+    baklengs, slik README skriver det              README 5/5            maalt 5/5            ok
+    «5/5» staar i README                           README True           maalt True           ok
+    treff i impact.json                            README 146            maalt 146            ok
+    rad-treff i alt i impact.json                  README 1235           maalt 1235           ok
+    vakt/test_vakt.py                              README 20/20 bestått  maalt 20/20 bestått  ok
+    «20/20 bestått» staar i README                 README True           maalt True           ok
+    toppseksjon regenererer ordrett                README True           maalt True           ok
+    V1+V2 regenererer ordrett                      README True           maalt True           ok
+    V3 «aldri hentet», deponert (med snapshots)    README 10             maalt 10             ok
+    V3 «aldri hentet», regenerert (uten snapshots) README 20             maalt 20             ok
+    V4 stille, deponert                            README 8              maalt 8              ok
+    V4 stille, regenerert                          README 18             maalt 18             ok
+    impact.load_scenarios() med innebygd sti       README 0              maalt 0              ok
+    register-koblinger i deponert expected_facts.yaml README 3              maalt 3              ok
+    treff i impact.json med scenariokobling        README 0              maalt 0              ok
+    «2 rows and 3 couplings» staar i README        README True           maalt True           ok
+    fvl.: kunngjoringer i arkivet                  README 5              maalt 5              ok
+    fvl.: av dem paa paragrafniva                  README 2              maalt 2              ok
+    LOV-2025-06-20-81 blant dem                    README True           maalt True           ok
+    README navngir LOV-2025-06-20-81               README True           maalt True           ok
+    filer de to grenene legger til                 README 38             maalt 38             ok
+    filer de to grenene endrer                     README 5              maalt 5              ok
+
+=== (g) eksklusjonssjekk ===
+    full vindusskanning (5/6/7/8 ord + rekonstruerbarhet): KAN IKKE KJORES - den tilbakeholdte fila finnes ikke paa denne maskinen.
+    AAPENT PUNKT, ikke bestaatt kontroll. Ma kjores fra Vault for deponering.
+    filer med strengen «hei_refusal», egen logg utenom README 12             maalt 12             ok
+      FRYS-v1.1.md   (lesningen selv, navngitt unntak)
+      FRYS.md
+      LICENSE-CC-BY-4.0
+      PREREG/fase1_b7251a28e3b78e36a616d61e18bab7ce1e3e74a9.md
+      PREREG/fase1b_d35342b204365bd2c0ec807b4d803bb2d6e732cd.md
+      RAPPORT/fase1.md
+      RAPPORT/fase1b.md
+      README.md
+      frys_read_v11.py   (lesningen selv, navngitt unntak)
+      src/exclusion_check.py
+      src/p1b/oneclass.py
+      src/p1b/tok47.py
+    av dem under data/                             README 0              maalt 0              ok
+    av dem nye i v1.1, lesningen unntatt           README 0              maalt 0              ok
+    unntakene er navngitt i README                 README True           maalt True           ok
+
+=== (f2) er hvert «maalt ved deponering»-tall faktisk maalt? ===
+    10       daekket av en maalelinje: ok
+    12       daekket av en maalelinje: ok
+    1235     daekket av en maalelinje: ok
+    146      daekket av en maalelinje: ok
+    20/20    daekket av en maalelinje: ok
+    38       daekket av en maalelinje: ok
+    5/5      daekket av en maalelinje: ok
+    8        daekket av en maalelinje: ok
+
+RESULTAT: REN
