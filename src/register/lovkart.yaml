@@ -1,0 +1,513 @@
+# lovkart — forkortelse i registerets legal_basis → dokument hos Lovdata
+#
+# Registerets `legal_basis` er prosa skrevet for mennesker: «ftrl. § 21-12»,
+# «§ 10-4 fjerde ledd», «blåreseptforskriften § 8». Ingen av formene kan slås
+# opp maskinelt. Denne fila er oversettelsen 2b trenger, og den finnes ikke i
+# Lovdatas åpne datasett — datasettet har tittel og kortnavn per dokument, men
+# ingen tabell fra juristforkortelse til dokument-ID.
+#
+# VERIFISERINGSSTATUS er det viktigste feltet. Det sier hvor IDen kommer fra:
+#
+#   registerfestet  IDen står ordrett i registerets egen legal_basis for minst
+#                   én rad. Registeret har verifisert den mot kilde; høyest
+#                   tillit vi har uten å lese Lovdata.
+#   korroborert     Bekreftet mot en Lovdata-side i rekognoseringen 2026-10-09,
+#                   men via søk — ikke lest direkte. lovdata.no og
+#                   api.lovdata.no var sperret av egress-policyen i sesjonen.
+#   ubekreftet      IDen er IKKE bekreftet. Står her som hypotese fordi en
+#                   tabell med hull er mer ærlig enn en tabell som later som.
+#                   MÅ slås opp før bruk.
+#
+# Ingen rad i denne fila er lest direkte fra Lovdata. Det er en reell
+# begrensning, ikke en formalitet: `korroborert` betyr at et søk returnerte en
+# Lovdata-URL og en tittel som stemmer, ikke at dokumentet er åpnet.
+#
+# refid-format: Lovdata adresserer dokumenter som `lov/<dato>-<nr>` og
+# `forskrift/<dato>-<nr>`, og paragrafer som `<refid>/§<nr>`. Endringer i Norsk
+# Lovtidend er fra 2023 merket ned til ledd:
+# `data-change-part="lov/2005-06-17-62/§15-6/ledd/3"`.
+
+schema_version: '1.0'
+recon:
+  date: '2026-10-09'
+  phase: 2b
+  method: >
+    Alle 118 legal_basis-felt lest ut av src/register/data/*.yaml. IDer hentet
+    fra registeret selv der det oppgir dem, ellers korroborert mot Lovdata via
+    søk. Lovdata-vertene var utilgjengelige direkte.
+  unread_sources:
+    - lovdata.no (egress-sperret: 403 på CONNECT)
+    - api.lovdata.no (egress-sperret: 403 på CONNECT)
+
+# ---------------------------------------------------------------- lover
+
+lover:
+  - abbrev: [ftrl., folketrygdloven]
+    title: Lov om folketrygd (folketrygdloven)
+    refid: lov/1997-02-28-19
+    legacy_id: LOV-1997-02-28-19
+    status: korroborert
+    source: https://lovdata.no/dokument/LTI/lov/1997-02-28-19/*
+    used_by: [NAV-01, NAV-02, NAV-03, NAV-04, NAV-05, NAV-06, HF-05, HF-08]
+    note: >
+      Også hjemmel for HF-01/HF-02 indirekte, men der er grunnlaget et rundskriv
+      til § 5-3 — ikke lovteksten. Se ikke_lovtekst nedenfor.
+
+  - abbrev: [aml., arbeidsmiljøloven]
+    title: Lov om arbeidsmiljø, arbeidstid og stillingsvern mv. (arbeidsmiljøloven)
+    refid: lov/2005-06-17-62
+    legacy_id: LOV-2005-06-17-62
+    status: korroborert
+    source: https://lovdata.no/dokument/LTI/lov/2005-06-17-62/KAPITTEL_2
+    used_by: [AT-01, AT-02, AT-03, AT-04, AT-05, AT-06, AT-07, AT-08, AT-09,
+              AT-10, AT-11, AT-12, AT-13, AT-14, AT-15, AT-16]
+    note: >
+      Bare AT-01 navngir loven. AT-02…AT-16 har bare «§ 10-4 fjerde ledd» og
+      arver loven fra raden over. Se arv nedenfor.
+
+  - abbrev: [fvl., forvaltningsloven]
+    title: Lov om behandlingsmåten i forvaltningssaker (forvaltningsloven)
+    refid: lov/1967-02-10
+    legacy_id: LOV-1967-02-10
+    status: ubekreftet
+    source: null
+    used_by: [LK-01]
+    note: >
+      Innholdet i § 29 (tre ukers klagefrist) ble korroborert, men selve
+      dokument-IDen kom ikke fram i noe søk. Loven har ingen «nr.» i vanlig
+      sitering, og det er uklart om Lovdatas refid er `lov/1967-02-10` eller
+      bærer et nummer. ENESTE ID I FILA SOM IKKE ER BEKREFTET I NOEN FORM.
+
+  - abbrev: [utdanningsstøtteloven]
+    title: Lov om utdanningsstøtte (utdanningsstøtteloven)
+    refid: lov/2005-06-03-37
+    legacy_id: LOV-2005-06-03-37
+    status: korroborert
+    source: https://lovdata.no/lov/2005-06-03-37
+    used_by: [LK-03, LK-05, LK-06, LK-07, LK-08, LK-10, LK-11, LK-13]
+    note: >
+      Rekognoseringen antok først en 2020-lov. Det var feil, og søket fanget
+      det: loven er fra 3. juni 2005. LK-10 («lov § 7») og LK-11 («lov § 5»)
+      sier bare «lov» og mener denne.
+
+  - abbrev: [fregl., folkeregisterloven]
+    title: Lov om folkeregistrering (folkeregisterloven)
+    refid: lov/2016-12-09-88
+    legacy_id: LOV-2016-12-09-88
+    status: registerfestet
+    source: src/register/data/skatteetaten.yaml (SKATT-06, SKATT-07, SKATT-17)
+    used_by: [SKATT-01, SKATT-02, SKATT-03, SKATT-04, SKATT-05, SKATT-06,
+              SKATT-07, SKATT-08, SKATT-17]
+    note: >
+      Registeret oppgir IDen selv i SKATT-06/07/17 og bruker kortformen
+      «fregl.» i SKATT-01…05 og SKATT-08. Intern forankring: forkortelsen og
+      IDen står i samme fil, om samme paragraf (§ 6-2).
+
+  - abbrev: [sktl., skatteloven]
+    title: Lov om skatt av formue og inntekt (skatteloven)
+    refid: lov/1999-03-26-14
+    legacy_id: LOV-1999-03-26-14
+    status: korroborert
+    source: https://lovdata.no/dokument/NL/lov/1999-03-26-14/KAPITTEL_15
+    used_by: [SKATT-18, SKATT-19]
+    note: >
+      Kapittel 15 bekreftet som «Skattesatser», og § 15-4 som personfradraget
+      SKATT-18 påstår. Ikke forveksle med skatteforvaltningsloven, som også
+      har en § 15-4 (søksmålsfrist).
+
+  - abbrev: [mval., merverdiavgiftsloven]
+    title: Lov om merverdiavgift (merverdiavgiftsloven)
+    refid: lov/2009-06-19-58
+    legacy_id: LOV-2009-06-19-58
+    status: korroborert
+    source: https://lovdata.no/lov/2009-06-19-58
+    used_by: [SKATT-20]
+
+  - abbrev: [skfvl., skatteforvaltningsloven]
+    title: Lov om skatteforvaltning (skatteforvaltningsloven)
+    refid: lov/2016-05-27-14
+    legacy_id: LOV-2016-05-27-14
+    status: korroborert
+    source: https://lovdata.no/dokument/NL/lov/2016-05-27-14/kap13
+    used_by: []
+    note: >
+      Brukes IKKE av noen av de 118 YAML-radene. Står her fordi
+      data/expected_facts.yaml kobler to scenarier til «skfvl. § 13-4», og den
+      koblingen peker på markdown-registerets kryss-tabell, ikke på YAML-en.
+      Kapittel 13 bekreftet som «Klage». Se bruddet i konsekvenskartet, ADR-0002.
+
+  - abbrev: [pliktavleveringslova, pliktavleveringsloven]
+    title: Lov om avleveringsplikt for allment tilgjengelege dokument (pliktavleveringslova)
+    refid: lov/1989-06-09-32
+    legacy_id: LOV-1989-06-09-32
+    status: registerfestet
+    source: src/register/data/nasjonalbiblioteket.yaml (NB-17)
+    used_by: [NB-15, NB-17, NB-18, NB-19, NB-20, NB-21, NB-22, NB-23]
+    note: >
+      NB-18…NB-23 oppgir bare «pliktavleveringslova» uten paragraf. De kan
+      flagges på dokumentnivå, aldri på paragrafnivå.
+
+  - abbrev: [vareførselsloven]
+    title: Lov om inn- og utførsel av varer (vareførselsloven)
+    refid: lov/2022-03-11-9
+    legacy_id: LOV-2022-03-11-9
+    status: korroborert
+    source: >
+      Navngitt som hjemmel for vareførselsforskriften i søkeresultat
+      (lov 11. mars 2022 nr. 9)
+    used_by: []
+    note: >
+      Ingen rad peker på loven direkte, men alle 17 TOLL-radene ligger under
+      forskriften som er hjemlet i den. En endring i loven kan tvinge
+      forskriftsendring; relevant som andreordens signal, ikke som treff.
+
+# ---------------------------------------------------------- forskrifter
+
+forskrifter:
+  - abbrev: [blåreseptforskriften]
+    title: >
+      Forskrift om stønad til dekning av utgifter til viktige legemidler mv.
+      (blåreseptforskriften)
+    refid: forskrift/2007-06-28-814
+    legacy_id: FOR-2007-06-28-814
+    status: korroborert
+    source: https://lovdata.no/dokument/SF/forskrift/2007-06-28-814
+    used_by: [HF-06, HF-09]
+    note: >
+      § 8 bekreftet som egenandelsbestemmelsen, med ordlyden HF-09 siterer
+      («60 prosent … ikke mer enn 400 kroner per utlevering»). Endret ved
+      FOR-2025-12-17-2621 — se endringsvedtak.
+
+  - abbrev: [folkeregisterforskriften]
+    title: Forskrift om folkeregistrering (folkeregisterforskriften)
+    refid: forskrift/2017-07-14-1201
+    legacy_id: FOR-2017-07-14-1201
+    status: registerfestet
+    source: src/register/data/skatteetaten.yaml (SKATT-11…SKATT-16)
+    used_by: [SKATT-11, SKATT-12, SKATT-13, SKATT-14, SKATT-15, SKATT-16, SKATT-17]
+
+  - abbrev: [forskrift om utdanningsstøtte]
+    title: Forskrift om utdanningsstøtte
+    refid: forskrift/2020-04-15-798
+    legacy_id: FOR-2020-04-15-798
+    status: registerfestet
+    source: src/register/data/lanekassen.yaml (LK-11, LK-19, LK-20, LK-21)
+    used_by: [LK-09, LK-10, LK-11, LK-12, LK-19, LK-20, LK-21, LK-22]
+    note: >
+      LK-09 og LK-12 sier bare «forskrift om utdanningsstøtte» / «forskrift»
+      uten paragraf. LK-22 sier «forskrift om utdanningsstøtte 2026–2027» —
+      se tvetydig nedenfor.
+
+  - abbrev: [vareførselsforskriften]
+    title: Forskrift om inn- og utførsel av varer (vareførselsforskriften)
+    refid: forskrift/2022-10-27-1901
+    legacy_id: FOR-2022-10-27-1901
+    status: korroborert
+    source: https://lovdata.no/dokument/LTI/forskrift/2022-10-27-1901/*
+    used_by: [TOLL-01, TOLL-02, TOLL-03, TOLL-04, TOLL-05, TOLL-06, TOLL-07,
+              TOLL-08, TOLL-09, TOLL-10, TOLL-11, TOLL-12, TOLL-13, TOLL-14,
+              TOLL-15, TOLL-16, TOLL-17]
+    note: >
+      Finansdepartementet, i kraft 01.01.2023. Bare TOLL-01 navngir
+      forskriften; TOLL-02…TOLL-17 arver den. Arven er internt bekreftet:
+      TOLL-13 siterer «Begrensningene i § 4-1-11 til § 4-1-13», altså samme
+      forskrift som TOLL-01 navngir.
+
+  - abbrev: [forskrift om pliktavlevering]
+    title: Forskrift om avleveringsplikt for allment tilgjengelege dokument
+    refid: forskrift/2018-07-01-1139
+    legacy_id: FOR-2018-07-01-1139
+    status: registerfestet
+    source: src/register/data/nasjonalbiblioteket.yaml (NB-17)
+    used_by: [NB-17]
+
+  - abbrev: []
+    title: null
+    refid: forskrift/2020-06-18-1262
+    legacy_id: FOR-2020-06-18-1262
+    status: registerfestet
+    source: src/register/data/helfo.yaml (HF-07)
+    used_by: [HF-07]
+    note: >
+      Registeret oppgir IDen men ingen tittel, og rekognoseringen fikk ikke
+      slått den opp. Gjelder honorartakst hos avtalepsykolog. Endret ved
+      FOR-2024-12-19-3293. Tittel mangler — fyll inn ved første Lovdata-oppslag.
+
+# ------------------------------------------------- endringsvedtak (hendelser)
+#
+# Disse er ikke mål for en henvisning, men hendelsene som treffer målene. De
+# står i registeret fordi en rad noterer hva som endret den. I 2b er de
+# fasiten: en kjent endring som SKAL gi treff hvis koblingen virker.
+
+endringsvedtak:
+  - legacy_id: FOR-2025-12-17-2621
+    changes: forskrift/2007-06-28-814
+    paragraph: '§ 8'
+    status: korroborert
+    source: https://lovdata.no/forskrift/2025-12-17-2621
+    expected_hit: [HF-06, HF-09]
+    note: >
+      Funnet i rekognoseringen, ikke i registeret. Dette er endringen HF-06 og
+      HF-09 beskriver (60 %/400 kr fra 1.1.2026). Beste baklengs-test vi har:
+      kjeden FOR-2025-12-17-2621 → forskrift/2007-06-28-814/§8 →
+      blåreseptforskriften § 8 → {HF-06, HF-09} kan verifiseres uten å gjette.
+
+  - legacy_id: LOV-2026-06-19-60
+    changes: lov/2005-06-03-37
+    paragraph: '§ 18 andre og tredje ledd'
+    status: registerfestet
+    source: src/register/data/lanekassen.yaml (LK-04)
+    expected_hit: [LK-03, LK-04, LK-05]
+
+  - legacy_id: FOR-2026-04-24-649
+    changes: forskrift/2020-04-15-798
+    paragraph: '§ 74 første ledd siste punktum'
+    status: registerfestet
+    source: src/register/data/lanekassen.yaml (LK-11)
+    expected_hit: [LK-11]
+
+  - legacy_id: FOR-2024-12-19-3293
+    changes: forskrift/2020-06-18-1262
+    paragraph: '§ 1'
+    status: registerfestet
+    source: src/register/data/helfo.yaml (HF-07)
+    expected_hit: [HF-07]
+
+  - legacy_id: FOR-2025-12-17-2639
+    changes: forskrift/2017-07-14-1201
+    paragraph: '§ 3-2-1'
+    status: avledet
+    source: >
+      Utledet av prosaen i SKATT-16: «endret ved forskrift 17. des. 2025
+      nr. 2639». Nummeret er registerfestet, formen FOR-2025-12-17-2639 er
+      konvertert av oss.
+    expected_hit: [SKATT-16]
+
+# ------------------------------------------------- grunnlaget ER en endring
+#
+# En tredje form for legal_basis, som verken er en stående bestemmelse eller
+# et ikke-rettslig grunnlag: raden peker på ENDRINGSVEDTAKET, fordi påstanden
+# handler om selve endringen («§ 18 andre og tredje ledd oppheves 1.8.2026»).
+#
+# Formen må løses til MÅLET, ikke til vedtaket. Et endringsvedtak endres
+# aldri igjen — det er en hendelse, ferdig i det den er kunngjort. Å overvåke
+# vedtaket ville gitt en rad som per konstruksjon aldri kan få treff.
+# Paragrafen står i radens `claim`, ikke i `legal_basis`, og kan derfor ikke
+# plukkes ut av hjemmelsfeltet alene.
+
+grunnlag_er_endring:
+  - rows: [LK-04]
+    legal_basis: LOV-2026-06-19-60
+    target_document: lov/2005-06-03-37
+    target_paragraph: '18'
+    note: >
+      Raden er fasiten for LK-03 og LK-05: den sier hva som skjer med § 18 og
+      hva som IKKE berøres (klageadgang, klagefrist, organets eksistens). En
+      endring i utdanningsstøtteloven § 18 skal treffe alle tre.
+
+# -------------------------------------------------------------- tvetydig
+#
+# Henvisninger som ikke kan løses til ett dokument uten et menneske.
+
+tvetydig:
+  - rows: [LK-22]
+    legal_basis: forskrift om utdanningsstøtte 2026–2027
+    problem: >
+      Lest bokstavelig er dette en egen årlig forskrift. Lest i sammenheng med
+      LK-11 — som fester samme basislånsats (15 488 kr/mnd) til
+      FOR-2020-04-15-798 § 74 endret ved FOR-2026-04-24-649 — er det samme
+      forskrift i 2026–27-utgave. Antakelsen er at det er det siste, men
+      antakelsen er ikke verifisert.
+    resolution_needed: >
+      Slå opp om Lovdata fører en separat forskrift for studieåret 2026–2027
+      eller bare endringsforskrifter til FOR-2020-04-15-798.
+
+  - rows: [LK-12]
+    legal_basis: forskrift
+    problem: >
+      Ingen paragraf, ingen forskrift navngitt. Raden er dessuten
+      **UVERIFISERT** i registeret (formuesgrense 2026/27, eksakt beløp
+      mangler). Dokument antatt FOR-2020-04-15-798 fra domenet.
+    resolution_needed: Finn paragrafen for formuesgrense ved behovsprøving.
+
+  - rows: [LK-09]
+    legal_basis: forskrift om utdanningsstøtte
+    problem: Dokument entydig, paragraf mangler helt.
+    resolution_needed: Kan bare flagges på dokumentnivå til paragraf er fylt inn.
+
+  - rows: [LK-10]
+    legal_basis: forskrift, behovsprøving jf. lov § 7
+    problem: >
+      To dokumenter i ett felt. «lov § 7» er utdanningsstøtteloven § 7 og er
+      løsbar; «forskrift» er det ikke.
+    resolution_needed: Splitt feltet i to henvisninger.
+
+  - rows: [HF-02]
+    legal_basis: samme
+    problem: >
+      Rent markdown-artefakt: «samme» betyr «som raden over» og er bare
+      meningsfullt i radrekkefølge. Løses til HF-01s grunnlag (rundskriv til
+      ftrl. § 5-3), som ikke er lovtekst.
+    resolution_needed: Erstatt med HF-01s grunnlag ordrett.
+
+  - rows: [NB-15]
+    legal_basis: '— (ISNI selv); pliktavleveringslova avgrenser hovedgrenen'
+    problem: >
+      Tankestreken betyr «ingen hjemmel» for hovedpåstanden (ISNI-tildeling er
+      ISNI International Agencys sak). Pliktavleveringslova nevnes bare som
+      avgrensning. En lovendring treffer avgrensningen, ikke påstanden.
+    resolution_needed: >
+      Avgjør om raden skal følge loven i det hele tatt. Antatt nei.
+
+  - rows: [AT-04, TOLL-07]
+    legal_basis: '§ … mot arbeidstilsynet.no / mot toll.no'
+    problem: >
+      Henvisningen bærer en sammenligning: paragrafen MOT etatssiden. Begge
+      sider kan endres uavhengig, og raden handler om avviket mellom dem.
+      Paragrafdelen er løsbar; «mot <side>» er en instruksjon til mennesket.
+    resolution_needed: >
+      Behold paragrafkoblingen, men merk raden som tosidig — en lovendring
+      alene avgjør ikke om raden fortsatt holder.
+
+# ------------------------------------------------- ikke lovtekst i det hele tatt
+#
+# Grunnlag som ALDRI kan treffes av en endring i de åpne datasettene, fordi
+# kilden ikke ligger der. Å la dem stå i samme mekanisme ville gitt falsk
+# trygghet: rader som ser overvåket ut, men ikke er det.
+
+ikke_lovtekst:
+  - rows: [HF-01, HF-02]
+    basis: rundskriv til folketrygdloven § 5-3 (Helsedirektoratet)
+    why: >
+      Rundskriv er ikke lov eller sentral forskrift og ligger ikke i de åpne
+      arkivene. Rekognoseringen fant dessuten at Helsedirektoratets rundskriv
+      til ftrl. § 5-14 fortsatt skriver 16 år der forskriften er endret til 18
+      — altså etterslep i rundskrivet. Nettopp dette etterslepet er HF-01s
+      påstand, og det er en annen endringskilde enn lovteksten.
+    trigger: Må følges som side, ikke som paragraf. Hale-mekanismen, ikke 2b.
+    open_question: >
+      HF-01 og HF-02 står som UTENFOR fordi grunnlaget er rundskrivet. Men
+      rekognoseringen fant at blåreseptforskriften § 8 nå lyder «Barn under 18
+      år og minstepensjonister skal ikke betale egenandel» — altså ligger
+      aldersendringen også i en forskrift som ER i det åpne arkivet. Hvilken
+      bestemmelse som bærer det brede egenandelsfritaket (ftrl. § 5-3, en
+      egenandelsforskrift, eller begge) er IKKE avgjort her. Å gjette en
+      kobling ville gitt to rader som ser overvåket ut uten å være det.
+      Avgjøres ved første Lovdata-oppslag, ikke av oss nå.
+
+  - rows: [HF-05]
+    basis: folketrygdloven § 5-3 jf. Stortingets årlige vedtak
+    why: >
+      Lovparagrafen er løsbar, men den operative verdien (egenandelstaket)
+      settes av Stortingets årlige vedtak. Stortingsvedtak ligger i arkivet
+      «gjeldende sentrale forskrifter», så dette er antakelig dekket — men
+      hvilket vedtak som bærer taket er ikke verifisert.
+    trigger: Både paragraf og årlig vedtak. Dobbel kobling, ikke verifisert.
+
+  - rows: [LK-21]
+    basis: lanekassen.no (uten-søknad-mekanisme); FOR-2020-04-15-798 §§ 97/98/100
+    why: Blandet grunnlag — etatsside og forskrift i samme felt.
+    trigger: Forskriftsdelen i 2b, sidedelen i hale.
+
+  - rows: [LK-02, LK-14, LK-15, LK-16, LK-17, LK-18, SKATT-09, SKATT-10,
+           HF-03, HF-04, NB-01, NB-02, NB-03, NB-04, NB-05, NB-06, NB-07,
+           NB-08, NB-09, NB-10, NB-11, NB-12, NB-13, NB-14, NB-16, NB-24,
+           NB-25, NB-26, NB-27, NB-28]
+    basis: null
+    why: >
+      30 rader har tomt legal_basis. De deler seg i tre, og skillet er
+      avgjørende: (1) rader som ikke HAR en hjemmel — ISBN/ISSN-praksis fra
+      ISBN Norge, etatspraksis ved ID-kontroll, et kundetelefonnummer. De
+      skal ikke ha én. (2) rader som er KORRIGERT — HF-03, HF-04 og LK-14
+      bærer tidligere feil som historikk, ikke gjeldende rett. (3) rader som
+      mangler hjemmel de burde hatt. Bare (3) er et hull å tette, og
+      rekognoseringen har ikke avgjort hvilke rader som faller der.
+    trigger: >
+      Ingen. 41 rader har review_trigger PRAKSIS, og praksis endres uten at
+      noen lov gjør det. Disse hører i hale, aldri i 2b.
+
+# --------------------------------------------------------------------- arv
+#
+# 31 rader har bare «§ x-y» uten lov. Loven må arves fra den første raden i
+# samme seksjonsblokk. Det er et markdown-artefakt: i tabellen sto loven i
+# første rad og de neste sparte plass.
+#
+# `section` i YAML-en redder det IKKE — den navngir etat og tema
+# («Tolletaten — reisegodskvoter og verdigrenser»), aldri loven. Arven må
+# derfor være eksplisitt, som her, og ikke utledes av feltet ved kjøretid.
+
+arv:
+  - rows: [AT-02, AT-03, AT-04, AT-05, AT-06, AT-07, AT-08, AT-09, AT-10,
+           AT-11, AT-12, AT-13, AT-14, AT-15, AT-16]
+    inherits_from: AT-01
+    document: lov/2005-06-17-62
+    evidence: >
+      AT-01 navngir arbeidsmiljøloven § 10-4. AT-10…AT-16 peker på §§ 11-2 til
+      11-5, og innholdet (arbeidstid for barn og ungdom) svarer til
+      arbeidsmiljølovens kapittel 11. Innholdsmessig bekreftet, ikke slått opp.
+
+  - rows: [TOLL-02, TOLL-03, TOLL-04, TOLL-05, TOLL-06, TOLL-07, TOLL-08,
+           TOLL-09, TOLL-10, TOLL-11, TOLL-12, TOLL-13, TOLL-14, TOLL-15,
+           TOLL-16, TOLL-17]
+    inherits_from: TOLL-01
+    document: forskrift/2022-10-27-1901
+    evidence: >
+      TOLL-01 navngir vareførselsforskriften § 4-1-11. TOLL-13 siterer
+      «Begrensningene i § 4-1-11 til § 4-1-13 gjelder ikke …» — en intern
+      kryssreferanse til samme forskrift. Sterkeste arvbeviset i registeret.
+
+# --------------------------------------------------- paragrafnormalisering
+#
+# Registerets presisjon er FINERE enn det Lovdata merker endringer på.
+# «§ 4-1-13 første ledd tredje punktum» har tre nivåer; Lovdatas
+# data-change-part når to: `/§4-1-13/ledd/1`. Punktum, bokstav og «siste
+# punktum» finnes ikke som adresserbart nivå i merkingen vi har sett.
+#
+# Følgen for 2b: match på paragraf, bruk ledd som avgrensning når begge har
+# det, og la punktum/bokstav stå som tekst mennesket leser. Å matche på
+# punktum ville gitt tapte treff, ikke presisjon.
+
+ordenstall:
+  første: 1
+  andre: 2
+  annet: 2
+  tredje: 3
+  fjerde: 4
+  femte: 5
+  sjette: 6
+  sjuende: 7
+  syvende: 7
+
+ikke_adresserbart:
+  - punktum        # «første ledd tredje punktum» — 8 rader
+  - bokstav        # «annet ledd bokstav a» — 3 rader
+  - siste punktum  # posisjonsavhengig, endres av selve endringen
+  - flere ledd     # «fjerde og femte ledd» (AT-04, AT-06) — uttrekket tar ett
+                   # ledd, ikke begge. Ufarlig så lenge matchen skjer på
+                   # paragraf og ledd bare er en avgrensning; ville vært en
+                   # tapt treff-kilde hvis ledd var påkrevd.
+
+# ------------------------------------------------------------ dekningsgrad
+#
+# Målt av resolve_lovkart.py 2026-10-09, ikke anslått:
+#
+#   LØST 70 · DOKUMENT 11 · DELVIS 2 · TVETYDIG 3 · ULØST 0 · UTENFOR 32
+#
+# Fordelt på review_trigger — og her ligger funnet som betyr noe for 2b:
+#
+#   trigger        LØST  DOKUMENT  DELVIS  TVETYDIG  UTENFOR   sum
+#   LOVENDRING        8         7       0         0        2    17
+#   STABIL           36         0       0         0        3    39
+#   ÅRLIG            12         3       2         1        0    18
+#   PRAKSIS          14         1       0         2       24    41
+#
+# Dekningen er invertert. Av de 17 radene som er merket LOVENDRING — nettopp
+# de 2b finnes for — kan bare 8 følges på paragrafnivå. Sju av dem er
+# pliktavleveringsrader som oppgir loven uten paragraf, og to har rundskriv
+# som grunnlag. Samtidig er 36 av 39 STABIL-rader fullt løsbare: de radene
+# som endres sjeldnest, er de best adresserte.
+#
+# Følgen er at paragrafkobling alene ikke dekker 2bs eget formål. Enten må de
+# sju NB-radene få paragraf, eller må pliktavleveringslova følges på
+# dokumentnivå med den støyen det gir. Det er ikke et spørsmål om mekanikk,
+# men om registerarbeid, og det hører i ADR-0002 som åpent punkt.
