@@ -534,18 +534,22 @@ time: `resolve_lovkart.py --check`, `resolve_lovkart.py --markdown`,
 ## Deposit status
 
 v1.1.0 was assembled, merged and read on 2026-10-09 in a cloud container that holds
-neither the Zenodo token nor the withheld `hei_refusal` pack. Two steps therefore remain,
-and both must run from the machine that holds them:
+neither the Zenodo token nor the withheld `hei_refusal` pack, and whose git credentials
+accept branch pushes but refuse `refs/tags/*`. Three steps therefore remain, and all three
+must run from the machine that holds what they need:
 
 1. **The full exclusion scan** — `src/exclusion_check.py` against the withheld
    `scenarios.jsonl`, over the extracted tarball. It must print `CLEAN`.
-2. **The Zenodo deposit** — a new version under concept DOI
+2. **The tag** — `v1.1.0` was created in the container and could not be pushed: every
+   push to a tag ref returns 403 here, lightweight and annotated alike, while branch pushes
+   to the same repository succeed. The commit it points at is on `main`.
+3. **The Zenodo deposit** — a new version under concept DOI
    [10.5281/zenodo.23260755](https://doi.org/10.5281/zenodo.23260755), same metadata,
    title unchanged, this README as the description. The version DOI it mints replaces the
    placeholder line at the top of this file.
 
-Everything else is done and recorded: the merge, this README, `CITATION.cff`, the
-frys-reading in `FRYS-v1.1.md` with its log in `FRYS-v1.1.txt`, and the tag `v1.1.0`.
+Everything else is done and recorded: the merge, this README, `CITATION.cff`, and the
+frys-reading in `FRYS-v1.1.md` with its log in `FRYS-v1.1.txt`.
 `frys_read_v11.py` reruns the reading — it takes the withheld file's path as an argument,
 and reports the exclusion scan as an open item rather than a passed check when that file is
 absent. `frys_read.py` is kept untouched as the v1.0.0 artifact; it cannot read this README,

@@ -277,6 +277,12 @@ lesningen.
 Zenodo-deponeringen er ikke kjørt av samme grunn i annen form: `ZENODO_TOKEN` er ikke satt
 i dette miljøet.
 
+Og et tredje, mindre punkt av samme slag: **taggen `v1.1.0` er laget, men ikke pushet.**
+Hver push til en tagg-ref gir 403 i dette miljøet — kontrollert med både annotert og
+lettvektstagg, mens grenpush til samme repo går gjennom, og ingenting ble opprettet på
+fjernsiden. Commiten taggen peker på ligger på `main`. Taggen må settes og pushes fra samme
+maskin som kjører deponeringen.
+
 ---
 
 ## Tre ting lesningen ikke kan fange, ført som kjent begrensning
