@@ -1,0 +1,487 @@
+schema_version: '1.0'
+generated_from:
+  register: NDVL-REG-0002_kildeverifisering.md
+  sha256: 8aa1e50a19fb8c678f9865b26d95912b8f0ec3c0609ccab933f9956adfc645d8
+  converted_at: '2026-10-09'
+domain: arbeidstilsynet
+facts:
+- id: AT-01
+  domain: arbeidstilsynet
+  claim: '**Alminnelig arbeidstid**: «Den alminnelige arbeidstid må ikke overstige ni timer i løpet av
+    24 timer og 40 timer i løpet av sju dager.» Etatssiden samsvarer: «9 timer i løpet av 24 timer (normalarbeidsdag)»,
+    «40 timer i løpet av 7 dager (normalarbeidsuke)»'
+  legal_basis: arbeidsmiljøloven § 10-4 første ledd
+  register_status: VERIFISERT verbatim
+  review_trigger: STABIL
+  review_by: null
+  section: Arbeidstilsynet — arbeidstid, pauser og alder (verifisert 2026-08-27)
+  values:
+  - value: 7
+    unit: dager
+    valid_from: null
+    valid_to: null
+    context: av 24 timer (normalarbeidsdag)», «40 timer i løpet av 7 dager (normalarbeidsuke)»
+    sources: &id001
+    - url: korpus sha256 729aff34d2… ; arbeidstilsynet.no/arbeidstid-og-organisering/arbeidstid/
+      quote: null
+      verified_at: null
+  - value: 24
+    unit: timer
+    valid_from: null
+    valid_to: null
+    context: elige arbeidstid må ikke overstige ni timer i løpet av 24 timer og 40 timer i løpet av sju
+      dager.» Etatssiden samsvare
+    sources: *id001
+  - value: 40
+    unit: timer
+    valid_from: null
+    valid_to: null
+    context: 'stid må ikke overstige ni timer i løpet av 24 timer og 40 timer i løpet av sju dager.» Etatssiden
+      samsvarer: «9 timer'
+    sources: *id001
+  - value: 9
+    unit: timer
+    valid_from: null
+    valid_to: null
+    context: '40 timer i løpet av sju dager.» Etatssiden samsvarer: «9 timer i løpet av 24 timer (normalarbeidsdag)»,
+      «40 timer i l'
+    sources: *id001
+  flags:
+  - flere_verdier_uten_strukturert_merkelapp
+  - kildesitat_mangler_i_registeret
+  - review_by_mangler
+  - valid_from_mangler
+- id: AT-02
+  domain: arbeidstilsynet
+  claim: '**38-timersuke**, fire alternative grunnlag: «døgnkontinuerlig skiftarbeid og sammenlignbart
+    turnusarbeid», «arbeid på to skift som regelmessig drives på søn- og helgedager …», «arbeid som innebærer
+    at den enkelte arbeidstaker må arbeide minst hver tredje søndag», «arbeid som hovedsakelig drives
+    om natten»'
+  legal_basis: § 10-4 fjerde ledd
+  register_status: VERIFISERT verbatim
+  review_trigger: STABIL
+  review_by: null
+  section: Arbeidstilsynet — arbeidstid, pauser og alder (verifisert 2026-08-27)
+  values: []
+  flags:
+  - kildesitat_mangler_i_registeret
+  - review_by_mangler
+  - value_not_extractable
+- id: AT-03
+  domain: arbeidstilsynet
+  claim: '**36-timersuke**, to alternative grunnlag: «helkontinuerlig skiftarbeid og sammenlignbart turnusarbeid»
+    og «arbeid under jord i gruver, tunneldrift og utsprengning av bergrom under jord»'
+  legal_basis: § 10-4 femte ledd
+  register_status: VERIFISERT verbatim
+  review_trigger: STABIL
+  review_by: null
+  section: Arbeidstilsynet — arbeidstid, pauser og alder (verifisert 2026-08-27)
+  values: []
+  flags:
+  - kildesitat_mangler_i_registeret
+  - review_by_mangler
+  - value_not_extractable
+- id: AT-04
+  domain: arbeidstilsynet
+  claim: '**DIVERGENS — etatssiden utelater grunnlag.** arbeidstilsynet.no gjengir de reduserte ukene
+    som «38 timer i løpet av 7 dager for arbeid som drives døgnet rundt på hverdager» og «36 timer i løpet
+    av 7 dager for arbeid som drives døgnet rundt, hele uken igjennom». Lovens ord «helkontinuerlig» og
+    hele alternativet «arbeid under jord i gruver, tunneldrift og utsprengning av bergrom under jord»
+    forekommer **ikke** på siden (null treff på «gruver» og «helkontinuerlig»). Nattarbeids- og tredjehversøndag-grunnlagene
+    i fjerde ledd er heller ikke gjenkjennelige i glosen. **Utelatelse, ikke motstrid** — dokumenteres
+    som divergens, ikke som feil hos noen part'
+  legal_basis: § 10-4 fjerde og femte ledd mot arbeidstilsynet.no
+  register_status: VERIFISERT verbatim (begge sider)
+  review_trigger: PRAKSIS
+  review_by: 2027-02
+  section: Arbeidstilsynet — arbeidstid, pauser og alder (verifisert 2026-08-27)
+  values:
+  - value: 7
+    unit: dager
+    valid_from: null
+    valid_to: null
+    context: no gjengir de reduserte ukene som «38 timer i løpet av 7 dager for arbeid som drives døgnet
+      rundt på hverdager» og «3
+    sources: &id002
+    - url: korpus sha256 729aff34d2… ; arbeidstilsynet.no/arbeidstid-og-organisering/arbeidstid/ (hentet
+        2026-08-27)
+      quote: null
+      verified_at: null
+  - value: 38
+    unit: timer
+    valid_from: null
+    valid_to: null
+    context: .** arbeidstilsynet.no gjengir de reduserte ukene som «38 timer i løpet av 7 dager for arbeid
+      som drives døgnet rundt
+    sources: *id002
+  - value: 36
+    unit: timer
+    valid_from: null
+    valid_to: null
+    context: r for arbeid som drives døgnet rundt på hverdager» og «36 timer i løpet av 7 dager for arbeid
+      som drives døgnet rundt,
+    sources: *id002
+  flags:
+  - flere_verdier_uten_strukturert_merkelapp
+  - kildesitat_mangler_i_registeret
+  - valid_from_mangler
+- id: AT-05
+  domain: arbeidstilsynet
+  claim: '**Passivt arbeid**: arbeidstiden kan forlenges «med inntil halvparten av de passive periodene,
+    men ikke med mer enn to timer i løpet av 24 timer og ti timer i løpet av sju dager»; Arbeidstilsynet
+    kan samtykke til inntil 13 timer i døgnet; «Den alminnelige arbeidstiden må ikke overstige 48 timer
+    i løpet av sju dager.»'
+  legal_basis: § 10-4 annet ledd
+  register_status: VERIFISERT verbatim
+  review_trigger: STABIL
+  review_by: null
+  section: Arbeidstilsynet — arbeidstid, pauser og alder (verifisert 2026-08-27)
+  values:
+  - value: 24
+    unit: timer
+    valid_from: null
+    valid_to: null
+    context: ve periodene, men ikke med mer enn to timer i løpet av 24 timer og ti timer i løpet av sju
+      dager»; Arbeidstilsynet kan
+    sources: &id003
+    - url: korpus ; arbeidstilsynet.no
+      quote: null
+      verified_at: null
+  - value: 13
+    unit: timer
+    valid_from: null
+    valid_to: null
+    context: av sju dager»; Arbeidstilsynet kan samtykke til inntil 13 timer i døgnet; «Den alminnelige
+      arbeidstiden må ikke overst
+    sources: *id003
+  - value: 48
+    unit: timer
+    valid_from: null
+    valid_to: null
+    context: øgnet; «Den alminnelige arbeidstiden må ikke overstige 48 timer i løpet av sju dager.»
+    sources: *id003
+  flags:
+  - flere_verdier_uten_strukturert_merkelapp
+  - kildesitat_mangler_i_registeret
+  - review_by_mangler
+  - valid_from_mangler
+- id: AT-06
+  domain: arbeidstilsynet
+  claim: '**Daglig og ukentlig arbeidsfri, voksne**: «minst 11 timer sammenhengende arbeidsfri i løpet
+    av 24 timer» og «en sammenhengende arbeidsfri periode på 35 timer i løpet av sju dager»'
+  legal_basis: § 10-8 første og annet ledd
+  register_status: VERIFISERT verbatim
+  review_trigger: STABIL
+  review_by: null
+  section: Arbeidstilsynet — arbeidstid, pauser og alder (verifisert 2026-08-27)
+  values:
+  - value: 11
+    unit: timer
+    valid_from: null
+    valid_to: null
+    context: '**Daglig og ukentlig arbeidsfri, voksne**: «minst 11 timer sammenhengende arbeidsfri i løpet
+      av 24 timer» og «en'
+    sources: &id004
+    - url: korpus sha256 729aff34d2…
+      quote: null
+      verified_at: null
+  - value: 24
+    unit: timer
+    valid_from: null
+    valid_to: null
+    context: ': «minst 11 timer sammenhengende arbeidsfri i løpet av 24 timer» og «en sammenhengende arbeidsfri
+      periode på 35 timer'
+    sources: *id004
+  - value: 35
+    unit: timer
+    valid_from: null
+    valid_to: null
+    context: 24 timer» og «en sammenhengende arbeidsfri periode på 35 timer i løpet av sju dager»
+    sources: *id004
+  flags:
+  - flere_verdier_uten_strukturert_merkelapp
+  - kildesitat_mangler_i_registeret
+  - review_by_mangler
+  - valid_from_mangler
+- id: AT-07
+  domain: arbeidstilsynet
+  claim: '**Pause, voksne**: «minst en pause dersom den daglige arbeidstiden overstiger fem og en halv
+    time. Pausene skal til sammen være minst en halv time hvis den daglige arbeidstid er minst åtte timer.»'
+  legal_basis: § 10-9 første ledd
+  register_status: VERIFISERT verbatim
+  review_trigger: STABIL
+  review_by: null
+  section: Arbeidstilsynet — arbeidstid, pauser og alder (verifisert 2026-08-27)
+  values: []
+  flags:
+  - kildesitat_mangler_i_registeret
+  - review_by_mangler
+  - value_not_extractable
+- id: AT-08
+  domain: arbeidstilsynet
+  claim: '**Ledende stilling**: «Bestemmelsene i dette kapittel kommer ikke til anvendelse for arbeidstaker
+    i ledende stilling, med unntak av § 10-2 første, andre og fjerde ledd.» Hele arbeidstidskapitlet settes
+    ut av kraft'
+  legal_basis: § 10-12 første ledd
+  register_status: VERIFISERT verbatim
+  review_trigger: STABIL
+  review_by: null
+  section: Arbeidstilsynet — arbeidstid, pauser og alder (verifisert 2026-08-27)
+  values: []
+  flags:
+  - kildesitat_mangler_i_registeret
+  - review_by_mangler
+  - value_not_extractable
+- id: AT-09
+  domain: arbeidstilsynet
+  claim: '**Særlig uavhengig stilling**: «Bestemmelsene i dette kapitlet kommer ikke til anvendelse for
+    arbeidstakere i særlig uavhengig stilling, med unntak av § 10-2 første, andre og fjerde ledd.» Etatssiden
+    formulerer det mykere: «arbeidsmiljøloven **kan unnta**» — loven er kategorisk'
+  legal_basis: § 10-12 annet ledd
+  register_status: VERIFISERT verbatim
+  review_trigger: PRAKSIS
+  review_by: 2027-02
+  section: Arbeidstilsynet — arbeidstid, pauser og alder (verifisert 2026-08-27)
+  values: []
+  flags:
+  - kildesitat_mangler_i_registeret
+  - value_not_extractable
+- id: AT-10
+  domain: arbeidstilsynet
+  claim: '**Barn under 15 år / skolepliktig, undervisningsdager**: arbeidstiden skal ikke overstige «2
+    timer i døgnet på dager med undervisning og 12 timer i uken i uker med undervisning»'
+  legal_basis: § 11-2 annet ledd bokstav a
+  register_status: VERIFISERT verbatim
+  review_trigger: STABIL
+  review_by: null
+  section: Arbeidstilsynet — arbeidstid, pauser og alder (verifisert 2026-08-27)
+  values:
+  - value: 2
+    unit: timer
+    valid_from: null
+    valid_to: null
+    context: 'ndervisningsdager**: arbeidstiden skal ikke overstige «2 timer i døgnet på dager med undervisning
+      og 12 timer i uken'
+    sources: &id005
+    - url: korpus sha256 729aff34d2…
+      quote: null
+      verified_at: null
+  - value: 12
+    unit: timer
+    valid_from: null
+    valid_to: null
+    context: erstige «2 timer i døgnet på dager med undervisning og 12 timer i uken i uker med undervisning»
+    sources: *id005
+  - value: 15
+    unit: ar
+    valid_from: null
+    valid_to: null
+    context: '**Barn under 15 år / skolepliktig, undervisningsdager**: arbeidstiden ska'
+    sources: *id005
+  flags:
+  - flere_verdier_uten_strukturert_merkelapp
+  - kildesitat_mangler_i_registeret
+  - review_by_mangler
+  - valid_from_mangler
+- id: AT-11
+  domain: arbeidstilsynet
+  claim: '**Barn under 15 år / skolepliktig, undervisningsfrie dager**: «7 timer i døgnet på undervisningsfrie
+    dager og 35 timer i undervisningsfrie uker»'
+  legal_basis: § 11-2 annet ledd bokstav b
+  register_status: VERIFISERT verbatim
+  review_trigger: STABIL
+  review_by: null
+  section: Arbeidstilsynet — arbeidstid, pauser og alder (verifisert 2026-08-27)
+  values:
+  - value: 7
+    unit: timer
+    valid_from: null
+    valid_to: null
+    context: 'nder 15 år / skolepliktig, undervisningsfrie dager**: «7 timer i døgnet på undervisningsfrie
+      dager og 35 timer i unde'
+    sources: &id006
+    - url: korpus sha256 729aff34d2…
+      quote: null
+      verified_at: null
+  - value: 35
+    unit: timer
+    valid_from: null
+    valid_to: null
+    context: 'ger**: «7 timer i døgnet på undervisningsfrie dager og 35 timer i undervisningsfrie uker»'
+    sources: *id006
+  - value: 15
+    unit: ar
+    valid_from: null
+    valid_to: null
+    context: '**Barn under 15 år / skolepliktig, undervisningsfrie dager**: «7 timer i'
+    sources: *id006
+  flags:
+  - flere_verdier_uten_strukturert_merkelapp
+  - kildesitat_mangler_i_registeret
+  - review_by_mangler
+  - valid_from_mangler
+- id: AT-12
+  domain: arbeidstilsynet
+  claim: '**Ungdom 15–18 år, ikke skolepliktig**: «skal arbeidstiden ikke overstige 8 timer i døgnet og
+    40 timer i uken»'
+  legal_basis: § 11-2 tredje ledd
+  register_status: VERIFISERT verbatim
+  review_trigger: STABIL
+  review_by: null
+  section: Arbeidstilsynet — arbeidstid, pauser og alder (verifisert 2026-08-27)
+  values:
+  - value: 8
+    unit: timer
+    valid_from: null
+    valid_to: null
+    context: 'ikke skolepliktig**: «skal arbeidstiden ikke overstige 8 timer i døgnet og 40 timer i uken»'
+    sources: &id007
+    - url: korpus sha256 729aff34d2…
+      quote: null
+      verified_at: null
+  - value: 40
+    unit: timer
+    valid_from: null
+    valid_to: null
+    context: «skal arbeidstiden ikke overstige 8 timer i døgnet og 40 timer i uken»
+    sources: *id007
+  - value: 18
+    unit: ar
+    valid_from: null
+    valid_to: null
+    context: '**Ungdom 15–18 år, ikke skolepliktig**: «skal arbeidstiden ikke overstig'
+    sources: *id007
+  flags:
+  - flere_verdier_uten_strukturert_merkelapp
+  - kildesitat_mangler_i_registeret
+  - review_by_mangler
+  - valid_from_mangler
+- id: AT-13
+  domain: arbeidstilsynet
+  claim: '**Nattarbeidsforbud, under 15 / skolepliktig**: «skal ikke arbeide mellom kl. 2000 og kl. 0600»'
+  legal_basis: § 11-3 første ledd
+  register_status: VERIFISERT verbatim
+  review_trigger: STABIL
+  review_by: null
+  section: Arbeidstilsynet — arbeidstid, pauser og alder (verifisert 2026-08-27)
+  values: []
+  flags:
+  - kildesitat_mangler_i_registeret
+  - review_by_mangler
+  - value_not_extractable
+- id: AT-14
+  domain: arbeidstilsynet
+  claim: '**Nattarbeid, ungdom 15–18 år**: «skal ha en arbeidsfri periode på minst 8 timer som omfatter
+    tiden mellom kl. 2300 og kl. 0600. Arbeid mellom kl. 2100 og kl. 2300 er nattarbeid og er ikke tillatt
+    med mindre arbeidets art gjør det nødvendig eller det foreligger et særlig og tidsavgrenset behov
+    for nattarbeid.» **Tre soner, ikke ett klokkeslett**'
+  legal_basis: § 11-3 annet ledd
+  register_status: VERIFISERT verbatim
+  review_trigger: STABIL
+  review_by: null
+  section: Arbeidstilsynet — arbeidstid, pauser og alder (verifisert 2026-08-27)
+  values:
+  - value: 8
+    unit: timer
+    valid_from: null
+    valid_to: null
+    context: 'om 15–18 år**: «skal ha en arbeidsfri periode på minst 8 timer som omfatter tiden mellom
+      kl. 2300 og kl. 0600. Arbeid'
+    sources: &id008
+    - url: korpus sha256 729aff34d2…
+      quote: null
+      verified_at: null
+  - value: 18
+    unit: ar
+    valid_from: null
+    valid_to: null
+    context: '**Nattarbeid, ungdom 15–18 år**: «skal ha en arbeidsfri periode på minst 8 timer som'
+    sources: *id008
+  flags:
+  - flere_verdier_uten_strukturert_merkelapp
+  - kildesitat_mangler_i_registeret
+  - review_by_mangler
+  - valid_from_mangler
+- id: AT-15
+  domain: arbeidstilsynet
+  claim: '**Pause, under 18 år**: «hvilepause i minst en halv time, om mulig sammenhengende, dersom den
+    daglige arbeidstiden overstiger fire og en halv time». Lavere terskel enn voksnes fem og en halv time
+    (AT-07)'
+  legal_basis: § 11-5 første ledd
+  register_status: VERIFISERT verbatim
+  review_trigger: STABIL
+  review_by: null
+  section: Arbeidstilsynet — arbeidstid, pauser og alder (verifisert 2026-08-27)
+  values:
+  - value: 18
+    unit: ar
+    valid_from: null
+    valid_to: null
+    context: '**Pause, under 18 år**: «hvilepause i minst en halv time, om mulig sammenhe'
+    sources:
+    - url: korpus sha256 729aff34d2…
+      quote: null
+      verified_at: null
+  flags:
+  - kildesitat_mangler_i_registeret
+  - review_by_mangler
+  - valid_from_mangler
+- id: AT-16
+  domain: arbeidstilsynet
+  claim: '**Daglig arbeidsfri, under 18 år**: sammenhengende arbeidsfri periode innenfor 24 timer på minst
+    «14 timer for barn som er under 15 år eller er skolepliktig» og «12 timer for ungdom mellom 15 og
+    18 år som ikke er skolepliktig». Begge lengre enn voksnes 11 timer (AT-06)'
+  legal_basis: § 11-5 annet ledd
+  register_status: VERIFISERT verbatim
+  review_trigger: STABIL
+  review_by: null
+  section: Arbeidstilsynet — arbeidstid, pauser og alder (verifisert 2026-08-27)
+  values:
+  - value: 24
+    unit: timer
+    valid_from: null
+    valid_to: null
+    context: 'er 18 år**: sammenhengende arbeidsfri periode innenfor 24 timer på minst «14 timer for barn
+      som er under 15 år eller e'
+    sources: &id009
+    - url: korpus sha256 729aff34d2…
+      quote: null
+      verified_at: null
+  - value: 14
+    unit: timer
+    valid_from: null
+    valid_to: null
+    context: engende arbeidsfri periode innenfor 24 timer på minst «14 timer for barn som er under 15
+      år eller er skolepliktig» og
+    sources: *id009
+  - value: 12
+    unit: timer
+    valid_from: null
+    valid_to: null
+    context: for barn som er under 15 år eller er skolepliktig» og «12 timer for ungdom mellom 15 og 18
+      år som ikke er skolepliktig
+    sources: *id009
+  - value: 11
+    unit: timer
+    valid_from: null
+    valid_to: null
+    context: år som ikke er skolepliktig». Begge lengre enn voksnes 11 timer (AT-06)
+    sources: *id009
+  - value: 18
+    unit: ar
+    valid_from: null
+    valid_to: null
+    context: '**Daglig arbeidsfri, under 18 år**: sammenhengende arbeidsfri periode innenfor 24 timer'
+    sources: *id009
+  - value: 15
+    unit: ar
+    valid_from: null
+    valid_to: null
+    context: nfor 24 timer på minst «14 timer for barn som er under 15 år eller er skolepliktig» og «12
+      timer for ungdom mellom
+    sources: *id009
+  flags:
+  - flere_verdier_uten_strukturert_merkelapp
+  - kildesitat_mangler_i_registeret
+  - review_by_mangler
+  - valid_from_mangler

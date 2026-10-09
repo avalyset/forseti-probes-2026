@@ -1,0 +1,371 @@
+schema_version: '1.0'
+generated_from:
+  register: NDVL-REG-0002_kildeverifisering.md
+  sha256: 8aa1e50a19fb8c678f9865b26d95912b8f0ec3c0609ccab933f9956adfc645d8
+  converted_at: '2026-10-09'
+domain: skatteetaten
+facts:
+- id: SKATT-01
+  domain: skatteetaten
+  claim: 'ID-kontroll, **nordiske borgere**: «Pass eller nasjonalt ID-kort, som viser bilde, statsborgerskap
+    og kjønn.» Nasjonalt ID-kort likestilt med pass'
+  legal_basis: fregl. § 6-2
+  register_status: VERIFISERT verbatim
+  review_trigger: PRAKSIS
+  review_by: 2027-08
+  section: Skatteetaten — legitimasjon ved fysisk oppmøte (verifisert 2026-08-27)
+  values: []
+  flags:
+  - kildesitat_mangler_i_registeret
+  - value_not_extractable
+- id: SKATT-02
+  domain: skatteetaten
+  claim: 'ID-kontroll, **nordiske borgere, alternativ**: «gyldig førerkort sammen med utskrift fra folkeregisteret
+    i landet du flytter fra». **Outliergren — førerkort godtas kun for nordiske borgere**, ikke for EU/EØS/EFTA
+    eller tredjeland'
+  legal_basis: fregl. § 6-2
+  register_status: VERIFISERT verbatim
+  review_trigger: PRAKSIS
+  review_by: 2027-08
+  section: Skatteetaten — legitimasjon ved fysisk oppmøte (verifisert 2026-08-27)
+  values: []
+  flags:
+  - kildesitat_mangler_i_registeret
+  - value_not_extractable
+- id: SKATT-03
+  domain: skatteetaten
+  claim: 'ID-kontroll, **EU/EØS/EFTA-borgere**: «Pass eller nasjonalt ID-kort som viser bilde, statsborgerskap
+    og kjønn.» Førerkort er ikke oppført'
+  legal_basis: fregl. § 6-2
+  register_status: VERIFISERT verbatim
+  review_trigger: PRAKSIS
+  review_by: 2027-08
+  section: Skatteetaten — legitimasjon ved fysisk oppmøte (verifisert 2026-08-27)
+  values: []
+  flags:
+  - kildesitat_mangler_i_registeret
+  - value_not_extractable
+- id: SKATT-04
+  domain: skatteetaten
+  claim: 'ID-kontroll, **borgere utenfor EU/EØS/EFTA**: «Pass». Nasjonalt ID-kort er **ikke** oppført
+    som alternativ. **Outliergren mot SKATT-01/SKATT-03**'
+  legal_basis: fregl. § 6-2
+  register_status: VERIFISERT verbatim
+  review_trigger: PRAKSIS
+  review_by: 2027-08
+  section: Skatteetaten — legitimasjon ved fysisk oppmøte (verifisert 2026-08-27)
+  values: []
+  flags:
+  - kildesitat_mangler_i_registeret
+  - value_not_extractable
+- id: SKATT-05
+  domain: skatteetaten
+  claim: 'ID-kontroll, rammeregel: «Hvilke krav som stilles til legitimasjonen din, avhenger av statsborgerskapet
+    ditt og oppholdsgrunnlaget ditt i Norge.» Etaten sier selv at kravet ikke er ensartet'
+  legal_basis: fregl. § 6-2
+  register_status: VERIFISERT verbatim
+  review_trigger: PRAKSIS
+  review_by: 2027-08
+  section: Skatteetaten — legitimasjon ved fysisk oppmøte (verifisert 2026-08-27)
+  values: []
+  flags:
+  - kildesitat_mangler_i_registeret
+  - value_not_extractable
+- id: SKATT-06
+  domain: skatteetaten
+  claim: '**KORRIGERT 2026-08-27.** Tidligere ført som: «innflytting til Norge → åtte dager, personlig
+    oppmøte, pass eller tilsvarende legitimasjon», uten forbehold. Lovteksten i § 6-2 er riktig sitert,
+    men påstanden er **ufullstendig som fasit**: folkeregisterforskriften § 6-5-4 unntar utenlandske statsborgere
+    med registrerings-/meldeplikt til utlendingsmyndighetene fra § 6-2-plikten helt, og gir EØS-borgere
+    **tre måneder og åtte dager**, ikke åtte. Åttedagersfristen gjelder derfor ikke generelt for «innflytting
+    til Norge». Erstattet av SKATT-11 og SKATT-12. Skal ikke bære et svar alene'
+  legal_basis: folkeregisterloven § 6-2 (LOV-2016-12-09-88)
+  register_status: '**KORRIGERT**'
+  review_trigger: STABIL
+  review_by: null
+  section: Skatteetaten — legitimasjon ved fysisk oppmøte (verifisert 2026-08-27)
+  values: []
+  flags:
+  - kildesitat_mangler_i_registeret
+  - review_by_mangler
+  - status_korrigert
+  - value_not_extractable
+- id: SKATT-07
+  domain: skatteetaten
+  claim: '**Flytting innenlands**, lovtekst: «Den som endrer bosted innen en norsk kommune eller mellom
+    norske kommuner, skal innen åtte dager etter flyttingen melde dette til skattekontoret.» **Ingen personlig
+    oppmøte og ingen legitimasjonsplikt i lovteksten** — motsatt gren av SKATT-06 for lovtekstens del.
+    **Merk:** forskriften stiller likevel krav, se SKATT-13 — lovtekst-påstanden er sann, men bærer ikke
+    alene et svar på hva som kreves'
+  legal_basis: folkeregisterloven § 6-1 (LOV-2016-12-09-88)
+  register_status: VERIFISERT verbatim
+  review_trigger: STABIL
+  review_by: null
+  section: Skatteetaten — legitimasjon ved fysisk oppmøte (verifisert 2026-08-27)
+  values: []
+  flags:
+  - kildesitat_mangler_i_registeret
+  - review_by_mangler
+  - value_not_extractable
+- id: SKATT-08
+  domain: skatteetaten
+  claim: '**Flyttemelding innenlands**, frist: «Flyttemeldingen må du sende tidligst 31 dager før og senest
+    8 dager etter du har flyttet.»'
+  legal_basis: fregl. § 6-1
+  register_status: VERIFISERT verbatim
+  review_trigger: PRAKSIS
+  review_by: 2027-08
+  section: Skatteetaten — legitimasjon ved fysisk oppmøte (verifisert 2026-08-27)
+  values:
+  - value: 31
+    unit: dager
+    valid_from: null
+    valid_to: null
+    context: 'nlands**, frist: «Flyttemeldingen må du sende tidligst 31 dager før og senest 8 dager etter
+      du har flyttet.»'
+    sources: &id001
+    - url: skatteetaten.no/person/folkeregister/flytte/i-norge/
+      quote: null
+      verified_at: null
+  - value: 8
+    unit: dager
+    valid_from: null
+    valid_to: null
+    context: emeldingen må du sende tidligst 31 dager før og senest 8 dager etter du har flyttet.»
+    sources: *id001
+  flags:
+  - flere_verdier_uten_strukturert_merkelapp
+  - kildesitat_mangler_i_registeret
+  - valid_from_mangler
+- id: SKATT-09
+  domain: skatteetaten
+  claim: '**D-nummer**: «Du må som regel sende en bekreftet kopi av passet ditt eller ditt nasjonalt ID-kort
+    til virksomheten». **Nasjonalt ID-kort godtas uten statsborgerskapsskille** — bryter med SKATT-04
+    for samme person'
+  legal_basis: null
+  register_status: VERIFISERT verbatim
+  review_trigger: PRAKSIS
+  review_by: 2027-08
+  section: Skatteetaten — legitimasjon ved fysisk oppmøte (verifisert 2026-08-27)
+  values: []
+  flags:
+  - kildesitat_mangler_i_registeret
+  - legal_basis_mangler
+  - value_not_extractable
+- id: SKATT-10
+  domain: skatteetaten
+  claim: '**D-nummer**, oppmøte: «Virksomheten som rekvirerer d-nummer til deg, kan kreve at du møter
+    til ID-kontroll.» Oppmøte er betinget, ikke absolutt'
+  legal_basis: null
+  register_status: VERIFISERT verbatim
+  review_trigger: PRAKSIS
+  review_by: 2027-08
+  section: Skatteetaten — legitimasjon ved fysisk oppmøte (verifisert 2026-08-27)
+  values: []
+  flags:
+  - kildesitat_mangler_i_registeret
+  - legal_basis_mangler
+  - value_not_extractable
+- id: SKATT-17
+  domain: skatteetaten
+  claim: '**Innflytting, hovedregel i lovteksten**: «skal innen åtte dager etter ankomsten personlig melde
+    dette på skattekontoret og vise frem pass eller tilsvarende legitimasjon». **Gjelder der forskriften
+    § 6-5-4 ikke gjør unntak** — altså i praksis norske statsborgere som flytter hjem, ikke EØS-borgere
+    (SKATT-12) og ikke utlendinger med meldeplikt til utlendingsmyndighetene (SKATT-11). Avløser den ufullstendige
+    SKATT-06'
+  legal_basis: folkeregisterloven § 6-2 (LOV-2016-12-09-88), lest sammen med folkeregisterforskriften
+    § 6-5-4
+  register_status: VERIFISERT verbatim
+  review_trigger: STABIL
+  review_by: null
+  section: Skatteetaten — legitimasjon ved fysisk oppmøte (verifisert 2026-08-27)
+  values: []
+  flags:
+  - kildesitat_mangler_i_registeret
+  - review_by_mangler
+  - value_not_extractable
+- id: SKATT-11
+  domain: skatteetaten
+  claim: '**Innflytting, unntak fra meldeplikt**: «En utenlandsk statsborger som ved innreisen til Norge
+    har registreringsplikt eller meldeplikt til utlendingsmyndighetene, er unntatt fra meldeplikten som
+    følger av folkeregisterloven § 6-2.» Erstatter deler av korrigerte SKATT-06'
+  legal_basis: folkeregisterforskriften (FOR-2017-07-14-1201) § 6-5-4 første ledd
+  register_status: VERIFISERT verbatim
+  review_trigger: LOVENDRING
+  review_by: null
+  section: Skatteetaten — legitimasjon ved fysisk oppmøte (verifisert 2026-08-27)
+  values: []
+  flags:
+  - kildesitat_mangler_i_registeret
+  - review_by_mangler
+  - value_not_extractable
+- id: SKATT-12
+  domain: skatteetaten
+  claim: '**Innflytting, EØS-borger**: «skal innen tre måneder og åtte dager etter ankomsten personlig
+    melde dette på skattekontoret og vise frem pass eller tilsvarende legitimasjon». **Ikke åtte dager.**
+    Gjelder personer omfattet av direktiv 2004/38/EF. Erstatter deler av korrigerte SKATT-06'
+  legal_basis: folkeregisterforskriften (FOR-2017-07-14-1201) § 6-5-4 andre ledd
+  register_status: VERIFISERT verbatim
+  review_trigger: LOVENDRING
+  review_by: null
+  section: Skatteetaten — legitimasjon ved fysisk oppmøte (verifisert 2026-08-27)
+  values: []
+  flags:
+  - kildesitat_mangler_i_registeret
+  - review_by_mangler
+  - value_not_extractable
+- id: SKATT-13
+  domain: skatteetaten
+  claim: '**Flytting innenlands, kanalavhengig krav**: «Flytting meldt elektronisk skal skje med bruk
+    av elektronisk ID.» mot «Flytting meldt på papir skal være underskrevet med medfølgende kopi av legitimasjonsdokument.»
+    **Samme flytting, ulikt legitimasjonskrav etter kanal**'
+  legal_basis: folkeregisterforskriften (FOR-2017-07-14-1201) § 6-5-1
+  register_status: VERIFISERT verbatim
+  review_trigger: STABIL
+  review_by: null
+  section: Skatteetaten — legitimasjon ved fysisk oppmøte (verifisert 2026-08-27)
+  values: []
+  flags:
+  - kildesitat_mangler_i_registeret
+  - review_by_mangler
+  - value_not_extractable
+- id: SKATT-14
+  domain: skatteetaten
+  claim: '**D-nummer, forskriftshjemmel**: «Vedlagt skjemaet må følge bekreftet kopi av pass eller tilsvarende.»
+    Legitimasjonen skal ha fotografi og vise fullt navn, fødselsdato, kjønn og statsborgerskap. Forskriftshjemmel
+    for SKATT-09'
+  legal_basis: folkeregisterforskriften (FOR-2017-07-14-1201) § 2-2-4
+  register_status: VERIFISERT verbatim
+  review_trigger: STABIL
+  review_by: null
+  section: Skatteetaten — legitimasjon ved fysisk oppmøte (verifisert 2026-08-27)
+  values: []
+  flags:
+  - kildesitat_mangler_i_registeret
+  - review_by_mangler
+  - value_not_extractable
+- id: SKATT-15
+  domain: skatteetaten
+  claim: '**D-nummer, oppmøte**: «Rekvirenten avgjør om vedkommende personlig skal møte på skattekontoret
+    for identitetskontroll.» Forskriftshjemmel for SKATT-10'
+  legal_basis: folkeregisterforskriften (FOR-2017-07-14-1201) § 2-2-5
+  register_status: VERIFISERT verbatim
+  review_trigger: STABIL
+  review_by: null
+  section: Skatteetaten — legitimasjon ved fysisk oppmøte (verifisert 2026-08-27)
+  values: []
+  flags:
+  - kildesitat_mangler_i_registeret
+  - review_by_mangler
+  - value_not_extractable
+- id: SKATT-16
+  domain: skatteetaten
+  claim: '**Identitetsgrader i registeret**: identitet registreres som «kontrollert» ved personlig fremmøte
+    med fremvist pass eller tilsvarende, ellers «ikke-kontrollert»; «unik» for person over 12 år med ordinært
+    pass eller ID-kort'
+  legal_basis: folkeregisterforskriften (FOR-2017-07-14-1201) § 3-2-1 (endret ved forskrift 17. des. 2025
+    nr. 2639)
+  register_status: VERIFISERT verbatim
+  review_trigger: STABIL
+  review_by: null
+  section: Skatteetaten — legitimasjon ved fysisk oppmøte (verifisert 2026-08-27)
+  values:
+  - value: 12
+    unit: ar
+    valid_from: null
+    valid_to: null
+    context: nde, ellers «ikke-kontrollert»; «unik» for person over 12 år med ordinært pass eller ID-kort
+    sources:
+    - url: korpus `sf-20170714-1201.xml` sha256 7d429c8975… ; kryssjekket lovdata.no 2026-08-27
+      quote: null
+      verified_at: null
+  flags:
+  - kildesitat_mangler_i_registeret
+  - review_by_mangler
+  - valid_from_mangler
+- id: SKATT-18
+  domain: skatteetaten
+  claim: 'Personfradrag klasse 1 for 2026: «114 540 kroner» (årvelger satt til 2026)'
+  legal_basis: skatteloven § 15-4
+  register_status: VERIFISERT verbatim
+  review_trigger: ÅRLIG
+  review_by: 2027-01
+  section: Skatteetaten — årlige satser (verifisert 2026-10-07)
+  values:
+  - value: 114540
+    unit: NOK
+    valid_from: '2026-01-01'
+    valid_to: null
+    context: 'Personfradrag klasse 1 for 2026: «114 540 kroner» (årvelger satt til 2026)'
+    sources:
+    - url: skatteetaten.no/satser/personfradrag
+      quote: null
+      verified_at: null
+  flags:
+  - kildesitat_mangler_i_registeret
+- id: SKATT-19
+  domain: skatteetaten
+  claim: 'Minstefradrag i lønnsinntekt 2026: sats «46 %», øvre grense «95 700 kr» (årvelger satt til 2026).
+    Pensjonsinntekt har egne satser: 40 % og 75 400 kr'
+  legal_basis: skatteloven § 6-32
+  register_status: VERIFISERT verbatim
+  review_trigger: ÅRLIG
+  review_by: 2027-01
+  section: Skatteetaten — årlige satser (verifisert 2026-10-07)
+  values:
+  - value: 95700
+    unit: NOK
+    valid_from: '2026-01-01'
+    valid_to: null
+    context: 'fradrag i lønnsinntekt 2026: sats «46 %», øvre grense «95 700 kr» (årvelger satt til 2026).
+      Pensjonsinntekt har egne sa'
+    sources: &id002
+    - url: skatteetaten.no/satser/minstefradrag
+      quote: null
+      verified_at: null
+  - value: 75400
+    unit: NOK
+    valid_from: '2026-01-01'
+    valid_to: null
+    context: 'tt til 2026). Pensjonsinntekt har egne satser: 40 % og 75 400 kr'
+    sources: *id002
+  - value: 46
+    unit: prosent
+    valid_from: '2026-01-01'
+    valid_to: null
+    context: 'Minstefradrag i lønnsinntekt 2026: sats «46 %», øvre grense «95 700 kr» (årvelger satt til
+      2026). Pe'
+    sources: *id002
+  - value: 40
+    unit: prosent
+    valid_from: '2026-01-01'
+    valid_to: null
+    context: 'elger satt til 2026). Pensjonsinntekt har egne satser: 40 % og 75 400 kr'
+    sources: *id002
+  flags:
+  - flere_verdier_uten_strukturert_merkelapp
+  - kildesitat_mangler_i_registeret
+- id: SKATT-20
+  domain: skatteetaten
+  claim: 'Registreringsgrense for merverdiavgift: «beløpsgrensen på 50 000 kroner i § 2-1 første ledd»,
+    målt over tolv måneder. Grensen er lovfestet, ikke årlig justert'
+  legal_basis: merverdiavgiftsloven § 2-1 første ledd
+  register_status: VERIFISERT verbatim
+  review_trigger: LOVENDRING
+  review_by: null
+  section: Skatteetaten — årlige satser (verifisert 2026-10-07)
+  values:
+  - value: 50000
+    unit: NOK
+    valid_from: null
+    valid_to: null
+    context: 'istreringsgrense for merverdiavgift: «beløpsgrensen på 50 000 kroner i § 2-1 første ledd»,
+      målt over tolv måneder. Grensen'
+    sources:
+    - url: Merverdiavgiftshåndboken (oppslag.rettskilder.skatteetaten.no, gjeldende utgave)
+      quote: null
+      verified_at: null
+  flags:
+  - kildesitat_mangler_i_registeret
+  - review_by_mangler
+  - valid_from_mangler

@@ -1,0 +1,37 @@
+(a) tall uten opphav i deponert kildemateriale: 0
+
+(b) noekkeltall mot navngitt rapport:
+    0,870     -> fase1   ok
+    0,471     -> fase1   ok
+    0,410     -> fase1b  ok
+    0,566     -> fase1b  ok
+    0,852     -> fase3   ok
+    0,867     -> fase3   ok
+    0,910     -> fase3   ok
+    1/13      -> fase3   ok
+    0,6914    -> fase3b  ok
+    45,0 %    -> fase3b  ok
+    0,8642    -> fase3c  ok
+    0,8765    -> fase3c  ok
+    13/13     -> fase3c  ok
+    0,219     -> fase3c  ok
+    0,002     -> fase3c  ok
+
+(c) metrikk-overclaim:
+    ubetingede «works/succeeded/validated»: 0 ok
+    presisjonsforbedring: 1 treff, 1 negerte ok
+    «superfluous» med McNemar + «distinguishable from» innen 1200 tegn: ok
+    verdikt «trenger data»: ok
+    verdikt «overfører ikke»: ok
+    verdikt «virker ikke»: ok
+
+(d) eksterne tall:
+    eksterne referanser uten tallpastand: ['OSF', 'github.com/SimulaMet/SimpleAudit']
+
+(e) stale status:
+    «has not been pushed»: ok
+    «default_enabled: False»: ok
+
+eksklusjonssjekk: CLEAN
+
+RESULTAT: REN

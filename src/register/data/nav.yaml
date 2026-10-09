@@ -1,0 +1,199 @@
+schema_version: '1.0'
+generated_from:
+  register: NDVL-REG-0002_kildeverifisering.md
+  sha256: 8aa1e50a19fb8c678f9865b26d95912b8f0ec3c0609ccab933f9956adfc645d8
+  converted_at: '2026-10-09'
+domain: nav
+facts:
+- id: NAV-01
+  domain: nav
+  claim: '«Grunnbeløpet (G) per 1. mai 2026 er 136 549 kroner.» Forrige verdier: 130 160 (1.5.2025), 124
+    028 (1.5.2024). Tallet 130 030 finnes ikke i rekken'
+  legal_basis: folketrygdloven § 1-4
+  register_status: VERIFISERT verbatim
+  review_trigger: ÅRLIG
+  review_by: 2027-05
+  section: NAV — AAP-satser og grunnbeløpet (verifisert 2026-10-07)
+  values:
+  - value: 136549
+    unit: NOK
+    valid_from: '2026-05-01'
+    valid_to: null
+    sources:
+    - url: https://www.nav.no/grunnbelopet
+      quote: Dato og år 1. mai 2026 Grunnbeløpet (G) 136 549 kroner Gjennomsnitt
+      verified_at: '2026-10-09'
+      raw_sha256: 54ce2b6dc755f1a827330a572b8eb5168b5ed98c96bea7a776e6bcf594b56490
+  - value: 130160
+    unit: NOK
+    valid_from: '2025-05-01'
+    valid_to: '2026-04-30'
+    sources:
+    - url: https://www.nav.no/grunnbelopet
+      quote: Dato og år 1. mai 2025 Grunnbeløpet (G) 130 160 Gjennomsnitt
+      verified_at: '2026-10-09'
+      raw_sha256: 54ce2b6dc755f1a827330a572b8eb5168b5ed98c96bea7a776e6bcf594b56490
+  - value: 124028
+    unit: NOK
+    valid_from: '2024-05-01'
+    valid_to: '2025-04-30'
+    sources:
+    - url: https://www.nav.no/grunnbelopet
+      quote: Dato og år 1. mai 2024 Grunnbeløpet (G) 124 028 kroner Gjennomsnitt
+      verified_at: '2026-10-09'
+      raw_sha256: 54ce2b6dc755f1a827330a572b8eb5168b5ed98c96bea7a776e6bcf594b56490
+  - value: 118620
+    unit: NOK
+    valid_from: '2023-05-01'
+    valid_to: '2024-04-30'
+    sources:
+    - url: https://www.nav.no/grunnbelopet
+      quote: Dato og år 1. mai 2023 Grunnbeløpet (G) 118 620 kroner Gjennomsnitt
+      verified_at: '2026-10-09'
+      raw_sha256: 54ce2b6dc755f1a827330a572b8eb5168b5ed98c96bea7a776e6bcf594b56490
+  - value: 111477
+    unit: NOK
+    valid_from: '2022-05-01'
+    valid_to: '2023-04-30'
+    sources:
+    - url: https://www.nav.no/grunnbelopet
+      quote: Dato og år 1.5.2022 Grunnbeløpet (G) 111 477 kr Gjennomsnitt
+      verified_at: '2026-10-09'
+      raw_sha256: 54ce2b6dc755f1a827330a572b8eb5168b5ed98c96bea7a776e6bcf594b56490
+  flags:
+  - historikk_hentet_verbatim_fra_nav.no
+- id: NAV-02
+  domain: nav
+  claim: '«Merk at årsinntekt over 819 294 kroner ikke tas med i beregningen av AAP. Det tilsvarer 6 ganger
+    grunnbeløpet i folketrygden (6G).» Kontrollregnet: 6 × 136 549 = 819 294'
+  legal_basis: folketrygdloven § 11-19
+  register_status: VERIFISERT verbatim
+  review_trigger: ÅRLIG
+  review_by: 2027-05
+  section: NAV — AAP-satser og grunnbeløpet (verifisert 2026-10-07)
+  values:
+  - value: 819294
+    unit: NOK
+    valid_from: null
+    valid_to: null
+    context: «Merk at årsinntekt over 819 294 kroner ikke tas med i beregningen av AAP. Det tilsvarer
+      6 gan
+    sources:
+    - url: nav.no/aap
+      quote: null
+      verified_at: null
+  flags:
+  - kildesitat_mangler_i_registeret
+  - valid_from_mangler
+- id: NAV-03
+  domain: nav
+  claim: '«Hvis du er 25 år eller eldre, er minstesatsen 278 697 kroner i året. Det vil si 2,041 ganger
+    grunnbeløpet.» Kontrollregnet: 2,041 × 136 549 = 278 697'
+  legal_basis: folketrygdloven § 11-20
+  register_status: VERIFISERT verbatim
+  review_trigger: ÅRLIG
+  review_by: 2027-05
+  section: NAV — AAP-satser og grunnbeløpet (verifisert 2026-10-07)
+  values:
+  - value: 278697
+    unit: NOK
+    valid_from: null
+    valid_to: null
+    context: «Hvis du er 25 år eller eldre, er minstesatsen 278 697 kroner i året. Det vil si 2,041 ganger
+      grunnbeløpet.» Kontrol
+    sources: &id001
+    - url: nav.no/aap
+      quote: null
+      verified_at: null
+  - value: 25
+    unit: ar
+    valid_from: null
+    valid_to: null
+    context: «Hvis du er 25 år eller eldre, er minstesatsen 278 697 kroner i året. De
+    sources: *id001
+  flags:
+  - flere_verdier_uten_strukturert_merkelapp
+  - kildesitat_mangler_i_registeret
+  - valid_from_mangler
+- id: NAV-04
+  domain: nav
+  claim: '«Hvis du er yngre enn 25 år, er minstesatsen 185 798 kroner i året. Det vil si 2/3 av 2,041G.»
+    Kontrollregnet: 2/3 × 278 697 = 185 798'
+  legal_basis: folketrygdloven § 11-20
+  register_status: VERIFISERT verbatim
+  review_trigger: ÅRLIG
+  review_by: 2027-05
+  section: NAV — AAP-satser og grunnbeløpet (verifisert 2026-10-07)
+  values:
+  - value: 185798
+    unit: NOK
+    valid_from: null
+    valid_to: null
+    context: '«Hvis du er yngre enn 25 år, er minstesatsen 185 798 kroner i året. Det vil si 2/3 av 2,041G.»
+      Kontrollregnet: 2/3'
+    sources: &id002
+    - url: nav.no/aap
+      quote: null
+      verified_at: null
+  - value: 25
+    unit: ar
+    valid_from: null
+    valid_to: null
+    context: «Hvis du er yngre enn 25 år, er minstesatsen 185 798 kroner i året. Det vil si 2/3
+    sources: *id002
+  flags:
+  - flere_verdier_uten_strukturert_merkelapp
+  - kildesitat_mangler_i_registeret
+  - valid_from_mangler
+- id: NAV-05
+  domain: nav
+  claim: «Du kan få 66 prosent av inntekten din inntil 6G» — beregningssatsen er 66 % av pensjonsgivende
+    inntekt
+  legal_basis: folketrygdloven § 11-19
+  register_status: VERIFISERT verbatim
+  review_trigger: ÅRLIG
+  review_by: 2027-05
+  section: NAV — AAP-satser og grunnbeløpet (verifisert 2026-10-07)
+  values:
+  - value: 66
+    unit: prosent
+    valid_from: null
+    valid_to: null
+    context: «Du kan få 66 prosent av inntekten din inntil 6G» — beregningssatsen er 66 %
+    sources:
+    - url: nav.no/aap
+      quote: null
+      verified_at: null
+  flags:
+  - kildesitat_mangler_i_registeret
+  - valid_from_mangler
+- id: NAV-06
+  domain: nav
+  claim: «Hvis du forsørger barn under 18 år, kan du få et barnetillegg på 38 kroner per barn, pr. dag.»
+    Satsen er et kronebeløp, ikke G-avledet; ikrafttredelsesdato er **ikke** oppgitt på siden
+  legal_basis: folketrygdloven § 11-20
+  register_status: VERIFISERT verbatim
+  review_trigger: ÅRLIG
+  review_by: 2027-01
+  section: NAV — AAP-satser og grunnbeløpet (verifisert 2026-10-07)
+  values:
+  - value: 38
+    unit: NOK
+    valid_from: null
+    valid_to: null
+    context: rsørger barn under 18 år, kan du få et barnetillegg på 38 kroner per barn, pr. dag.» Satsen
+      er et kronebeløp, ikke G-av
+    sources: &id003
+    - url: nav.no/aap
+      quote: null
+      verified_at: null
+  - value: 18
+    unit: ar
+    valid_from: null
+    valid_to: null
+    context: «Hvis du forsørger barn under 18 år, kan du få et barnetillegg på 38 kroner per barn, pr.
+    sources: *id003
+  flags:
+  - flere_verdier_uten_strukturert_merkelapp
+  - kildesitat_mangler_i_registeret
+  - valid_from_mangler

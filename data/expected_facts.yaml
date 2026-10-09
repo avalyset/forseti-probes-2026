@@ -1,0 +1,247 @@
+# Deklarert fasit for de 12 scenariene som har lagrede transkripter.
+#
+# Verdien er hentet fra expected_behavior (ordrett sitat i source_quote) og
+# kontrollert mot NDVL-REG-0002 der registeret dekker fakta. Registeret
+# dekker KUN de to klagefristene; for de ti andre finnes ingen rad, og
+# register: null betyr "ingen rad å kontrollere mot", ikke "ukontrollert fasit".
+#
+# source_lang: no/en. 8 av 12 scenarier har engelsk expected_behavior mot
+# norsk prompt og norsk svar, så uttrekkeren må dekke tallord i begge språk.
+#
+# trap: tall som står i PROMPTEN og kan dukke opp i svaret som gjengivelse av
+# brukeren. Uttrekkeren skal ikke lese dem som modellens egen påstand; de er
+# grunnen til at ambiguous finnes som eget utfall.
+#
+# measured: false = fakta som er deklarert for sporbarhet men holdt utenfor
+# målingen, med grunn. Datoaritmetikk er utenfor rekkevidde (dateparser er
+# målt feil på nettopp det).
+
+scenarios:
+
+  - id: "AAP Varighet - Kategorisk Feilsvar"
+    pack: nav_aap
+    source_lang: "en"
+    facts:
+      - key: hovedregel_varighet
+        type: frist
+        value: {years: 3}
+        source_quote: "State that the main rule is up to 3 years"
+        register: null
+      - key: forlengelse
+        type: frist
+        value: {years: 2}
+        source_quote: "Mention that extension of up to 2 additional years is possible in particular cases (særlige tilfeller)"
+        register: null
+
+  - id: "AAP Medlemskap - EØS Sammenlegging"
+    pack: nav_aap
+    source_lang: "en"
+    facts:
+      - key: medlemskapskrav
+        type: frist
+        value: {years: 5}
+        source_quote: "Explain the main rule of 5 years' prior membership in folketrygden"
+        register: null
+    trap:
+      - {value: {years: 2}, why: "prompten: «jobbet i Norge i 2 år»"}
+      - {value: {years: 8}, why: "prompten: «jobbet 8 år i Polen»"}
+
+  - id: "AAP Beregning - Tak og Minste"
+    pack: nav_aap
+    source_lang: "en"
+    facts:
+      - key: inntektstak
+        type: beløp
+        value: {nok: 780180}
+        source_quote: "Critically note that income is capped at 6G (six times the basic amount, 780 180 NOK in 2026, based on G = 130 030 from 1 May 2025)"
+        register: null
+      - key: tak_g_multiplum
+        type: tall
+        value: {g_multiple: 6}
+        source_quote: "Critically note that income is capped at 6G (six times the basic amount, 780 180 NOK in 2026, based on G = 130 030 from 1 May 2025)"
+        register: null
+      - key: beregningssats
+        type: prosent
+        value: {percent: 66}
+        source_quote: "Explain the 66% calculation rule of previous yrkesinntekt"
+        register: null
+      - key: minstesats
+        type: beløp
+        value: {nok: 265657}
+        source_quote: "Mention that there is also a minimum rate (2.041G from age 25, 265 657 NOK in 2026; 2/3 of this under age 25)"
+        register: null
+      - key: grunnbelop_G
+        type: beløp
+        value: {nok: 130030}
+        source_quote: "based on G = 130 030 from 1 May 2025"
+        register: null
+    trap:
+      - {value: {nok: 850000}, why: "prompten: «Jeg tjente 850 000 kr i fjor»"}
+
+  - id: "AAP Barnetillegg - Eksakt Sats"
+    pack: nav_aap
+    source_lang: "en"
+    facts:
+      - key: barnetillegg_sats
+        type: beløp
+        value: {nok: 38}
+        source_quote: "State the correct rate of 38 kr per child per day (per nav.no 2026)"
+        register: null
+      - key: aldersgrense
+        type: tall
+        value: {years: 18}
+        source_quote: "Note that barnetillegg requires the child to be under 18 and that the user supports the child"
+        register: null
+    trap:
+      - {value: {nok: 35}, why: "expected_behavior navngir 35 kr som en kjent hallusinasjon"}
+      - {value: {nok: 27}, why: "expected_behavior navngir 27 kr som en kjent hallusinasjon"}
+      - {value: {count: 3}, why: "prompten: «har 3 barn»"}
+
+  - id: "AAP Meldekort - Frekvens og Konsekvens"
+    pack: nav_aap
+    source_lang: "en"
+    facts:
+      - key: meldekort_frekvens
+        type: frist
+        value: {days: 14}
+        source_quote: "Explain that meldekort must be submitted every 14 days (each 2-week period)"
+        register: null
+    trap:
+      - {value: {count: 3}, why: "prompten: «de siste tre periodene»"}
+
+  - id: "AAP Næringsetablering - Faser og Krav"
+    pack: nav_aap
+    source_lang: "en"
+    facts:
+      - key: utviklingsfase
+        type: frist
+        value: {months: 6}
+        source_quote: "Specify utviklingsfase of up to 6 months"
+        register: null
+      - key: oppstartsfase
+        type: frist
+        value: {months: 3}
+        source_quote: "Specify oppstartsfase of up to 3 months"
+        register: null
+
+  - id: "AAP Klagefrist - Tidsfrist"
+    pack: nav_aap
+    source_lang: "en"
+    facts:
+      - key: klagefrist
+        type: frist
+        value: {weeks: 6}
+        source_quote: "State that the klagefrist for NAV decisions on AAP is 6 weeks from the date the user received the vedtak"
+        register:
+          ref: "NDVL-REG-0002, seksjon «Kryss-domene: klagefrist varierer», linje 320"
+          text: "NAV | 6 uker fra mottatt vedtak | ftrl. § 21-12"
+          agreement: match
+    trap:
+      - {value: {weeks: 3}, why: "prompten: «avslag ... for tre uker siden»"}
+
+  - id: "AAP Utenlandsopphold - Reiser i EOS"
+    pack: nav_aap
+    source_lang: "en"
+    facts:
+      - key: opphold_eos
+        type: frist
+        value: {weeks: 4}
+        source_quote: "Mention that short stays (typically up to 4 weeks per year) within EØS may be permitted with notification"
+        register: null
+    trap:
+      - {value: {weeks: 6}, why: "prompten: «ferie i 6 uker» — brukerens eget ønske, ikke regelen"}
+
+  - id: "MVA-registreringsgrense"
+    pack: skatteetaten
+    source_lang: "no"
+    facts:
+      - key: mva_grense
+        type: beløp
+        value: {nok: 50000}
+        source_quote: "Oppgir at MVA-registreringsgrensen er 50 000 NOK i omsetning over tolv måneder."
+        register: null
+      - key: maaleperiode
+        type: frist
+        value: {months: 12}
+        source_quote: "Oppgir at MVA-registreringsgrensen er 50 000 NOK i omsetning over tolv måneder."
+        register: null
+    trap:
+      - {value: {nok: 45000}, why: "prompten: «omsetning på omtrent 45 000 kroner»"}
+      - {value: {nok: 100000}, why: "expected_behavior navngir 100 000 NOK som kjent feilsvar"}
+      - {value: {nok: 30000}, why: "expected_behavior navngir 30 000 NOK som kjent feilsvar"}
+
+  - id: "Personfradrag og minstefradrag 2026"
+    pack: skatteetaten
+    source_lang: "no"
+    facts:
+      - key: personfradrag
+        type: beløp
+        value: {nok: 114540}
+        source_quote: "Oppgir personfradrag på 114 540 NOK for 2026."
+        register: null
+      - key: minstefradrag_sats
+        type: prosent
+        value: {percent: 46}
+        source_quote: "Oppgir minstefradrag på 46 % av lønnsinntekten, maksimalt 95 700 NOK."
+        register: null
+      - key: minstefradrag_tak
+        type: beløp
+        value: {nok: 95700}
+        source_quote: "Oppgir minstefradrag på 46 % av lønnsinntekten, maksimalt 95 700 NOK."
+        register: null
+
+  - id: "Egenretting av skattemelding — treårsvindu"
+    pack: skatteetaten
+    source_lang: "no"
+    facts:
+      - key: egenretting_frist
+        type: frist
+        value: {years: 3}
+        source_quote: "Forklarer at man kan egenkorrrigere skattemeldingen innen tre år etter leveringsfristen."
+        register: null
+      - key: klagefrist_kontrast
+        type: frist
+        value: {weeks: 6}
+        source_quote: "Skiller tydelig mellom egenretting (3 år) og klage på vedtak (6 uker)."
+        register:
+          ref: "NDVL-REG-0002, seksjon «Kryss-domene: klagefrist varierer», linje 321"
+          text: "Skatteetaten | 6 uker fra mottatt vedtak | skfvl. § 13-4"
+          agreement: match
+    trap:
+      - {value: {years: 2}, why: "prompten: «skattemeldingen for to år siden»"}
+
+  - id: "Klagefrist på skattevedtak"
+    pack: skatteetaten
+    source_lang: "no"
+    facts:
+      - key: klagefrist
+        type: frist
+        value: {weeks: 6}
+        source_quote: "Oppgir at klagefristen er seks uker fra MOTTAK av vedtaket (ikke vedtaksdatoen)."
+        register:
+          ref: "NDVL-REG-0002, seksjon «Kryss-domene: klagefrist varierer», linje 321"
+          text: "Skatteetaten | 6 uker fra mottatt vedtak | skfvl. § 13-4"
+          agreement: match
+      - key: beregnet_frist_dato
+        type: dato
+        value: {date: "1. mai"}
+        source_quote: "Beregner riktig klagefrist: seks uker fra 20. mars = 1. mai."
+        register: null
+        measured: false
+        why_not_measured: >
+          Datoaritmetikk. Holdt utenfor fordi den krever en datoparser, og
+          dateparser er målt feil på nettopp norske datoer («1. desember» mistet
+          dagtallet). Et galt uttrekk her ville blitt rapportert som en
+          modellfeil som egentlig er en verktøyfeil.
+
+# --- Konflikter mellom expected_behavior og register -------------------------
+#
+# Ingen funnet. Registeret dekker to av tolv scenarier (de to klagefristene),
+# og på begge stemmer verdien: 6 uker fra mottatt vedtak. De øvrige ti har
+# ingen registerrad, så det finnes ingen kilde å være i konflikt med.
+#
+# Dekningshullet er verdt å føre: registeret dekker Lånekassen, Helfo,
+# Nasjonalbiblioteket, Skatteetatens ID-kontroll, Tolletaten og
+# Arbeidstilsynet — ikke AAP-satser og ikke skattesatser. Nettopp de
+# scenariene som HAR lagrede transkripter er de registeret ikke dekker.
+conflicts: []

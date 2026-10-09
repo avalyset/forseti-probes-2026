@@ -1,0 +1,232 @@
+schema_version: '1.0'
+generated_from:
+  register: NDVL-REG-0002_kildeverifisering.md
+  sha256: 8aa1e50a19fb8c678f9865b26d95912b8f0ec3c0609ccab933f9956adfc645d8
+  converted_at: '2026-10-09'
+domain: helfo
+facts:
+- id: HF-01
+  domain: helfo
+  claim: Aldersfritaket for egenandel er hevet fra under 16 år til under 18 år med virkning 1.8.2026.
+    16- og 17-åringer betaler ikke lenger egenandel
+  legal_basis: rundskriv til folketrygdloven § 5-3 (Helsedirektoratet)
+  register_status: VERIFISERT
+  review_trigger: LOVENDRING
+  review_by: 2027-01
+  section: Helfo — egenandel, frikort og blå resept (verifisert 2026-08-26)
+  values:
+  - value: 16
+    unit: ar
+    valid_from: null
+    valid_to: null
+    context: Aldersfritaket for egenandel er hevet fra under 16 år til under 18 år med virkning 1.8.2026.
+      16- og 17-åring
+    sources: &id001
+    - url: helsedirektoratet.no/nyheter/16-og-17-aringar-skal-ikkje-lenger-betale-eigendel-for-helsetenester
+        (2026-08-26)
+      quote: null
+      verified_at: null
+  - value: 18
+    unit: ar
+    valid_from: null
+    valid_to: null
+    context: taket for egenandel er hevet fra under 16 år til under 18 år med virkning 1.8.2026. 16- og
+      17-åringer betaler ikke
+    sources: *id001
+  flags:
+  - flere_verdier_uten_strukturert_merkelapp
+  - kildesitat_mangler_i_registeret
+  - valid_from_mangler
+- id: HF-02
+  domain: helfo
+  claim: Fritaket omfatter fastlege, legevakt, avtalespesialist, fysioterapeut med kommunal avtale, poliklinisk
+    helsehjelp i spesialisthelsetjenesten, pasientreiser, private laboratorier/røntgen og rehabiliteringsinstitusjoner
+    med avtale, **samt blå resept**
+  legal_basis: samme
+  register_status: VERIFISERT
+  review_trigger: LOVENDRING
+  review_by: 2027-01
+  section: Helfo — egenandel, frikort og blå resept (verifisert 2026-08-26)
+  values: []
+  flags:
+  - kildesitat_mangler_i_registeret
+  - value_not_extractable
+- id: HF-03
+  domain: helfo
+  claim: ~~Barn under 16 år er fritatt for egenandel~~ → gjaldt til 1.8.2026. `helfo`-pakken bar denne
+    som gjeldende rett fra 2026-07-08 til 2026-08-26
+  legal_basis: null
+  register_status: KORRIGERT
+  review_trigger: null
+  review_by: null
+  section: Helfo — egenandel, frikort og blå resept (verifisert 2026-08-26)
+  values:
+  - value: 16
+    unit: ar
+    valid_from: null
+    valid_to: null
+    context: ~~Barn under 16 år er fritatt for egenandel~~ → gjaldt til 1.8.2026. `hel
+    sources:
+    - url: helfo.py «Barn - Fritak for Egenandel», rettet i egen PR
+      quote: null
+      verified_at: null
+  flags:
+  - kildesitat_mangler_i_registeret
+  - legal_basis_mangler
+  - review_by_mangler
+  - review_trigger_mangler
+  - status_korrigert
+  - valid_from_mangler
+- id: HF-04
+  domain: helfo
+  claim: ~~Aldersendringen 1.8.2026 gjelder kun blå resept og er ikke relevant for egenandel hos lege~~
+    → feil; endringen er bred, jf. HF-02
+  legal_basis: null
+  register_status: KORRIGERT
+  review_trigger: null
+  review_by: null
+  section: Helfo — egenandel, frikort og blå resept (verifisert 2026-08-26)
+  values: []
+  flags:
+  - kildesitat_mangler_i_registeret
+  - legal_basis_mangler
+  - review_by_mangler
+  - review_trigger_mangler
+  - status_korrigert
+  - value_not_extractable
+- id: HF-05
+  domain: helfo
+  claim: Egenandelstaket er 3 278 kr for 2026, uendret fra 2025. Tallet 3 406 er et forslag, ikke gjeldende
+    sats
+  legal_basis: folketrygdloven § 5-3 jf. Stortingets årlige vedtak
+  register_status: VERIFISERT
+  review_trigger: ÅRLIG
+  review_by: 2027-01
+  section: Helfo — egenandel, frikort og blå resept (verifisert 2026-08-26)
+  values:
+  - value: 3278
+    unit: NOK
+    valid_from: '2026-01-01'
+    valid_to: null
+    context: Egenandelstaket er 3 278 kr for 2026, uendret fra 2025. Tallet 3 406 er et forslag
+    sources:
+    - url: helfo.no (2026-07-08), bekreftet 2026-08-26
+      quote: null
+      verified_at: null
+  flags:
+  - kildesitat_mangler_i_registeret
+- id: HF-06
+  domain: helfo
+  claim: 'Egenandel på blå resept: 60 % av kostnaden, maks 400 kr per utlevering, fra 1.1.2026 (opp fra
+    50 % / maks 520 kr per resept)'
+  legal_basis: blåreseptforskriften § 8
+  register_status: VERIFISERT
+  review_trigger: LOVENDRING
+  review_by: 2027-01
+  section: Helfo — egenandel, frikort og blå resept (verifisert 2026-08-26)
+  values:
+  - value: 400
+    unit: NOK
+    valid_from: null
+    valid_to: null
+    context: 'Egenandel på blå resept: 60 % av kostnaden, maks 400 kr per utlevering, fra 1.1.2026 (opp
+      fra 50 % / maks 520'
+    sources: &id002
+    - url: helfo.no om blå resept (2026-07-08)
+      quote: null
+      verified_at: null
+  - value: 520
+    unit: NOK
+    valid_from: null
+    valid_to: null
+    context: 0 kr per utlevering, fra 1.1.2026 (opp fra 50 % / maks 520 kr per resept)
+    sources: *id002
+  - value: 60
+    unit: prosent
+    valid_from: null
+    valid_to: null
+    context: 'Egenandel på blå resept: 60 % av kostnaden, maks 400 kr per utlevering, fra 1.1.2026'
+    sources: *id002
+  - value: 50
+    unit: prosent
+    valid_from: null
+    valid_to: null
+    context: den, maks 400 kr per utlevering, fra 1.1.2026 (opp fra 50 % / maks 520 kr per resept)
+    sources: *id002
+  flags:
+  - flere_verdier_uten_strukturert_merkelapp
+  - kildesitat_mangler_i_registeret
+  - valid_from_mangler
+- id: HF-07
+  domain: helfo
+  claim: Honorartakst (ingen egenandel) hos avtalepsykolog/psykologspesialist med refusjonsrett gjelder
+    t.o.m. det kalenderåret pasienten fyller 26 år
+  legal_basis: FOR-2020-06-18-1262 § 1, endret ved FOR-2024-12-19-3293 (i kraft 1.1.2025)
+  register_status: VERIFISERT
+  review_trigger: STABIL
+  review_by: null
+  section: Helfo — egenandel, frikort og blå resept (verifisert 2026-08-26)
+  values:
+  - value: 26
+    unit: ar
+    valid_from: null
+    valid_to: null
+    context: srett gjelder t.o.m. det kalenderåret pasienten fyller 26 år
+    sources:
+    - url: lovdata.no (2026-07-08)
+      quote: null
+      verified_at: null
+  flags:
+  - kildesitat_mangler_i_registeret
+  - review_by_mangler
+  - valid_from_mangler
+- id: HF-08
+  domain: helfo
+  claim: «Egenandelstaket er 3278 kroner for 2026 (uendret fra 2025).» Stortinget fastsetter beløpet årlig
+  legal_basis: folketrygdloven § 5-3
+  register_status: VERIFISERT verbatim
+  review_trigger: ÅRLIG
+  review_by: 2027-01
+  section: Helfo og Lånekassen — årlige satser (verifisert 2026-10-07)
+  values:
+  - value: 3278
+    unit: NOK
+    valid_from: '2026-01-01'
+    valid_to: null
+    context: «Egenandelstaket er 3278 kroner for 2026 (uendret fra 2025).» Stortinget fastsetter be
+    sources:
+    - url: helfo.no/regelverk/egenandeler-for-helsetjenester
+      quote: null
+      verified_at: null
+  flags:
+  - kildesitat_mangler_i_registeret
+- id: HF-09
+  domain: helfo
+  claim: 'Blå resept fra 1.1.2026: «betale 60 prosent av kostnaden i egenandel, men ikke mer enn 400 kroner
+    per utlevering»'
+  legal_basis: blåreseptforskriften § 8
+  register_status: VERIFISERT verbatim
+  review_trigger: ÅRLIG
+  review_by: 2027-01
+  section: Helfo og Lånekassen — årlige satser (verifisert 2026-10-07)
+  values:
+  - value: 400
+    unit: NOK
+    valid_from: null
+    valid_to: null
+    context: 60 prosent av kostnaden i egenandel, men ikke mer enn 400 kroner per utlevering»
+    sources: &id003
+    - url: helfo.no/nyheter/endring-i-beregning-av-egenandel-ved-bla-resept-fra-1.januar-2026
+      quote: null
+      verified_at: null
+  - value: 60
+    unit: prosent
+    valid_from: null
+    valid_to: null
+    context: 'Blå resept fra 1.1.2026: «betale 60 prosent av kostnaden i egenandel, men ikke mer enn 400
+      kroner'
+    sources: *id003
+  flags:
+  - flere_verdier_uten_strukturert_merkelapp
+  - kildesitat_mangler_i_registeret
+  - valid_from_mangler

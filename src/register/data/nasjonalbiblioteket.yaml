@@ -1,0 +1,401 @@
+schema_version: '1.0'
+generated_from:
+  register: NDVL-REG-0002_kildeverifisering.md
+  sha256: 8aa1e50a19fb8c678f9865b26d95912b8f0ec3c0609ccab933f9956adfc645d8
+  converted_at: '2026-10-09'
+domain: nasjonalbiblioteket
+facts:
+- id: NB-01
+  domain: nasjonalbiblioteket
+  claim: 'ISBN-serier: «Forlag som blir tildelt 100 numre eller mer, skal selv holde rede på nummerserien.»
+    mot «Forlag med 10 nummer i ISBN-serien får tildelt hvert enkelt nummer fra ISBN Norge.» **Motsatte
+    grener — hvem tildeler det enkelte nummeret avhenger av serielengden**'
+  legal_basis: null
+  register_status: VERIFISERT verbatim
+  review_trigger: PRAKSIS
+  review_by: 2027-08
+  section: Nasjonalbiblioteket — standardnummerering og pliktavlevering (verifisert 2026-08-07)
+  values: []
+  flags:
+  - kildesitat_mangler_i_registeret
+  - legal_basis_mangler
+  - value_not_extractable
+- id: NB-02
+  domain: nasjonalbiblioteket
+  claim: 'ISBN, digitale format: «Når digitale publikasjoner gjøres tilgjengelig i flere ulike format
+    (f.eks. PDF, Word, HTML eller ePub), skal hvert format tildeles et eget ISBN.»'
+  legal_basis: null
+  register_status: VERIFISERT verbatim
+  review_trigger: PRAKSIS
+  review_by: 2027-08
+  section: Nasjonalbiblioteket — standardnummerering og pliktavlevering (verifisert 2026-08-07)
+  values: []
+  flags:
+  - kildesitat_mangler_i_registeret
+  - legal_basis_mangler
+  - value_not_extractable
+- id: NB-03
+  domain: nasjonalbiblioteket
+  claim: 'ISSN, digitale format: «Trykte og elektroniske format av same publikasjon får kvar sine ISSN.»
+    MEN «Ulike elektroniske versjonar (som HTML og PDF) må bruke same ISSN.» — **motsatt av ISBN på HTML-vs-PDF-spørsmålet**'
+  legal_basis: null
+  register_status: VERIFISERT verbatim
+  review_trigger: PRAKSIS
+  review_by: 2027-08
+  section: Nasjonalbiblioteket — standardnummerering og pliktavlevering (verifisert 2026-08-07)
+  values: []
+  flags:
+  - kildesitat_mangler_i_registeret
+  - legal_basis_mangler
+  - value_not_extractable
+- id: NB-04
+  domain: nasjonalbiblioteket
+  claim: 'ISMN, digitale format: «Ulike formater på nettet (for eksempel PDF, HTML eller Word) defineres
+    også som ulike utgaver.» → «en trykt utgave og en nettversjon av samme dokument skal ha ulike ISMN»
+    — **følger ISBN, ikke ISSN**'
+  legal_basis: null
+  register_status: VERIFISERT verbatim
+  review_trigger: PRAKSIS
+  review_by: 2027-08
+  section: Nasjonalbiblioteket — standardnummerering og pliktavlevering (verifisert 2026-08-07)
+  values: []
+  flags:
+  - kildesitat_mangler_i_registeret
+  - legal_basis_mangler
+  - value_not_extractable
+- id: NB-05
+  domain: nasjonalbiblioteket
+  claim: 'Ordningsvalg: «Tidsskrifter og serier tildeles ISSN … Årbøker, monografier i serier osv. kan
+    likevel tildeles et ISBN for hvert bind i serien, i tillegg til seriens ISSN.» **Ikke enten/eller
+    — årbøker og monografiserier kan ha begge**'
+  legal_basis: null
+  register_status: VERIFISERT verbatim
+  review_trigger: PRAKSIS
+  review_by: 2027-08
+  section: Nasjonalbiblioteket — standardnummerering og pliktavlevering (verifisert 2026-08-07)
+  values: []
+  flags:
+  - kildesitat_mangler_i_registeret
+  - legal_basis_mangler
+  - value_not_extractable
+- id: NB-06
+  domain: nasjonalbiblioteket
+  claim: 'Ordningsvalg noter: «Notetrykk (musikktrykk) tildeles ISMN». ISMN-siden fører «sangbøker (valgfritt)»
+    under hva som skal ha ISMN; ISBN-siden sier sangbøker der teksten er mer vesentlig enn notene kan
+    få ISBN i tillegg'
+  legal_basis: null
+  register_status: VERIFISERT verbatim
+  review_trigger: PRAKSIS
+  review_by: 2027-08
+  section: Nasjonalbiblioteket — standardnummerering og pliktavlevering (verifisert 2026-08-07)
+  values: []
+  flags:
+  - kildesitat_mangler_i_registeret
+  - legal_basis_mangler
+  - value_not_extractable
+- id: NB-07
+  domain: nasjonalbiblioteket
+  claim: 'ISBN nytt nummer: «Et uforandret opplag beholder det gamle nummeret.» — mot ny (endret) utgave
+    / ny serie / nytt forlag som gir nytt ISBN'
+  legal_basis: null
+  register_status: VERIFISERT verbatim
+  review_trigger: PRAKSIS
+  review_by: 2027-08
+  section: Nasjonalbiblioteket — standardnummerering og pliktavlevering (verifisert 2026-08-07)
+  values: []
+  flags:
+  - kildesitat_mangler_i_registeret
+  - legal_basis_mangler
+  - value_not_extractable
+- id: NB-08
+  domain: nasjonalbiblioteket
+  claim: 'ISBN-serie kan ikke utvides: «ISBN-systemet er bygget opp slik at en serie med ISBN ikke kan
+    utvides.»'
+  legal_basis: null
+  register_status: VERIFISERT verbatim
+  review_trigger: PRAKSIS
+  review_by: 2027-08
+  section: Nasjonalbiblioteket — standardnummerering og pliktavlevering (verifisert 2026-08-07)
+  values: []
+  flags:
+  - kildesitat_mangler_i_registeret
+  - legal_basis_mangler
+  - value_not_extractable
+- id: NB-09
+  domain: nasjonalbiblioteket
+  claim: 'ISSN saksbehandling: «Du vil få svar på ISSN-søknaden i løpet av 10 arbeidsdagar (to veker)»
+    og «ISSN-søknadar bør difor ikkje sendast tidlegare enn tre månadar før utgjeving.» **ISBN har ingen
+    tilsvarende oppgitt frist**'
+  legal_basis: null
+  register_status: VERIFISERT verbatim
+  review_trigger: PRAKSIS
+  review_by: 2027-08
+  section: Nasjonalbiblioteket — standardnummerering og pliktavlevering (verifisert 2026-08-07)
+  values: []
+  flags:
+  - kildesitat_mangler_i_registeret
+  - legal_basis_mangler
+  - value_not_extractable
+- id: NB-10
+  domain: nasjonalbiblioteket
+  claim: 'ISSN nettsider/bloggar, kvalifiserende terskel: «har ein redaksjon på meir enn éin person»'
+  legal_basis: null
+  register_status: VERIFISERT verbatim
+  review_trigger: PRAKSIS
+  review_by: 2027-08
+  section: Nasjonalbiblioteket — standardnummerering og pliktavlevering (verifisert 2026-08-07)
+  values: []
+  flags:
+  - kildesitat_mangler_i_registeret
+  - legal_basis_mangler
+  - value_not_extractable
+- id: NB-11
+  domain: nasjonalbiblioteket
+  claim: 'ISSN open access, fullstendighetsterskel: «Publikasjonar med fri tilgang (open access) blir
+    sett på som fullstendige dersom ei komplett utgåve inneheld minimum fem artiklar.»'
+  legal_basis: null
+  register_status: VERIFISERT verbatim
+  review_trigger: PRAKSIS
+  review_by: 2027-08
+  section: Nasjonalbiblioteket — standardnummerering og pliktavlevering (verifisert 2026-08-07)
+  values: []
+  flags:
+  - kildesitat_mangler_i_registeret
+  - legal_basis_mangler
+  - value_not_extractable
+- id: NB-12
+  domain: nasjonalbiblioteket
+  claim: 'ISSN forhåndstildeling: generelt «Vi ser helst at du søkjer om ISSN i forkant av ei utgjeving»,
+    MEN «Elektroniske publikasjonar får ikkje ISSN i forkant av publisering» — **motsatt gren for elektronisk**'
+  legal_basis: null
+  register_status: VERIFISERT verbatim
+  review_trigger: PRAKSIS
+  review_by: 2027-08
+  section: Nasjonalbiblioteket — standardnummerering og pliktavlevering (verifisert 2026-08-07)
+  values: []
+  flags:
+  - kildesitat_mangler_i_registeret
+  - legal_basis_mangler
+  - value_not_extractable
+- id: NB-13
+  domain: nasjonalbiblioteket
+  claim: 'ISSN kan trekkes tilbake: «ISSN Noreg har rett til å trekkje tilbake eit tildelt ISSN» ved mangelfull/feil/villeiande
+    informasjon eller manglende pliktavlevering. **ISBN-flaten har ingen tilbaketrekkingshjemmel**'
+  legal_basis: null
+  register_status: VERIFISERT verbatim
+  review_trigger: PRAKSIS
+  review_by: 2027-08
+  section: Nasjonalbiblioteket — standardnummerering og pliktavlevering (verifisert 2026-08-07)
+  values: []
+  flags:
+  - kildesitat_mangler_i_registeret
+  - legal_basis_mangler
+  - value_not_extractable
+- id: NB-14
+  domain: nasjonalbiblioteket
+  claim: 'ISSN kombidokument: «Ein CD-ROM som ligg ved ein trykt publikasjon, blir handsama som eit «kombidokument»
+    og får felles ISSN.»'
+  legal_basis: null
+  register_status: VERIFISERT verbatim
+  review_trigger: PRAKSIS
+  review_by: 2027-08
+  section: Nasjonalbiblioteket — standardnummerering og pliktavlevering (verifisert 2026-08-07)
+  values: []
+  flags:
+  - kildesitat_mangler_i_registeret
+  - legal_basis_mangler
+  - value_not_extractable
+- id: NB-15
+  domain: nasjonalbiblioteket
+  claim: 'ISNI-gren: NB tildeler automatisk til det som er omfattet av pliktavleveringslova; «Unntaksvis,
+    og etter en egen vurdering, kan Nasjonalbiblioteket også tildele ISNI til personer og korporasjoner
+    som faller utenfor pliktavleveringslova.» NB er RA, ikke tildeler: «ISNI International Agency er ansvarlig
+    for tildelingen»'
+  legal_basis: — (ISNI selv); pliktavleveringslova avgrenser hovedgrenen
+  register_status: VERIFISERT verbatim
+  review_trigger: PRAKSIS
+  review_by: 2027-08
+  section: Nasjonalbiblioteket — standardnummerering og pliktavlevering (verifisert 2026-08-07)
+  values: []
+  flags:
+  - kildesitat_mangler_i_registeret
+  - value_not_extractable
+- id: NB-16
+  domain: nasjonalbiblioteket
+  claim: NB ble ISNI Registration Agency **1. juli 2023**
+  legal_basis: null
+  register_status: VERIFISERT verbatim
+  review_trigger: STABIL
+  review_by: null
+  section: Nasjonalbiblioteket — standardnummerering og pliktavlevering (verifisert 2026-08-07)
+  values: []
+  flags:
+  - kildesitat_mangler_i_registeret
+  - legal_basis_mangler
+  - review_by_mangler
+  - value_not_extractable
+- id: NB-17
+  domain: nasjonalbiblioteket
+  claim: '**Pliktavlevering, eksemplartall — tre grener:** «I følge pliktavleveringsloven skal det avleveres
+    inntil syv eksemplarer, men Nasjonalbiblioteket ber som hovedregel om tre eksemplarer av alle fysiske
+    utgivelser.» + «Digitale dokumenter skal avleveres i ett eksemplar fra utgiver.» Lovtak 7 / praksis
+    fysisk 3 / digitalt 1'
+  legal_basis: pliktavleveringslova LOV-1989-06-09-32; forskrift FOR-2018-07-01-1139
+  register_status: VERIFISERT verbatim
+  review_trigger: LOVENDRING
+  review_by: 2027-01
+  section: Nasjonalbiblioteket — standardnummerering og pliktavlevering (verifisert 2026-08-07)
+  values: []
+  flags:
+  - kildesitat_mangler_i_registeret
+  - value_not_extractable
+- id: NB-18
+  domain: nasjonalbiblioteket
+  claim: 'Pliktavlevering per publikasjonstype: bøker **tre**, notetrykk **tre**, digitale dokument på
+    fysisk lagringsmedium **tre**, småtrykk **to**'
+  legal_basis: pliktavleveringslova
+  register_status: VERIFISERT verbatim
+  review_trigger: LOVENDRING
+  review_by: 2027-01
+  section: Nasjonalbiblioteket — standardnummerering og pliktavlevering (verifisert 2026-08-07)
+  values: []
+  flags:
+  - kildesitat_mangler_i_registeret
+  - value_not_extractable
+- id: NB-19
+  domain: nasjonalbiblioteket
+  claim: '**KONFLIKT internt på tidsskriftsiden:** ingressen sier «skal avleveres i inntil tre trykte
+    eksemplarer i tillegg til digital trykkefil», mens punktlisten på samme side sier «To eksemplarer
+    av trykte periodika, med mindre annet antall er avtalt med oss». **SKAL IKKE brukes som probe med
+    ett fasitsvar før konflikten er avklart med NB**'
+  legal_basis: pliktavleveringslova
+  register_status: VERIFISERT verbatim (begge strenger) — **KONFLIKT**
+  review_trigger: LOVENDRING
+  review_by: 2027-01
+  section: Nasjonalbiblioteket — standardnummerering og pliktavlevering (verifisert 2026-08-07)
+  values: []
+  flags:
+  - kildesitat_mangler_i_registeret
+  - status_konflikt
+  - value_not_extractable
+- id: NB-20
+  domain: nasjonalbiblioteket
+  claim: 'Pliktavlevering, opptrykk: «Ved nye, uforandrede opptrykk er det ikke nødvendig å avlevere.»
+    — parallell til, men ikke identisk med, ISBN-regelen NB-07'
+  legal_basis: pliktavleveringslova
+  register_status: VERIFISERT verbatim
+  review_trigger: LOVENDRING
+  review_by: 2027-01
+  section: Nasjonalbiblioteket — standardnummerering og pliktavlevering (verifisert 2026-08-07)
+  values: []
+  flags:
+  - kildesitat_mangler_i_registeret
+  - value_not_extractable
+- id: NB-21
+  domain: nasjonalbiblioteket
+  claim: 'Pliktavlevering, utenlandsk produksjon: «Dokumenter laget i utlandet skal bare avleveres dersom
+    det er laget for en norsk utgiver eller er spesielt tilpasset allmenheten i Norge.»'
+  legal_basis: pliktavleveringslova
+  register_status: VERIFISERT verbatim
+  review_trigger: LOVENDRING
+  review_by: 2027-01
+  section: Nasjonalbiblioteket — standardnummerering og pliktavlevering (verifisert 2026-08-07)
+  values: []
+  flags:
+  - kildesitat_mangler_i_registeret
+  - value_not_extractable
+- id: NB-22
+  domain: nasjonalbiblioteket
+  claim: 'Pliktavlevering, intern vs åpen krets: «Rent bedriftsinterne dokument er likevel ikke avleveringspliktige,
+    men det er derimot dokumenter som blir spredd til medlemmene i en åpen organisasjon.»'
+  legal_basis: pliktavleveringslova
+  register_status: VERIFISERT verbatim
+  review_trigger: LOVENDRING
+  review_by: 2027-01
+  section: Nasjonalbiblioteket — standardnummerering og pliktavlevering (verifisert 2026-08-07)
+  values: []
+  flags:
+  - kildesitat_mangler_i_registeret
+  - value_not_extractable
+- id: NB-23
+  domain: nasjonalbiblioteket
+  claim: 'Pliktavlevering, frist: «Både fysiske og digitale dokumenter skal avleveres senest når de er
+    gjort allment tilgjengelige.»'
+  legal_basis: pliktavleveringslova
+  register_status: VERIFISERT verbatim
+  review_trigger: LOVENDRING
+  review_by: 2027-01
+  section: Nasjonalbiblioteket — standardnummerering og pliktavlevering (verifisert 2026-08-07)
+  values: []
+  flags:
+  - kildesitat_mangler_i_registeret
+  - value_not_extractable
+- id: NB-24
+  domain: nasjonalbiblioteket
+  claim: 'Deltakelse i ISBN-systemet krever norsk adresse: «Firmaer, institusjoner, foreninger eller privatpersoner
+    som har adresse i Norge, og som utgir publikasjoner, kan delta i ISBN-systemet.» Ikke krav om Brønnøysund-registrering'
+  legal_basis: null
+  register_status: VERIFISERT verbatim
+  review_trigger: PRAKSIS
+  review_by: 2027-08
+  section: Nasjonalbiblioteket — standardnummerering og pliktavlevering (verifisert 2026-08-07)
+  values: []
+  flags:
+  - kildesitat_mangler_i_registeret
+  - legal_basis_mangler
+  - value_not_extractable
+- id: NB-25
+  domain: nasjonalbiblioteket
+  claim: 'ISBN er gratis: «**Det er gratis å få tildelt ISBN.**» Uten formatbegrensning. Motpåstand til
+    hele pris-distraktorfamilien (D-03/D-05/D-06 i NDVL-MAL-0001)'
+  legal_basis: null
+  register_status: VERIFISERT verbatim
+  review_trigger: PRAKSIS
+  review_by: 2027-08
+  section: Nasjonalbiblioteket — standardnummerering og pliktavlevering (verifisert 2026-08-07)
+  values: []
+  flags:
+  - kildesitat_mangler_i_registeret
+  - legal_basis_mangler
+  - value_not_extractable
+- id: NB-26
+  domain: nasjonalbiblioteket
+  claim: 'ISMN er gratis: «**Det er gratis å få tildelt ISMN.**»'
+  legal_basis: null
+  register_status: VERIFISERT verbatim
+  review_trigger: PRAKSIS
+  review_by: 2027-08
+  section: Nasjonalbiblioteket — standardnummerering og pliktavlevering (verifisert 2026-08-07)
+  values: []
+  flags:
+  - kildesitat_mangler_i_registeret
+  - legal_basis_mangler
+  - value_not_extractable
+- id: NB-27
+  domain: nasjonalbiblioteket
+  claim: 'ISSN er gratis: «**Tildeling av ISSN og tenestene til ISSN Noreg er gratis.**»'
+  legal_basis: null
+  register_status: VERIFISERT verbatim
+  review_trigger: PRAKSIS
+  review_by: 2027-08
+  section: Nasjonalbiblioteket — standardnummerering og pliktavlevering (verifisert 2026-08-07)
+  values: []
+  flags:
+  - kildesitat_mangler_i_registeret
+  - legal_basis_mangler
+  - value_not_extractable
+- id: NB-28
+  domain: nasjonalbiblioteket
+  claim: 'ISBN er frivillig: «**Å ha ISBN er frivillig**, men hvis en bok skal selges gjennom bokhandel,
+    vil som regel bokhandelen kreve at den har ISBN.» Plikten ligger hos forhandleren, ikke i systemet.
+    Motpåstand til D-07'
+  legal_basis: null
+  register_status: VERIFISERT verbatim
+  review_trigger: PRAKSIS
+  review_by: 2027-08
+  section: Nasjonalbiblioteket — standardnummerering og pliktavlevering (verifisert 2026-08-07)
+  values: []
+  flags:
+  - kildesitat_mangler_i_registeret
+  - legal_basis_mangler
+  - value_not_extractable

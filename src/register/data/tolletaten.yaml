@@ -1,0 +1,322 @@
+schema_version: '1.0'
+generated_from:
+  register: NDVL-REG-0002_kildeverifisering.md
+  sha256: 8aa1e50a19fb8c678f9865b26d95912b8f0ec3c0609ccab933f9956adfc645d8
+  converted_at: '2026-10-09'
+domain: tolletaten
+facts:
+- id: TOLL-01
+  domain: tolletaten
+  claim: '**Verdigrense over 24 timer**: «varer … til en verdi av 6000 norske kroner, som innføres etter
+    opphold i utlandet, på Svalbard eller Jan Mayen i minst 24 timer»'
+  legal_basis: vareførselsforskriften § 4-1-11 første ledd
+  register_status: VERIFISERT verbatim
+  review_trigger: PRAKSIS
+  review_by: '2026-09-15'
+  section: Tolletaten — reisegodskvoter og verdigrenser (verifisert 2026-08-27)
+  values:
+  - value: 24
+    unit: timer
+    valid_from: null
+    valid_to: null
+    context: '**Verdigrense over 24 timer**: «varer … til en verdi av 6000 norske kroner, som in'
+    sources:
+    - url: korpus sha256 0840b3bd80… ; toll.no/no/handle-i-utlandet/verdigrensa (oppdatert 18.8.2026)
+      quote: null
+      verified_at: null
+  flags:
+  - kildesitat_mangler_i_registeret
+  - valid_from_mangler
+- id: TOLL-02
+  domain: tolletaten
+  claim: '**Verdigrense under 24 timer**: «kan det én gang innenfor et tidsrom av 24 timer innføres varer
+    … til en verdi av 3000 norske kroner»'
+  legal_basis: § 4-1-11 annet ledd
+  register_status: VERIFISERT verbatim
+  review_trigger: PRAKSIS
+  review_by: '2026-09-15'
+  section: Tolletaten — reisegodskvoter og verdigrenser (verifisert 2026-08-27)
+  values:
+  - value: 24
+    unit: timer
+    valid_from: null
+    valid_to: null
+    context: '**Verdigrense under 24 timer**: «kan det én gang innenfor et tidsrom av 24 timer in'
+    sources:
+    - url: som TOLL-01
+      quote: null
+      verified_at: null
+  flags:
+  - kildesitat_mangler_i_registeret
+  - valid_from_mangler
+- id: TOLL-03
+  domain: tolletaten
+  claim: '**Verdigrensen omfatter ikke alkohol/tobakk/nikotin**: «Verdigrensene i første og annet ledd
+    gjelder ikke for alkohol-, tobakks- og nikotinvarer.» Etatssiden samsvarer: «Alkohol og tobakksvarer
+    inngår ikkje i verdigrensa. Desse varene har eigne kvotar.»'
+  legal_basis: § 4-1-11 femte ledd
+  register_status: VERIFISERT verbatim
+  review_trigger: STABIL
+  review_by: null
+  section: Tolletaten — reisegodskvoter og verdigrenser (verifisert 2026-08-27)
+  values: []
+  flags:
+  - kildesitat_mangler_i_registeret
+  - review_by_mangler
+  - value_not_extractable
+- id: TOLL-04
+  domain: tolletaten
+  claim: '**Tobakkskvote, reisende**: «100 sigaretter, 125 gram andre tobakksvarer, 10 milliliter e-væske
+    med nikotin eller 100 gram andre nikotinvarer». Etatssiden oppgir kun de to første: «Du kan ta med
+    100 stk sigaretter eller 125 gram annen tobakk.» — **delvis dekning, ikke motstrid**'
+  legal_basis: § 4-1-12 annet ledd bokstav c
+  register_status: VERIFISERT verbatim
+  review_trigger: PRAKSIS
+  review_by: '2026-09-15'
+  section: Tolletaten — reisegodskvoter og verdigrenser (verifisert 2026-08-27)
+  values: []
+  flags:
+  - kildesitat_mangler_i_registeret
+  - value_not_extractable
+- id: TOLL-05
+  domain: tolletaten
+  claim: '**Sigarettpapir**: «100 blad sigarettpapir». Etatssiden: «Sigarettpapir og -hylser — 100 stk»'
+  legal_basis: § 4-1-12 annet ledd bokstav d
+  register_status: VERIFISERT verbatim
+  review_trigger: PRAKSIS
+  review_by: '2026-09-15'
+  section: Tolletaten — reisegodskvoter og verdigrenser (verifisert 2026-08-27)
+  values: []
+  flags:
+  - kildesitat_mangler_i_registeret
+  - value_not_extractable
+- id: TOLL-06
+  domain: tolletaten
+  claim: '**Turistdobling, forskriften**: «Reisende som ikke er bosatt i Norge, men er besøkende turister
+    som definert i konvensjon av 4. juni 1954 om tollettelser for turister, kan som reisegods innføre
+    en utvidet mengde tobakks- og nikotinvarer … Den utvidede mengde er det dobbelte av mengden tobakks-
+    og nikotinvarer i annet ledd bokstav c og d.» **Doblingen omfatter både bokstav c og d** — altså også
+    sigarettpapir. Vilkåret er bosted PLUSS turiststatus etter 1954-konvensjonen, ikke statsborgerskap'
+  legal_basis: § 4-1-12 tredje ledd
+  register_status: VERIFISERT verbatim
+  review_trigger: LOVENDRING
+  review_by: '2026-09-15'
+  section: Tolletaten — reisegodskvoter og verdigrenser (verifisert 2026-08-27)
+  values: []
+  flags:
+  - kildesitat_mangler_i_registeret
+  - value_not_extractable
+- id: TOLL-07
+  domain: tolletaten
+  claim: '**DIVERGENS — etatssiden mot forskriften.** toll.no sier under «Verdigrense for turistar»: «Kvotene
+    for alkohol, tobakk og matvarer gjeld for alle som reiser til Noreg, også turistar.» Lest i sammenheng
+    kan setningen forsvares som «turistar er ikkje kvotefrie», men den naturlige lesningen er at samme
+    kvote gjelder. Forskriften § 4-1-12 tredje ledd gir turister **dobbel** tobakks- og nikotinkvote (TOLL-06).
+    En bruker som følger etatssiden får et annet svar enn forskriften gir. **Dokumenteres som divergens,
+    ikke som feil hos noen part**'
+  legal_basis: § 4-1-12 tredje ledd mot toll.no
+  register_status: VERIFISERT verbatim (begge sider)
+  review_trigger: PRAKSIS
+  review_by: '2026-09-15'
+  section: Tolletaten — reisegodskvoter og verdigrenser (verifisert 2026-08-27)
+  values: []
+  flags:
+  - kildesitat_mangler_i_registeret
+  - value_not_extractable
+- id: TOLL-08
+  domain: tolletaten
+  claim: '**Aldersgrense 18 år**: «Unntak fra deklareringsplikt for alkohol-, tobakks- og nikotinvarer
+    gjelder kun for personer som er fylt 18 år.» Etatssiden samsvarer'
+  legal_basis: § 4-1-13 første ledd første punktum
+  register_status: VERIFISERT verbatim
+  review_trigger: STABIL
+  review_by: null
+  section: Tolletaten — reisegodskvoter og verdigrenser (verifisert 2026-08-27)
+  values:
+  - value: 18
+    unit: ar
+    valid_from: null
+    valid_to: null
+    context: '**Aldersgrense 18 år**: «Unntak fra deklareringsplikt for alkohol-, tobakks'
+    sources:
+    - url: korpus ; toll.no/…/kvote
+      quote: null
+      verified_at: null
+  flags:
+  - kildesitat_mangler_i_registeret
+  - review_by_mangler
+  - valid_from_mangler
+- id: TOLL-09
+  domain: tolletaten
+  claim: '**Aldersgrense 20 år**: «Unntak fra deklareringsplikt for vare med alkoholstyrke over 22 volumprosent
+    gjelder kun for personer som er fylt 20 år.» Etatssiden samsvarer'
+  legal_basis: § 4-1-13 første ledd annet punktum
+  register_status: VERIFISERT verbatim
+  review_trigger: STABIL
+  review_by: null
+  section: Tolletaten — reisegodskvoter og verdigrenser (verifisert 2026-08-27)
+  values:
+  - value: 20
+    unit: ar
+    valid_from: null
+    valid_to: null
+    context: '**Aldersgrense 20 år**: «Unntak fra deklareringsplikt for vare med alkohols'
+    sources:
+    - url: korpus ; toll.no/…/kvote
+      quote: null
+      verified_at: null
+  flags:
+  - kildesitat_mangler_i_registeret
+  - review_by_mangler
+  - valid_from_mangler
+- id: TOLL-10
+  domain: tolletaten
+  claim: '**Aldersgrense 12 år, matvarer**: «Unntak fra deklareringsplikt for andre matvarer enn sjokolade-
+    og sukkervarer gjelder kun for personer som er fylt 12 år.» **Etatssidene nevner 18 og 20, men ikke
+    12** — utelatelse, ikke motstrid'
+  legal_basis: § 4-1-13 første ledd tredje punktum
+  register_status: VERIFISERT verbatim
+  review_trigger: PRAKSIS
+  review_by: '2026-09-15'
+  section: Tolletaten — reisegodskvoter og verdigrenser (verifisert 2026-08-27)
+  values:
+  - value: 12
+    unit: ar
+    valid_from: null
+    valid_to: null
+    context: '**Aldersgrense 12 år, matvarer**: «Unntak fra deklareringsplikt for andre m'
+    sources:
+    - url: korpus sha256 0840b3bd80…
+      quote: null
+      verified_at: null
+  flags:
+  - kildesitat_mangler_i_registeret
+  - valid_from_mangler
+- id: TOLL-11
+  domain: tolletaten
+  claim: '**Transportpersonell**: «40 sigaretter, 100 gram andre tobakksvarer, 4 milliliter e-væske med
+    nikotin eller 40 gram andre nikotinvarer», «100 blad sigarettpapir», «andre varer enn alkohol til
+    en verdi av 500 kr», én gang per 24 timer. **Ingen alkoholkvote i det hele tatt**, og verdigrensen
+    er 500 kr mot 6000/3000'
+  legal_basis: § 4-1-14
+  register_status: VERIFISERT verbatim
+  review_trigger: PRAKSIS
+  review_by: '2026-09-15'
+  section: Tolletaten — reisegodskvoter og verdigrenser (verifisert 2026-08-27)
+  values:
+  - value: 500
+    unit: NOK
+    valid_from: null
+    valid_to: null
+    context: garettpapir», «andre varer enn alkohol til en verdi av 500 kr», én gang per 24 timer. **Ingen
+      alkoholkvote i det hel
+    sources: &id001
+    - url: korpus ; toll.no/no/bedrift/tollbestemmelser-for-fly--og-fergepersonell (oppdatert 17.8.2026)
+      quote: null
+      verified_at: null
+  - value: 24
+    unit: timer
+    valid_from: null
+    valid_to: null
+    context: varer enn alkohol til en verdi av 500 kr», én gang per 24 timer. **Ingen alkoholkvote i det
+      hele tatt**, og verdigrens
+    sources: *id001
+  flags:
+  - flere_verdier_uten_strukturert_merkelapp
+  - kildesitat_mangler_i_registeret
+  - valid_from_mangler
+- id: TOLL-12
+  domain: tolletaten
+  claim: '**Oljeplattformpersonell**: «kan én gang innenfor en 24-timers periode innføre varer som nevnt
+    i § 4-1-14». **Egen personkategori, men identisk regel ved henvisning** — ikke egne tall'
+  legal_basis: § 4-1-15
+  register_status: VERIFISERT verbatim
+  review_trigger: STABIL
+  review_by: null
+  section: Tolletaten — reisegodskvoter og verdigrenser (verifisert 2026-08-27)
+  values: []
+  flags:
+  - kildesitat_mangler_i_registeret
+  - review_by_mangler
+  - value_not_extractable
+- id: TOLL-13
+  domain: tolletaten
+  claim: '**Laissez-passer**: «Begrensningene i § 4-1-11 til § 4-1-13 gjelder ikke for reisegods som innføres
+    av personer som har De Forente Nasjoners passérbrev (laissez-passer) eller anbefalingsbrev fra norsk
+    diplomatisk stasjon». Setter verdigrense, mengdekvote OG aldersgrense ut av kraft samtidig'
+  legal_basis: § 4-1-16
+  register_status: VERIFISERT verbatim
+  review_trigger: STABIL
+  review_by: null
+  section: Tolletaten — reisegodskvoter og verdigrenser (verifisert 2026-08-27)
+  values: []
+  flags:
+  - kildesitat_mangler_i_registeret
+  - review_by_mangler
+  - value_not_extractable
+- id: TOLL-14
+  domain: tolletaten
+  claim: '**Under 24 timer, opprinnelsesvilkår**: «Ved opphold i utlandet, på Svalbard eller Jan Mayen
+    i mindre enn 24 timer gjelder unntaket fra deklareringsplikt for alkohol-, tobakks- og nikotinvarer
+    bare varer som er kjøpt i beskattet stand i et EØS-land.» Etatssiden samsvarer og utdyper: «Du kan
+    derfor ikke handle på tax-free.»'
+  legal_basis: § 4-1-12 annet ledd siste punktum
+  register_status: VERIFISERT verbatim
+  review_trigger: PRAKSIS
+  review_by: '2026-09-15'
+  section: Tolletaten — reisegodskvoter og verdigrenser (verifisert 2026-08-27)
+  values:
+  - value: 24
+    unit: timer
+    valid_from: null
+    valid_to: null
+    context: '**Under 24 timer, opprinnelsesvilkår**: «Ved opphold i utlandet, på Sva'
+    sources:
+    - url: korpus ; toll.no/…/kvote
+      quote: null
+      verified_at: null
+  flags:
+  - kildesitat_mangler_i_registeret
+  - valid_from_mangler
+- id: TOLL-15
+  domain: tolletaten
+  claim: '**Matvaregrense**: «unntaket fra deklareringsplikt bare for til sammen 10 kg kjøttvarer, ost
+    og fôrvarer. Hunde- og kattemat er ikke omfattet av begrensningen på 10 kg.»'
+  legal_basis: § 4-1-12 første ledd
+  register_status: VERIFISERT verbatim
+  review_trigger: STABIL
+  review_by: null
+  section: Tolletaten — reisegodskvoter og verdigrenser (verifisert 2026-08-27)
+  values: []
+  flags:
+  - kildesitat_mangler_i_registeret
+  - review_by_mangler
+  - value_not_extractable
+- id: TOLL-16
+  domain: tolletaten
+  claim: '**Drivstoff**: «600 liter drivstoff i transportmiddelets normale drivstofftanker» pluss «10
+    liter drivstoff på godkjent reservekanne» per transportmiddel, i tillegg til verdigrensen'
+  legal_basis: § 4-1-12 fjerde ledd
+  register_status: VERIFISERT verbatim
+  review_trigger: STABIL
+  review_by: null
+  section: Tolletaten — reisegodskvoter og verdigrenser (verifisert 2026-08-27)
+  values: []
+  flags:
+  - kildesitat_mangler_i_registeret
+  - review_by_mangler
+  - value_not_extractable
+- id: TOLL-17
+  domain: tolletaten
+  claim: '**Ikke unntatt**: motorvogn omfattet av Stortingets engangsavgiftsvedtak, og hester, er ikke
+    unntatt deklareringsplikt som reisegods'
+  legal_basis: § 4-1-12 femte ledd
+  register_status: VERIFISERT verbatim
+  review_trigger: STABIL
+  review_by: null
+  section: Tolletaten — reisegodskvoter og verdigrenser (verifisert 2026-08-27)
+  values: []
+  flags:
+  - kildesitat_mangler_i_registeret
+  - review_by_mangler
+  - value_not_extractable

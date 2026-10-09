@@ -1,0 +1,19 @@
+# Kjente endringsdatoer per registerrad. Halen kjorer bare rader som har
+# passert datoen sin, slik at den ikke henter sider for en sats som ikke kan
+# ha endret seg enna.
+#
+# month/day = arlig tilbakevendende dato. Ingen cron i denne runden;
+# run.py --as-of DATE gjor valget eksplisitt.
+rows:
+  NAV-01: {month: 5, day: 1, why: "G fastsettes av Stortinget hver 1. mai"}
+  NAV-02: {month: 5, day: 1, why: "6G folger G"}
+  NAV-03: {month: 5, day: 1, why: "2,041G folger G"}
+  NAV-04: {month: 5, day: 1, why: "2/3 av 2,041G folger G"}
+  NAV-05: {month: 5, day: 1, why: "beregningssats, gjennomgaas med G"}
+  NAV-06: {month: 1, day: 1, why: "barnetillegg er et kronebelop, justeres ved arsskiftet"}
+  SKATT-18: {month: 1, day: 1, why: "personfradrag fastsettes i statsbudsjettet"}
+  SKATT-19: {month: 1, day: 1, why: "minstefradrag fastsettes i statsbudsjettet"}
+  SKATT-20: {month: 1, day: 1, why: "lovfestet grense; sjekkes arlig, endres sjelden"}
+  HF-08: {month: 1, day: 1, why: "egenandelstaket fastsettes arlig av Stortinget"}
+  HF-09: {month: 1, day: 1, why: "blareseptsatser endres ved arsskiftet"}
+  LK-22: {month: 8, day: 1, why: "studiearet starter 1. august"}

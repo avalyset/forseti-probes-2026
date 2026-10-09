@@ -1,0 +1,431 @@
+schema_version: '1.0'
+generated_from:
+  register: NDVL-REG-0002_kildeverifisering.md
+  sha256: 8aa1e50a19fb8c678f9865b26d95912b8f0ec3c0609ccab933f9956adfc645d8
+  converted_at: '2026-10-09'
+domain: lanekassen
+facts:
+- id: LK-01
+  domain: lanekassen
+  claim: Klagefrist 3 uker fra underretning er kommet frem til parten
+  legal_basis: forvaltningsloven § 29
+  register_status: VERIFISERT verbatim
+  review_trigger: STABIL
+  review_by: null
+  section: Lånekassen (verifisert 2026-07-27)
+  values:
+  - value: 3
+    unit: uker
+    valid_from: null
+    valid_to: null
+    context: Klagefrist 3 uker fra underretning er kommet frem til parten
+    sources:
+    - url: Vault `lov/forvaltningsloven.xml` (LOV-1967-02-10, à jour 2026-01-01)
+      quote: null
+      verified_at: null
+  flags:
+  - kildesitat_mangler_i_registeret
+  - review_by_mangler
+  - valid_from_mangler
+- id: LK-02
+  domain: lanekassen
+  claim: Lånekassen formulerer fristen som «Du må klage innen tre uker etter du fikk vedtaket.»
+  legal_basis: null
+  register_status: VERIFISERT verbatim
+  review_trigger: PRAKSIS
+  review_by: 2027-01
+  section: Lånekassen (verifisert 2026-07-27)
+  values: []
+  flags:
+  - kildesitat_mangler_i_registeret
+  - legal_basis_mangler
+  - value_not_extractable
+- id: LK-03
+  domain: lanekassen
+  claim: Klageinstans er klagenemnd oppnevnt av departementet
+  legal_basis: utdanningsstøtteloven § 18 første ledd første punktum
+  register_status: VERIFISERT verbatim (2026-07-27) — **FORFALT 2026-08-01, ikke re-verifisert etter ikrafttredelse**
+  review_trigger: LOVENDRING
+  review_by: null
+  section: Lånekassen (verifisert 2026-07-27)
+  values: []
+  flags:
+  - kildesitat_mangler_i_registeret
+  - review_by_uparselig:FORFALT
+  - status_forfalt
+  - value_not_extractable
+- id: LK-04
+  domain: lanekassen
+  claim: § 18 andre og tredje ledd oppheves 1.8.2026; sammensetning flyttes til forskrift. Klageadgang,
+    klagefrist og organets eksistens er IKKE berørt
+  legal_basis: LOV-2026-06-19-60
+  register_status: VERIFISERT
+  review_trigger: LOVENDRING
+  review_by: null
+  section: Lånekassen (verifisert 2026-07-27)
+  values: []
+  flags:
+  - kildesitat_mangler_i_registeret
+  - review_by_uparselig:FORFALT — ikrafttrådt 1.8.2026, radene o
+  - value_not_extractable
+- id: LK-05
+  domain: lanekassen
+  claim: Nemndas sammensetning («tre medlemmer med personlige varamedlemmer») — SKAL IKKE brukes i scenario,
+    oppheves fra lov 1.8.2026
+  legal_basis: utdanningsstøtteloven § 18 (gjeldende t.o.m. 31.7.2026)
+  register_status: VERIFISERT som utgående
+  review_trigger: LOVENDRING
+  review_by: null
+  section: Lånekassen (verifisert 2026-07-27)
+  values: []
+  flags:
+  - kildesitat_mangler_i_registeret
+  - review_by_uparselig:UTGÅTT 1.8.2026
+  - status_forfalt
+  - value_not_extractable
+- id: LK-06
+  domain: lanekassen
+  claim: 'Utsettelse: hele terminbeløp inntil 3 år, halve inntil 6 år'
+  legal_basis: utdanningsstøtteloven § 8 fjerde ledd
+  register_status: VERIFISERT verbatim
+  review_trigger: STABIL
+  review_by: null
+  section: Lånekassen (verifisert 2026-07-27)
+  values:
+  - value: 3
+    unit: ar
+    valid_from: null
+    valid_to: null
+    context: 'Utsettelse: hele terminbeløp inntil 3 år, halve inntil 6 år'
+    sources: &id001
+    - url: Vault `lov/utdanningsstotteloven.xml`
+      quote: null
+      verified_at: null
+  - value: 6
+    unit: ar
+    valid_from: null
+    valid_to: null
+    context: 'Utsettelse: hele terminbeløp inntil 3 år, halve inntil 6 år'
+    sources: *id001
+  flags:
+  - flere_verdier_uten_strukturert_merkelapp
+  - kildesitat_mangler_i_registeret
+  - review_by_mangler
+  - valid_from_mangler
+- id: LK-07
+  domain: lanekassen
+  claim: Død → gjeld ettergis. Uførhet/langvarig sykdom → helt eller delvis når det finnes rimelig
+  legal_basis: utdanningsstøtteloven § 10 første/andre ledd
+  register_status: VERIFISERT verbatim
+  review_trigger: STABIL
+  review_by: null
+  section: Lånekassen (verifisert 2026-07-27)
+  values: []
+  flags:
+  - kildesitat_mangler_i_registeret
+  - review_by_mangler
+  - value_not_extractable
+- id: LK-08
+  domain: lanekassen
+  claim: Renter påløper først når utdanning avsluttes/avbrytes eller støtte opphører
+  legal_basis: utdanningsstøtteloven § 9 første ledd
+  register_status: VERIFISERT verbatim
+  review_trigger: STABIL
+  review_by: null
+  section: Lånekassen (verifisert 2026-07-27)
+  values: []
+  flags:
+  - kildesitat_mangler_i_registeret
+  - review_by_mangler
+  - value_not_extractable
+- id: LK-09
+  domain: lanekassen
+  claim: 'Omgjøring opptil 40 % (25 % ved fullført grad + 15 % for beståtte studiepoeng). Vilkår konjunktivt:
+    ikke bo hos foreldre + inntekt/formue under grense + bestå'
+  legal_basis: forskrift om utdanningsstøtte
+  register_status: VERIFISERT
+  review_trigger: ÅRLIG
+  review_by: 2027-05
+  section: Lånekassen (verifisert 2026-07-27)
+  values:
+  - value: 40
+    unit: prosent
+    valid_from: null
+    valid_to: null
+    context: Omgjøring opptil 40 % (25 % ved fullført grad + 15 % for beståtte studiepoen
+    sources: &id002
+    - url: lanekassen.no
+      quote: null
+      verified_at: null
+  - value: 25
+    unit: prosent
+    valid_from: null
+    valid_to: null
+    context: Omgjøring opptil 40 % (25 % ved fullført grad + 15 % for beståtte studiepoeng). Vi
+    sources: *id002
+  - value: 15
+    unit: prosent
+    valid_from: null
+    valid_to: null
+    context: 'Omgjøring opptil 40 % (25 % ved fullført grad + 15 % for beståtte studiepoeng). Vilkår konjunktivt:
+      ikke bo'
+    sources: *id002
+  flags:
+  - flere_verdier_uten_strukturert_merkelapp
+  - kildesitat_mangler_i_registeret
+  - valid_from_mangler
+- id: LK-10
+  domain: lanekassen
+  claim: 'Inntektsgrense 2026: 234 821 kr'
+  legal_basis: forskrift, behovsprøving jf. lov § 7
+  register_status: VERIFISERT verbatim
+  review_trigger: ÅRLIG
+  review_by: 2027-01
+  section: Lånekassen (verifisert 2026-07-27)
+  values:
+  - value: 234821
+    unit: NOK
+    valid_from: null
+    valid_to: null
+    context: 'Inntektsgrense 2026: 234 821 kr'
+    sources:
+    - url: lanekassen.no
+      quote: null
+      verified_at: null
+  flags:
+  - kildesitat_mangler_i_registeret
+  - valid_from_mangler
+- id: LK-11
+  domain: lanekassen
+  claim: 'Basisstøtte (basislån) 2026/27: **15 488 kr/mnd for fulltidsstudier**. Kr/undervisningsår ikke
+    oppgitt som ett tall i forskriften (kun per måned)'
+  legal_basis: lov § 5; forskrift om utdanningsstøtte FOR-2020-04-15-798 **§ 74 første ledd siste punktum**
+    (endret ved FOR-2026-04-24-649)
+  register_status: '**VERIFISERT verbatim**'
+  review_trigger: ÅRLIG
+  review_by: 2027-04
+  section: Lånekassen (verifisert 2026-07-27)
+  values:
+  - value: 15488
+    unit: NOK
+    valid_from: null
+    valid_to: null
+    context: 'Basisstøtte (basislån) 2026/27: **15 488 kr/mnd for fulltidsstudier**. Kr/undervisningsår
+      ikke opp'
+    sources:
+    - url: lovdata.no/dokument/LTI/forskrift/2026-04-24-649 (verbatim, 2026-07-27)
+      quote: null
+      verified_at: null
+  flags:
+  - kildesitat_mangler_i_registeret
+  - valid_from_mangler
+- id: LK-12
+  domain: lanekassen
+  claim: Formuesgrense 2026/27, eksakt beløp
+  legal_basis: forskrift
+  register_status: '**UVERIFISERT**'
+  review_trigger: ÅRLIG
+  review_by: null
+  section: Lånekassen (verifisert 2026-07-27)
+  values: []
+  flags:
+  - kildesitat_mangler_i_registeret
+  - review_by_mangler
+  - status_uverifisert
+  - value_not_extractable
+- id: LK-13
+  domain: lanekassen
+  claim: 'Distriktssletting: 25 000 kr/år, kommuneklasse 5 eller 6, 12 sammenhengende mnd botid + yrkesaktivitet,
+    søknad innen 3 mnd etter opptjeningsperioden'
+  legal_basis: utdanningsstøtteloven § 10 tredje ledd
+  register_status: VERIFISERT verbatim
+  review_trigger: ÅRLIG
+  review_by: 2027-01
+  section: Lånekassen (verifisert 2026-07-27)
+  values:
+  - value: 25000
+    unit: NOK
+    valid_from: null
+    valid_to: null
+    context: 'Distriktssletting: 25 000 kr/år, kommuneklasse 5 eller 6, 12 sammenhengende mnd bot'
+    sources: &id003
+    - url: lanekassen.no/nb-NO/gjeld-og-betaling/sletting-av-gjeld-i-utvalgte-kommuner/
+      quote: null
+      verified_at: null
+  - value: 3
+    unit: maneder
+    valid_from: null
+    valid_to: null
+    context: ammenhengende mnd botid + yrkesaktivitet, søknad innen 3 mnd etter opptjeningsperioden
+    sources: *id003
+  flags:
+  - flere_verdier_uten_strukturert_merkelapp
+  - kildesitat_mangler_i_registeret
+  - valid_from_mangler
+- id: LK-14
+  domain: lanekassen
+  claim: 'Distriktssletting: opptjening tidligst fra **1. januar 2025**'
+  legal_basis: null
+  register_status: '**KORRIGERT** — tidligere ført som 1.1.2026 i recon-runde 1; feil. Konsekvens: ordningen
+    er ~18 mnd gammel og egner seg IKKE som drift-probe (sannsynlig innenfor modellenes cutoff)'
+  review_trigger: STABIL
+  review_by: null
+  section: Lånekassen (verifisert 2026-07-27)
+  values: []
+  flags:
+  - kildesitat_mangler_i_registeret
+  - legal_basis_mangler
+  - review_by_mangler
+  - status_korrigert
+  - value_not_extractable
+- id: LK-15
+  domain: lanekassen
+  claim: 'Distriktssletting: maks totalbeløp'
+  legal_basis: null
+  register_status: '**UVERIFISERT**'
+  review_trigger: null
+  review_by: null
+  section: Lånekassen (verifisert 2026-07-27)
+  values: []
+  flags:
+  - kildesitat_mangler_i_registeret
+  - legal_basis_mangler
+  - review_by_mangler
+  - review_trigger_mangler
+  - status_uverifisert
+  - value_not_extractable
+- id: LK-16
+  domain: lanekassen
+  claim: Finnmark/Nord-Troms (innsatssonen) er en SEPARAT ordning fra distriktsslettingen
+  legal_basis: null
+  register_status: VERIFISERT verbatim
+  review_trigger: STABIL
+  review_by: null
+  section: Lånekassen (verifisert 2026-07-27)
+  values: []
+  flags:
+  - kildesitat_mangler_i_registeret
+  - legal_basis_mangler
+  - review_by_mangler
+  - value_not_extractable
+- id: LK-17
+  domain: lanekassen
+  claim: 'Forvaltningspraksis: utfyllende begrunnelse er lovlig i enkeltsaker, men i strid med forvaltningsloven
+    som generell praksis for å redusere antall klager til nemnda'
+  legal_basis: null
+  register_status: VERIFISERT verbatim
+  review_trigger: PRAKSIS
+  review_by: 2027-01
+  section: Lånekassen (verifisert 2026-07-27)
+  values: []
+  flags:
+  - kildesitat_mangler_i_registeret
+  - legal_basis_mangler
+  - value_not_extractable
+- id: LK-18
+  domain: lanekassen
+  claim: Kundetelefon +47 21 49 60 00, hverdager 09–15
+  legal_basis: null
+  register_status: VERIFISERT fra side
+  review_trigger: PRAKSIS
+  review_by: 2027-01
+  section: Lånekassen (verifisert 2026-07-27)
+  values: []
+  flags:
+  - kildesitat_mangler_i_registeret
+  - legal_basis_mangler
+  - value_not_extractable
+- id: LK-19
+  domain: lanekassen
+  claim: Omgjøring forutsetter at søkeren IKKE bor sammen med foreldrene (borteboer); § 3 definerer borteboer
+    (selvstendig, fysisk/registrert atskilt boenhet). Gift søker, eller søker med barn å forsørge som
+    bor med barnet, regnes som å ikke bo hjemme — **rekategorisering til borteboer, ikke en egen hjemmeboer-omgjøringsrett**
+    (separert ≠ gift).
+  legal_basis: forskrift om utdanningsstøtte FOR-2020-04-15-798 **§ 76 jf. § 3**
+  register_status: VERIFISERT verbatim
+  review_trigger: STABIL
+  review_by: null
+  section: Lånekassen (verifisert 2026-07-27)
+  values: []
+  flags:
+  - kildesitat_mangler_i_registeret
+  - review_by_mangler
+  - value_not_extractable
+- id: LK-20
+  domain: lanekassen
+  claim: 'Prosentsplitt bekreftet mot forskrift: **§ 77 studiepoeng = inntil 15 %** (høyere utdanning;
+    40 % i andre utdanninger), **§ 78 bestått grad = inntil 25 %**. §§ 80/81: retten til omgjøring for
+    **tidligere/senere perioder gjelder også søkere som bor sammen med foreldrene** i perioden de består
+    utdanning.'
+  legal_basis: FOR-2020-04-15-798 **§§ 77/78/80/81**
+  register_status: VERIFISERT verbatim
+  review_trigger: STABIL
+  review_by: null
+  section: Lånekassen (verifisert 2026-07-27)
+  values:
+  - value: 15
+    unit: prosent
+    valid_from: null
+    valid_to: null
+    context: 't bekreftet mot forskrift: **§ 77 studiepoeng = inntil 15 %** (høyere utdanning; 40 % i
+      andre utdanninger), **§ 78'
+    sources: &id004
+    - url: lovdata (verbatim, 2026-08-01)
+      quote: null
+      verified_at: null
+  - value: 40
+    unit: prosent
+    valid_from: null
+    valid_to: null
+    context: '**§ 77 studiepoeng = inntil 15 %** (høyere utdanning; 40 % i andre utdanninger), **§ 78
+      bestått grad = inntil 25'
+    sources: *id004
+  - value: 25
+    unit: prosent
+    valid_from: null
+    valid_to: null
+    context: '0 % i andre utdanninger), **§ 78 bestått grad = inntil 25 %**. §§ 80/81: retten til omgjøring
+      for **tidligere/sene'
+    sources: *id004
+  flags:
+  - flere_verdier_uten_strukturert_merkelapp
+  - kildesitat_mangler_i_registeret
+  - review_by_mangler
+  - valid_from_mangler
+- id: LK-21
+  domain: lanekassen
+  claim: 'Omgjøring skjer uten søknad — Lånekassen anvender den automatisk på grunnlag av innrapporterte
+    faglige resultater og skatteoppgjør — men er betinget av vilkårene. Behovsprøvingen gjøres mot opplysninger
+    i fastsettingen av formues- og inntektsskatt: **§ 97** (behovsprøving av stipend, generell) jf. **§
+    98** (inntekt) og **§ 100** (formue).'
+  legal_basis: lanekassen.no (uten-søknad-mekanisme); FOR-2020-04-15-798 **§§ 97/98/100**
+  register_status: VERIFISERT
+  review_trigger: ÅRLIG
+  review_by: 2027-01
+  section: Lånekassen (verifisert 2026-07-27)
+  values: []
+  flags:
+  - kildesitat_mangler_i_registeret
+  - value_not_extractable
+- id: LK-22
+  domain: lanekassen
+  claim: 'Studieåret 2026–2027: «For fulltidsstudenter økes basislånet til 15 488 kroner i måneden.» Publisert
+    11.05.2026'
+  legal_basis: forskrift om utdanningsstøtte 2026–2027
+  register_status: VERIFISERT verbatim
+  review_trigger: ÅRLIG
+  review_by: 2027-05
+  section: Helfo og Lånekassen — årlige satser (verifisert 2026-10-07)
+  values:
+  - value: 15488
+    unit: NOK
+    valid_from: '2026-01-01'
+    valid_to: null
+    context: '2026–2027: «For fulltidsstudenter økes basislånet til 15 488 kroner i måneden.» Publisert
+      11.05.2026'
+    sources:
+    - url: lanekassen.no/nb-NO/laresteder/nyheter/forskriftene-for-2026-2027-er-klare
+      quote: null
+      verified_at: null
+  flags:
+  - kildesitat_mangler_i_registeret
