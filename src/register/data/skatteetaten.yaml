@@ -369,3 +369,26 @@ facts:
   - kildesitat_mangler_i_registeret
   - review_by_mangler
   - valid_from_mangler
+- id: SKATT-KLAGE-01
+  domain: skatteetaten
+  claim: 'Skatteetaten: klagefrist 6 uker fra mottatt vedtak'
+  legal_basis: skfvl. § 13-4
+  register_status: VERIFISERT verbatim
+  review_trigger: LOVENDRING
+  review_by: null
+  section: 'Kryss-domene: klagefrist varierer'
+  values:
+  - value: 6
+    unit: uker
+    valid_from: null
+    valid_to: null
+    context: Skatteetaten | 6 uker fra mottatt vedtak | skfvl. § 13-4
+    sources:
+    - url: https://lovdata.no/lov/2016-05-27-14
+      quote: null
+      verified_at: null
+  flags:
+  - kildesitat_mangler_i_registeret
+  - review_by_mangler
+  - konvertert_fra_kryss_domene_tabell
+  lovdata_refid: lov/2016-05-27-14

@@ -1,0 +1,15 @@
+{
+ "row_id": "NAV-01",
+ "value": 136549.0,
+ "unit": "NOK",
+ "previous": 130160.0,
+ "change": 0.04908574062692071,
+ "supporting_rows": [
+  "NAV-02"
+ ],
+ "n_sources": 2,
+ "valid_from": "2026-05-01",
+ "source_url": "https://www.nav.no/grunnbelopet",
+ "span": "Grunnbeløpet (G) per 1. mai 2026 er 136 549 kroner.",
+ "context": "Utbetaling Grunnbeløpet i folketrygden Grunnbeløpet (G) per 1. mai 2026 er 136 549 kroner. Innhold på denne siden Om grunnbeløpet"
+}

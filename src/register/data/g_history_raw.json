@@ -1,0 +1,32 @@
+[
+ {
+  "year": 2022,
+  "valid_from": "2022-05-01",
+  "value": 111477,
+  "quote": "Dato og år 1.5.2022 Grunnbeløpet (G) 111 477 kr Gjennomsnitt"
+ },
+ {
+  "year": 2023,
+  "valid_from": "2023-05-01",
+  "value": 118620,
+  "quote": "Dato og år 1. mai 2023 Grunnbeløpet (G) 118 620 kroner Gjennomsnitt"
+ },
+ {
+  "year": 2024,
+  "valid_from": "2024-05-01",
+  "value": 124028,
+  "quote": "Dato og år 1. mai 2024 Grunnbeløpet (G) 124 028 kroner Gjennomsnitt"
+ },
+ {
+  "year": 2025,
+  "valid_from": "2025-05-01",
+  "value": 130160,
+  "quote": "Dato og år 1. mai 2025 Grunnbeløpet (G) 130 160 Gjennomsnitt"
+ },
+ {
+  "year": 2026,
+  "valid_from": "2026-05-01",
+  "value": 136549,
+  "quote": "Dato og år 1. mai 2026 Grunnbeløpet (G) 136 549 kroner Gjennomsnitt"
+ }
+]

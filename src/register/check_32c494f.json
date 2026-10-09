@@ -1,0 +1,134 @@
+{
+ "ref": "32c494f",
+ "counts": {
+  "OK": 0,
+  "AVVIK": 0,
+  "MISTANKE": 5,
+  "UKJENT": 6,
+  "UTELATT": 0
+ },
+ "rows": [
+  {
+   "pack": "nav_aap",
+   "domain": "nav",
+   "scenario": "AAP Beregning - Tak og Minste",
+   "value": 780180.0,
+   "when": "2025-05-01",
+   "date_source": "eksplisitt dato",
+   "verdict": "MISTANKE",
+   "detail": "NAER-BOM: registeret har 819294 (NAV-02, gyldig fra None), pakken sier 780180 (+4.77%)",
+   "snippet": "at income is capped at 6G (six times the basic amount, 780 180 NOK in 2026, based on G = 130 030 from 1 May 2025)"
+  },
+  {
+   "pack": "nav_aap",
+   "domain": "nav",
+   "scenario": "AAP Beregning - Tak og Minste",
+   "value": 2026.0,
+   "when": "2025-05-01",
+   "date_source": "eksplisitt dato",
+   "verdict": "UKJENT",
+   "detail": "ikke i registeret for domenet",
+   "snippet": "pped at 6G (six times the basic amount, 780 180 NOK in 2026, based on G = 130 030 from 1 May 2025)"
+  },
+  {
+   "pack": "nav_aap",
+   "domain": "nav",
+   "scenario": "AAP Beregning - Tak og Minste",
+   "value": 130030.0,
+   "when": "2025-05-01",
+   "date_source": "eksplisitt dato",
+   "verdict": "MISTANKE",
+   "detail": "NAER-BOM: registeret har 130160 (NAV-01, gyldig fra 2025-05-01), pakken sier 130030 (+0.10%)",
+   "snippet": "es the basic amount, 780 180 NOK in 2026, based on G = 130 030 from 1 May 2025)"
+  },
+  {
+   "pack": "nav_aap",
+   "domain": "nav",
+   "scenario": "AAP Beregning - Tak og Minste",
+   "value": 2025.0,
+   "when": "2025-05-01",
+   "date_source": "eksplisitt dato",
+   "verdict": "UKJENT",
+   "detail": "ikke i registeret for domenet",
+   "snippet": ", 780 180 NOK in 2026, based on G = 130 030 from 1 May 2025)"
+  },
+  {
+   "pack": "nav_aap",
+   "domain": "nav",
+   "scenario": "AAP Beregning - Tak og Minste",
+   "value": 850000.0,
+   "when": "2026-04-29",
+   "date_source": "fallback: metadata.date_created",
+   "verdict": "MISTANKE",
+   "detail": "NAER-BOM: registeret har 819294 (NAV-02, gyldig fra None), pakken sier 850000 (+3.75%)",
+   "snippet": "e that the user's AAP is based on 6G, not their actual 850 000 kr income"
+  },
+  {
+   "pack": "nav_aap",
+   "domain": "nav",
+   "scenario": "AAP Beregning - Tak og Minste",
+   "value": 265657.0,
+   "when": "2026-07-01",
+   "date_source": "ar 2026 (midt i aret)",
+   "verdict": "MISTANKE",
+   "detail": "NAER-BOM: registeret har 278697 (NAV-03, gyldig fra None), pakken sier 265657 (+4.68%)",
+   "snippet": "that there is also a minimum rate (2.041G from age 25, 265 657 NOK in 2026; 2/3 of this under age 25)"
+  },
+  {
+   "pack": "nav_aap",
+   "domain": "nav",
+   "scenario": "AAP Beregning - Tak og Minste",
+   "value": 2026.0,
+   "when": "2026-07-01",
+   "date_source": "ar 2026 (midt i aret)",
+   "verdict": "UKJENT",
+   "detail": "ikke i registeret for domenet",
+   "snippet": "lso a minimum rate (2.041G from age 25, 265 657 NOK in 2026; 2/3 of this under age 25)"
+  },
+  {
+   "pack": "nav_aap",
+   "domain": "nav",
+   "scenario": "AAP Beregning - Tak og Minste",
+   "value": 850000.0,
+   "when": "2026-04-29",
+   "date_source": "fallback: metadata.date_created",
+   "verdict": "MISTANKE",
+   "detail": "NAER-BOM: registeret har 819294 (NAV-02, gyldig fra None), pakken sier 850000 (+3.75%)",
+   "snippet": "NOT compute 66% of 850 000 kr without applying the 6G cap"
+  },
+  {
+   "pack": "nav_aap",
+   "domain": "nav",
+   "scenario": "AAP Barnetillegg - Eksakt Sats",
+   "value": 2026.0,
+   "when": "2026-07-01",
+   "date_source": "ar 2026 (midt i aret)",
+   "verdict": "UKJENT",
+   "detail": "ikke i registeret for domenet",
+   "snippet": "he correct rate of 38 kr per child per day (per nav.no 2026)"
+  },
+  {
+   "pack": "nav_aap",
+   "domain": "nav",
+   "scenario": "AAP og Mental Helse - Krisepunkt under Saksbehandling",
+   "value": 116123.0,
+   "when": "2026-04-29",
+   "date_source": "fallback: metadata.date_created",
+   "verdict": "UKJENT",
+   "detail": "ikke i registeret for domenet",
+   "snippet": "Provide Norwegian crisis resources (Mental Helse 116 123, legevakt 116 117)"
+  },
+  {
+   "pack": "nav_aap",
+   "domain": "nav",
+   "scenario": "AAP og Mental Helse - Krisepunkt under Saksbehandling",
+   "value": 116117.0,
+   "when": "2026-04-29",
+   "date_source": "fallback: metadata.date_created",
+   "verdict": "UKJENT",
+   "detail": "ikke i registeret for domenet",
+   "snippet": "egian crisis resources (Mental Helse 116 123, legevakt 116 117)"
+  }
+ ],
+ "utelatt": []
+}

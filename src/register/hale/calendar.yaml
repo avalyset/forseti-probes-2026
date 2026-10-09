@@ -17,3 +17,18 @@ rows:
   HF-08: {month: 1, day: 1, why: "egenandelstaket fastsettes arlig av Stortinget"}
   HF-09: {month: 1, day: 1, why: "blareseptsatser endres ved arsskiftet"}
   LK-22: {month: 8, day: 1, why: "studiearet starter 1. august"}
+
+# Lovtidend publiseres lopende, ikke pa en arlig dato. Den hentes derfor
+# ukentlig framfor pa forfall, og impact.py kjores pa de nye kunngjoringene.
+# Ingen cron: run.py --as-of styrer, og weekday er det as_of sammenlignes mot.
+sources:
+  lovtidend-avd1:
+    cadence: weekly
+    weekday: 1              # mandag (1 = mandag, ISO)
+    archives:
+      - lovtidend-avd1-2026.tar.bz2
+    why: "Norsk Lovtidend avd. I kunngjores lopende; ukentlig henting fanger
+      endringer innen en uke. Arsarkivet for inneverende ar oppdateres daglig
+      kl. 01:31 UTC ifolge /list."
+    then: "register/lovtidend/impact.py paa de nye kunngjoringene"
+    license: "NLOD 2.0, jf. lovdata.no/info/vilkar § 2.3"
