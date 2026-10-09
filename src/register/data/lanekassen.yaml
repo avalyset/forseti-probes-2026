@@ -225,12 +225,12 @@ facts:
   legal_basis: forskrift
   register_status: '**UVERIFISERT**'
   review_trigger: ÅRLIG
-  review_by: null
+  review_by: 2027-08
   section: Lånekassen (verifisert 2026-07-27)
   values: []
   flags:
   - kildesitat_mangler_i_registeret
-  - review_by_mangler
+  - review_by_satt_til_studiearsstart_2b
   - status_uverifisert
   - value_not_extractable
 - id: LK-13
@@ -429,3 +429,26 @@ facts:
       verified_at: null
   flags:
   - kildesitat_mangler_i_registeret
+- id: LK-KLAGE-01
+  domain: lanekassen
+  claim: 'Lånekassen: klagefrist 3 uker fra mottatt vedtak'
+  legal_basis: fvl. § 29 (ingen lex specialis)
+  register_status: VERIFISERT verbatim
+  review_trigger: LOVENDRING
+  review_by: null
+  section: 'Kryss-domene: klagefrist varierer'
+  values:
+  - value: 3
+    unit: uker
+    valid_from: null
+    valid_to: null
+    context: Lånekassen | 3 uker fra mottatt vedtak | fvl. § 29 (ingen lex specialis)
+    sources:
+    - url: https://lovdata.no/lov/1967-02-10
+      quote: null
+      verified_at: null
+  flags:
+  - kildesitat_mangler_i_registeret
+  - review_by_mangler
+  - konvertert_fra_kryss_domene_tabell
+  lovdata_refid: lov/1967-02-10

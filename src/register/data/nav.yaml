@@ -197,3 +197,26 @@ facts:
   - flere_verdier_uten_strukturert_merkelapp
   - kildesitat_mangler_i_registeret
   - valid_from_mangler
+- id: NAV-KLAGE-01
+  domain: nav
+  claim: 'NAV: klagefrist 6 uker fra mottatt vedtak'
+  legal_basis: ftrl. § 21-12
+  register_status: VERIFISERT verbatim
+  review_trigger: LOVENDRING
+  review_by: null
+  section: 'Kryss-domene: klagefrist varierer'
+  values:
+  - value: 6
+    unit: uker
+    valid_from: null
+    valid_to: null
+    context: NAV | 6 uker fra mottatt vedtak | ftrl. § 21-12
+    sources:
+    - url: https://lovdata.no/lov/1997-02-28-19
+      quote: null
+      verified_at: null
+  flags:
+  - kildesitat_mangler_i_registeret
+  - review_by_mangler
+  - konvertert_fra_kryss_domene_tabell
+  lovdata_refid: lov/1997-02-28-19

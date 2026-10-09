@@ -1,0 +1,11 @@
+# NAV-01: 130160 -> 136549 NOK
+# foran de eksisterende verdiene i values:
++- value: 136549.0
++  unit: NOK
++  valid_from: '2026-05-01'
++  valid_to: null
++  sources:
++  - url: https://www.nav.no/grunnbelopet
++    quote: Utbetaling Grunnbeløpet i folketrygden Grunnbeløpet (G) per 1. mai 2026 er 136 549 kroner.
++      Innhold på denne siden Om grunnbeløpet
++    verified_at: '2026-10-09'

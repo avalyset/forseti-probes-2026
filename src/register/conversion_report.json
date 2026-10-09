@@ -1,0 +1,29 @@
+{
+ "n_facts": 118,
+ "flags": {
+  "kildesitat_mangler_i_registeret": 117,
+  "review_by_mangler": 46,
+  "valid_from_mangler": 37,
+  "legal_basis_mangler": 30,
+  "value_not_extractable": 75,
+  "review_by_uparselig": 3,
+  "status_forfalt": 2,
+  "flere_verdier_uten_strukturert_merkelapp": 22,
+  "status_uverifisert": 2,
+  "status_korrigert": 4,
+  "review_trigger_mangler": 3,
+  "status_konflikt": 1,
+  "historikk_hentet_verbatim_fra_nav.no": 1
+ },
+ "register_sha256": "8aa1e50a19fb8c678f9865b26d95912b8f0ec3c0609ccab933f9956adfc645d8",
+ "n_with_value": 43,
+ "per_domain": {
+  "lanekassen": 22,
+  "helfo": 9,
+  "nasjonalbiblioteket": 28,
+  "skatteetaten": 20,
+  "tolletaten": 17,
+  "arbeidstilsynet": 16,
+  "nav": 6
+ }
+}

@@ -219,7 +219,9 @@ facts:
   values: []
   flags:
   - kildesitat_mangler_i_registeret
+  - paragraf_ikke_entydig_2b
   - value_not_extractable
+  paragraph_unresolved_reason: hjemmel er «—» i registeret; ISNI-tildeling er ikke lovregulert
 - id: NB-16
   domain: nasjonalbiblioteket
   claim: NB ble ISNI Registration Agency **1. juli 2023**
@@ -240,7 +242,7 @@ facts:
     inntil syv eksemplarer, men Nasjonalbiblioteket ber som hovedregel om tre eksemplarer av alle fysiske
     utgivelser.» + «Digitale dokumenter skal avleveres i ett eksemplar fra utgiver.» Lovtak 7 / praksis
     fysisk 3 / digitalt 1'
-  legal_basis: pliktavleveringslova LOV-1989-06-09-32; forskrift FOR-2018-07-01-1139
+  legal_basis: pliktavleveringslova LOV-1989-06-09-32 § 4
   register_status: VERIFISERT verbatim
   review_trigger: LOVENDRING
   review_by: 2027-01
@@ -248,12 +250,21 @@ facts:
   values: []
   flags:
   - kildesitat_mangler_i_registeret
+  - paragraf_lost_2b_verbatim
   - value_not_extractable
+  lovdata_refid: lov/1989-06-09-32
+  lovdata_paragraph: §4
+  paragraph_evidence:
+    quote: Både fysiske og digitale dokument som er gjorde tilgjengelege for allmenta skal avleverast
+      i inntil sju eksemplar.
+    url: https://lovdata.no/dokument/NL/lov/1989-06-09-32
+    provenance: nl-19890609-032.xml i gjeldende-lover.tar.bz2 sha256 f7318fe7469f5111…
+    verified_at: '2026-10-09'
 - id: NB-18
   domain: nasjonalbiblioteket
   claim: 'Pliktavlevering per publikasjonstype: bøker **tre**, notetrykk **tre**, digitale dokument på
     fysisk lagringsmedium **tre**, småtrykk **to**'
-  legal_basis: pliktavleveringslova
+  legal_basis: forskrift FOR-2018-07-01-1139 § 8
   register_status: VERIFISERT verbatim
   review_trigger: LOVENDRING
   review_by: 2027-01
@@ -261,7 +272,16 @@ facts:
   values: []
   flags:
   - kildesitat_mangler_i_registeret
+  - paragraf_lost_2b_verbatim
   - value_not_extractable
+  lovdata_refid: forskrift/2018-07-01-1139
+  lovdata_paragraph: §8
+  paragraph_evidence:
+    quote: Er eit dokument produsert i Noreg, skal den som har produsert det levere tre eksemplar og utgjevaren
+      fire.
+    url: https://lovdata.no/dokument/SF/forskrift/2018-07-01-1139
+    provenance: sf-20180701-1139.xml i gjeldende-sentrale-forskrifter.tar.bz2 sha256 36116e5cdfe7364b…
+    verified_at: '2026-10-09'
 - id: NB-19
   domain: nasjonalbiblioteket
   claim: '**KONFLIKT internt på tidsskriftsiden:** ingressen sier «skal avleveres i inntil tre trykte
@@ -276,8 +296,11 @@ facts:
   values: []
   flags:
   - kildesitat_mangler_i_registeret
+  - paragraf_ikke_entydig_2b
   - status_konflikt
   - value_not_extractable
+  paragraph_unresolved_reason: konflikten er nb.no-prosa; både forskrift § 8 og § 11 er kandidater — ikke
+    entydig
 - id: NB-20
   domain: nasjonalbiblioteket
   claim: 'Pliktavlevering, opptrykk: «Ved nye, uforandrede opptrykk er det ikke nødvendig å avlevere.»
@@ -290,12 +313,14 @@ facts:
   values: []
   flags:
   - kildesitat_mangler_i_registeret
+  - paragraf_ikke_entydig_2b
   - value_not_extractable
+  paragraph_unresolved_reason: «opptrykk» finnes verbatim i hverken loven eller forskriften
 - id: NB-21
   domain: nasjonalbiblioteket
   claim: 'Pliktavlevering, utenlandsk produksjon: «Dokumenter laget i utlandet skal bare avleveres dersom
     det er laget for en norsk utgiver eller er spesielt tilpasset allmenheten i Norge.»'
-  legal_basis: pliktavleveringslova
+  legal_basis: pliktavleveringslova LOV-1989-06-09-32 § 4
   register_status: VERIFISERT verbatim
   review_trigger: LOVENDRING
   review_by: 2027-01
@@ -303,7 +328,16 @@ facts:
   values: []
   flags:
   - kildesitat_mangler_i_registeret
+  - paragraf_lost_2b_verbatim
   - value_not_extractable
+  lovdata_refid: lov/1989-06-09-32
+  lovdata_paragraph: §4
+  paragraph_evidence:
+    quote: Dokument laga i utlandet skal berre avleverast dersom det er laga for norsk utgjevar eller
+      særskilt tilpassa allmenta i Noreg.
+    url: https://lovdata.no/dokument/NL/lov/1989-06-09-32
+    provenance: nl-19890609-032.xml i gjeldende-lover.tar.bz2 sha256 f7318fe7469f5111…
+    verified_at: '2026-10-09'
 - id: NB-22
   domain: nasjonalbiblioteket
   claim: 'Pliktavlevering, intern vs åpen krets: «Rent bedriftsinterne dokument er likevel ikke avleveringspliktige,
@@ -316,12 +350,14 @@ facts:
   values: []
   flags:
   - kildesitat_mangler_i_registeret
+  - paragraf_ikke_entydig_2b
   - value_not_extractable
+  paragraph_unresolved_reason: «bedriftsinterne» finnes verbatim i hverken loven eller forskriften
 - id: NB-23
   domain: nasjonalbiblioteket
   claim: 'Pliktavlevering, frist: «Både fysiske og digitale dokumenter skal avleveres senest når de er
     gjort allment tilgjengelige.»'
-  legal_basis: pliktavleveringslova
+  legal_basis: forskrift FOR-2018-07-01-1139 § 6
   register_status: VERIFISERT verbatim
   review_trigger: LOVENDRING
   review_by: 2027-01
@@ -329,7 +365,16 @@ facts:
   values: []
   flags:
   - kildesitat_mangler_i_registeret
+  - paragraf_lost_2b_verbatim
   - value_not_extractable
+  lovdata_refid: forskrift/2018-07-01-1139
+  lovdata_paragraph: §6
+  paragraph_evidence:
+    quote: Utgjevar og importør skal sende inn avleveringseksemplar når dokumentet vert gjort tilgjengeleg
+      for allmenta, om ikkje noko anna er særskilt fastsett.
+    url: https://lovdata.no/dokument/SF/forskrift/2018-07-01-1139
+    provenance: sf-20180701-1139.xml i gjeldende-sentrale-forskrifter.tar.bz2 sha256 36116e5cdfe7364b…
+    verified_at: '2026-10-09'
 - id: NB-24
   domain: nasjonalbiblioteket
   claim: 'Deltakelse i ISBN-systemet krever norsk adresse: «Firmaer, institusjoner, foreninger eller privatpersoner
