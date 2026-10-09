@@ -192,6 +192,10 @@ Two licences. Which applies to what:
 | everything under `src/` | **Apache-2.0** | `LICENSE-Apache-2.0` |
 | everything under `PREREG/`, `RAPPORT/`, `docs/`, `data/`, `figs/`, this README | **CC BY 4.0** | `LICENSE-CC-BY-4.0` |
 
+`LICENSE` is a copy of `LICENSE-Apache-2.0`, present so GitHub's detector reports the
+repository as Apache-2.0. It does not override the table above: the non-code material is
+CC BY 4.0.
+
 `data/expected_facts.yaml` and the register YAML under `src/register/data/` quote short
 passages from Norwegian public-sector web pages, each with its source URL and the date it
 was verified. Those quotations are cited, not relicensed.
